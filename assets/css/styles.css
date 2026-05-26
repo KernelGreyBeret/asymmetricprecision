@@ -35,6 +35,27 @@ body::before {
   mask-image: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent 70%);
 }
 
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+}
+
+.brand img {
+    height: 42px;
+    width: auto;
+}
+
+.hero-logo {
+    width: min(700px, 90%);
+    height: auto;
+    margin-bottom: 2rem;
+    opacity: 0.96;
+}
+
 img { max-width: 100%; display: block; }
 
 a { color: var(--gold); text-decoration: none; }
@@ -255,25 +276,4 @@ h3 { font-size: 1.45rem; }
   .site-nav.open { display: flex; }
   .split, .card-grid.three, .card-grid.two { grid-template-columns: 1fr; }
   .site-footer { flex-direction: column; }
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-decoration: none;
-}
-
-.brand img {
-    height: 42px;
-    width: auto;
-}
-
-.hero-logo {
-    width: min(700px, 90%);
-    height: auto;
-    margin-bottom: 2rem;
-    opacity: 0.96;
 }
