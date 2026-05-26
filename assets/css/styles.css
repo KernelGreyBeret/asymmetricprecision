@@ -256,3 +256,24 @@ h3 { font-size: 1.45rem; }
   .split, .card-grid.three, .card-grid.two { grid-template-columns: 1fr; }
   .site-footer { flex-direction: column; }
 }
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+}
+
+.brand img {
+    height: 42px;
+    width: auto;
+}
+
+.hero-logo {
+    width: min(700px, 90%);
+    height: auto;
+    margin-bottom: 2rem;
+    opacity: 0.96;
+}
