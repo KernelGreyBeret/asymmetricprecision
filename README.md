@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="assets/logo-banner.png" alt="Asymmetric Precision" width="700">
+</p>
 
 # Asymmetric Precision™
 
