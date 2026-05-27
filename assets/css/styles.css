@@ -344,3 +344,29 @@ h3 { font-size: 1.45rem; }
     color: #c8a45d;
 }
 
+.site-footer {
+    margin-top: 6rem;
+    padding: 3rem 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    text-align: center;
+    opacity: 0.75;
+}
+
+.footer-mark img {
+    width: 42px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.site-footer p {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.footer-small {
+    font-size: 0.82rem;
+    opacity: 0.65;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
