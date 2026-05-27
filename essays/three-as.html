@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The Three A’s of Zero Trust | Asymmetric Precision</title>
+
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+
+    <a class="brand" href="../index.html">
+      <img src="../assets/logo-mark.png" alt="Asymmetric Precision Logo" />
+      <span>Asymmetric Precision</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="../books.html">Books</a></li>
+      <li><a href="../essays.html">Essays</a></li>
+      <li><a href="../frameworks.html">Frameworks</a></li>
+      <li><a href="../field-notes.html">Field Notes</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+<main class="essay-page">
+
+  <article class="essay-content">
+
+    <p class="essay-eyebrow">Essay</p>
+
+    <h1>The Three A’s of Zero Trust</h1>
+
+    <p class="essay-subtitle">
+      Attribution, Authority, and Authorization
+    </p>
+
+    <div class="essay-meta">
+      <span>Tommy Burke</span>
+      <span>•</span>
+      <span>2026</span>
+      <span>•</span>
+      <span>~10 minute read</span>
+    </div>
+
+    <div class="essay-actions">
+      <a class="button-primary" href="../assets/pdfs/three-as.pdf" target="_blank">
+        Download PDF
+      </a>
+    </div>
+
+    <section class="essay-body">
+    
+      <p>
+        Modern Zero Trust discussions often focus heavily on technologies.
+      </p>
+    
+      <p>
+        Identity providers. Multi-factor authentication. Microsegmentation.
+        Data tagging. Policy engines. Behavior analytics. Continuous monitoring.
+      </p>
+    
+      <p>
+        All of those things matter.
+      </p>
+    
+      <p>
+        But over time, I’ve found that most Zero Trust capabilities ultimately
+        exist to support one or more of three fundamental concepts:
+      </p>
+    
+      <ul>
+        <li>Attribution</li>
+        <li>Authority</li>
+        <li>Authorization</li>
+      </ul>
+    
+      <p>
+        The more I work through enterprise architectures, the more I believe these
+        three concepts form the operational foundation beneath almost every Zero Trust
+        activity, capability, and enforcement mechanism.
+      </p>
+    
+      <p>
+        Not just technically — architecturally, philosophically, and operationally.
+      </p>
+    
+      <p>
+        And importantly, they are not independent concepts. They recursively depend
+        on one another.
+      </p>
+    
+      <p>
+        Understanding those relationships changes how you think about Zero Trust itself.
+      </p>
+    
+      <h2>Attribution</h2>
+    
+      <p>
+        At its simplest, attribution answers a basic question:
+        “Who or what performed this action?”
+      </p>
+    
+      <p>
+        But in mature Zero Trust architectures, attribution becomes far more expansive
+        than simple user identification.
+      </p>
+    
+      <p>Attribution applies to:</p>
+    
+      <ul>
+        <li>users</li>
+        <li>devices</li>
+        <li>workloads</li>
+        <li>services</li>
+        <li>applications</li>
+        <li>APIs</li>
+        <li>automation</li>
+        <li>policies</li>
+        <li>enforcement actions</li>
+        <li>analytics outcomes</li>
+        <li>orchestration actions</li>
+        <li>telemetry sources</li>
+        <li>data transformations</li>
+        <li>administrative decisions</li>
+      </ul>
+    
+      <p>
+        In other words, the architecture must be able to reliably associate actions,
+        events, decisions, and state changes back to specific entities and systems.
+      </p>
+    
+      <p>
+        This is foundational to trust.
+      </p>
+    
+      <p>Because without attribution:</p>
+    
+      <ul>
+        <li>accountability collapses</li>
+        <li>auditing weakens</li>
+        <li>policy provenance disappears</li>
+        <li>enforcement becomes ambiguous</li>
+        <li>forensic reconstruction becomes unreliable</li>
+        <li>automation becomes dangerous</li>
+        <li>trust decisions lose confidence</li>
+      </ul>
+    
+      <p>
+        And importantly, Zero Trust attribution is not only about identifying users.
+      </p>
+    
+      <p>
+        It is also about attributing decisions themselves.
+      </p>
+    
+      <p>For example:</p>
+    
+      <ul>
+        <li>Which system denied access?</li>
+        <li>Which policy triggered enforcement?</li>
+        <li>Which telemetry source elevated risk?</li>
+        <li>Which orchestration engine isolated the device?</li>
+        <li>Which authoritative source supplied the attribute?</li>
+        <li>Which administrator approved the exception?</li>
+        <li>Which enforcement point blocked the request?</li>
+      </ul>
+    
+      <p>
+        These questions matter because enterprise trust cannot exist where decision
+        lineage is unclear.
+      </p>
+    
+      <p>
+        Attribution creates accountability.
+      </p>
+    
+      <p>
+        But accountability alone is insufficient. Because attribution does not establish
+        whether an entity or system should be trusted to act.
+      </p>
+    
+      <p>
+        That leads directly into authority.
+      </p>
+    
+      <h2>Authority</h2>
+    
+      <p>
+        Authority answers a different question:
+        “Who or what is trusted to define truth, make decisions, enforce policy, or establish state?”
+      </p>
+    
+      <p>
+        This concept is frequently underappreciated in enterprise security architecture.
+      </p>
+    
+      <p>
+        Many organizations discuss trust without clearly defining authority boundaries.
+        But Zero Trust architectures fundamentally depend on authoritative sources.
+      </p>
+    
+      <p>
+        Without them, the system has no stable foundation for decision-making.
+      </p>
+    
+      <p>For example:</p>
+    
+      <ul>
+        <li>What system is authoritative for identity?</li>
+        <li>What system is authoritative for device posture?</li>
+        <li>What system is authoritative for policy?</li>
+        <li>What system is authoritative for data classification?</li>
+        <li>What system is authoritative for risk scoring?</li>
+        <li>What system is authoritative for access decisions?</li>
+        <li>What system is authoritative for telemetry?</li>
+        <li>What system is authoritative for enforcement?</li>
+      </ul>
+    
+      <p>
+        These are not merely technical implementation questions.
+      </p>
+    
+      <p>
+        They are <em>trust-governance questions</em>.
+      </p>
+    
+      <p>
+        Because every authorization decision ultimately depends on authoritative truth sources.
+      </p>
+    
+      <p>If authoritative boundaries become ambiguous:</p>
+    
+      <ul>
+        <li>policies conflict</li>
+        <li>enforcement diverges</li>
+        <li>telemetry loses confidence</li>
+        <li>data integrity degrades</li>
+        <li>trust chains weaken</li>
+        <li>operators lose clarity</li>
+        <li>automation becomes inconsistent</li>
+      </ul>
+    
+      <p>
+        This problem appears constantly in enterprise environments.
+      </p>
+    
+      <p>
+        Multiple systems begin independently:
+      </p>
+    
+      <ul>
+        <li>assigning permissions</li>
+        <li>classifying risk</li>
+        <li>making access decisions</li>
+        <li>evaluating posture</li>
+        <li>defining policy</li>
+        <li>overriding enforcement</li>
+        <li>managing identity state</li>
+      </ul>
+    
+      <p>
+        Eventually, no one can confidently answer:
+        “Which system actually owns the decision?”
+      </p>
+    
+      <p>
+        That ambiguity is dangerous.
+      </p>
+    
+      <p>
+        Zero Trust architectures require clear authority boundaries because trust
+        cannot be continuously evaluated against uncertain truth sources.
+      </p>
+    
+      <p>
+        And authority itself is recursive.
+      </p>
+    
+      <p>For example:</p>
+    
+      <ul>
+        <li>A policy engine must itself be trusted.</li>
+        <li>An identity provider must itself be authoritative.</li>
+        <li>Telemetry used for authorization must itself originate from trusted systems.</li>
+        <li>Enforcement points must be trusted to correctly execute decisions.</li>
+        <li>Analytics engines must be trusted to accurately interpret data.</li>
+      </ul>
+    
+      <p>
+        Authority therefore becomes both an <strong>operational</strong> and
+        <strong>architectural</strong> concern.
+      </p>
+    
+      <p>
+        And critically, authority without attribution becomes unaccountable.
+      </p>
+    
+      <p>
+        Which leads to the third concept.
+      </p>
+    
+      <h2>Authorization</h2>
+    
+      <p>
+        Authorization answers the runtime question:
+        “Should this specific action be permitted right now under these exact conditions?”
+      </p>
+    
+      <p>
+        This is where Zero Trust fundamentally diverges from many traditional security models.
+      </p>
+    
+      <p>
+        Historically, organizations often treated authorization as relatively static.
+        If identity was established and permissions existed, access was generally granted.
+      </p>
+    
+      <p>
+        Zero Trust changes this entirely.
+      </p>
+    
+      <p>Authorization becomes:</p>
+    
+      <ul>
+        <li>contextual</li>
+        <li>dynamic</li>
+        <li>continuously reevaluated</li>
+        <li>risk-informed</li>
+        <li>policy-driven</li>
+        <li>environment-aware</li>
+      </ul>
+    
+      <p>
+        Authorization no longer depends solely on identity.
+      </p>
+    
+      <p>
+        It depends on the evaluated trust state of:
+      </p>
+    
+      <ul>
+        <li>the user</li>
+        <li>the device</li>
+        <li>the session</li>
+        <li>the network</li>
+        <li>the data</li>
+        <li>the environment</li>
+        <li>the behavior</li>
+        <li>the request pattern</li>
+        <li>operational conditions</li>
+        <li>active threat indicators</li>
+        <li>policy constraints</li>
+        <li>mission context</li>
+      </ul>
+    
+      <p>
+        all evaluated together at runtime.
+      </p>
+    
+      <p>
+        Importantly, authorization depends directly on both attribution and authority.
+      </p>
+    
+      <p>
+        Authorization cannot function without reliable attribution because:
+      </p>
+    
+      <ul>
+        <li>unidentified actions cannot be evaluated</li>
+        <li>unattributed telemetry cannot be trusted</li>
+        <li>unauthenticated entities cannot be assessed</li>
+      </ul>
+    
+      <p>
+        Authorization also cannot function without authoritative truth sources because:
+      </p>
+    
+      <ul>
+        <li>inaccurate identity state corrupts decisions</li>
+        <li>stale posture data weakens trust evaluation</li>
+        <li>conflicting policy sources create inconsistent enforcement</li>
+        <li>unreliable analytics introduce decision instability</li>
+      </ul>
+    
+      <p>
+        In practice, authorization becomes the operational convergence point of the entire architecture.
+      </p>
+    
+      <p>
+        This is why modern Zero Trust environments place such heavy emphasis on:
+      </p>
+    
+      <ul>
+        <li>policy decision points</li>
+        <li>contextual access evaluation</li>
+        <li>runtime telemetry</li>
+        <li>behavioral analytics</li>
+        <li>continuous verification</li>
+        <li>adaptive enforcement</li>
+        <li>dynamic policy orchestration</li>
+      </ul>
+    
+      <p>
+        Authorization is no longer a one-time event; it is a continuous operational process.
+      </p>
+    
+      <h2>The Recursive Relationship</h2>
+    
+      <p>
+        The Three A’s are not isolated functions.
+      </p>
+    
+      <p>
+        They recursively support one another.
+      </p>
+    
+      <p>Authorization depends on authoritative sources.</p>
+      <p>Authority requires attribution.</p>
+      <p>Attribution depends on trusted authoritative telemetry.</p>
+      <p>Enforcement authority itself must be attributable.</p>
+      <p>Policy authorities must themselves be authorized.</p>
+      <p>Telemetry attribution depends on trusted collection mechanisms.</p>
+    
+      <p>
+        The relationships continually loop back into one another.
+      </p>
+    
+      <p>
+        This is why Zero Trust architectures become difficult to implement at enterprise scale.
+      </p>
+    
+      <p>
+        The challenge is not simply deploying tools.
+      </p>
+    
+      <p>
+        The challenge is maintaining trustworthy relationships between:
+      </p>
+    
+      <ul>
+        <li>attribution chains</li>
+        <li>authority boundaries</li>
+        <li>authorization decisions</li>
+      </ul>
+    
+      <p>
+        across thousands of systems, users, devices, policies, workflows,
+        and enforcement mechanisms.
+      </p>
+    
+      <p>
+        Most architectural failures occur when one of these chains becomes ambiguous.
+      </p>
+    
+      <p>For example:</p>
+    
+      <ul>
+        <li>unclear policy ownership</li>
+        <li>conflicting authoritative sources</li>
+        <li>inconsistent enforcement</li>
+        <li>unverifiable telemetry</li>
+        <li>unattributed automation</li>
+        <li>orphaned permissions</li>
+        <li>disconnected analytics</li>
+        <li>static authorization assumptions</li>
+      </ul>
+    
+      <p>
+        These failures erode trust not because security controls are absent,
+        but because trust relationships themselves become unreliable.
+      </p>
+    
+      <h2>Zero Trust as a Trust Architecture</h2>
+    
+      <p>
+        One of the biggest misconceptions about Zero Trust is the belief that it is
+        primarily a collection of security technologies.
+      </p>
+    
+      <p>
+        It is not.
+      </p>
+    
+      <p>
+        At its core, Zero Trust is an architecture for establishing and continuously
+        evaluating trust.
+      </p>
+    
+      <p>
+        That architecture requires:
+      </p>
+    
+      <ul>
+        <li>reliable attribution</li>
+        <li>authoritative truth sources</li>
+        <li>contextual authorization</li>
+      </ul>
+    
+      <p>
+        working together continuously.
+      </p>
+    
+      <p>
+        Every capability ultimately contributes to one or more of those goals.
+      </p>
+    
+      <p>
+        Identity systems. Policy engines. Analytics platforms. Data tagging.
+        Device posture assessment. Behavioral monitoring. Access enforcement.
+        Telemetry pipelines. Automation systems.
+      </p>
+    
+      <p>
+        All of them support the establishment, validation, protection,
+        or enforcement of attribution, authority, and authorization relationships
+        across the enterprise.
+      </p>
+    
+      <p>
+        The technologies matter, but the trust relationships matter more.
+      </p>
+    
+      <h2>Final Thought</h2>
+    
+      <p>
+        Attribution establishes accountability.
+      </p>
+    
+      <p>
+        Authority establishes trusted truth.
+      </p>
+    
+      <p>
+        Authorization establishes permissible action.
+      </p>
+    
+      <p>
+        When those relationships are <strong>clear</strong>, trust decisions become
+        <strong>defensible</strong>.
+      </p>
+    
+      <p>
+        When those relationships become <em>ambiguous</em>, Zero Trust begins to
+        <em>fail</em>.
+      </p>
+    
+      <p>
+        The more I work through enterprise Zero Trust architectures, the more I believe
+        the real challenge is not deploying security technologies.
+      </p>
+    
+      <p>
+        It is maintaining confidence in the attribution, authority,
+        and authorization chains across the enterprise continuously,
+        consistently, and at scale.
+      </p>
+    
+      <p class="essay-signature">
+        <em>
+          Tommy Burke is a cybersecurity engineer, systems thinker, and retired U.S.
+          Army veteran focused on enterprise Zero Trust architecture,
+          operational trust systems, and modern authorization models.
+        </em>
+      </p>
+    
+      <p class="essay-closing">
+        <em>“Asymmetric Precision”</em>
+      </p>
+    
+    </section>
+
+    <div class="essay-actions bottom-actions">
+      <a class="button-primary" href="../assets/pdfs/three-as.pdf" target="_blank">
+        Download PDF
+      </a>
+    </div>
+
+  </article>
+
+</main>
+
+</body>
+</html>
