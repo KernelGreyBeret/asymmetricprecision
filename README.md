@@ -1,82 +1,64 @@
-# Asymmetric Precision Site
 
-Static website for asymmetricprecision.com.
+# Asymmetric Precision™
 
-## What this is
+Frameworks, essays, books, and operational philosophy
+from the edge of complexity.
 
-A free GitHub Pages-ready site for:
+https://asymmetricprecision.com
 
-- Books
-- Essays
-- Frameworks
-- Field Notes
-- Projects
-- Bio/About
-- Contact
+---
 
-No build step. No paid hosting. No dependencies.
+## About
 
-## Folder structure
+Asymmetric Precision™ is a systems-thinking and operational architecture platform exploring:
 
-```text
-/
-├── index.html
-├── assets/
-│   ├── css/styles.css
-│   └── js/main.js
-├── books/index.html
-├── essays/index.html
-├── frameworks/index.html
-├── field-notes/index.html
-├── projects/index.html
-├── about/index.html
-└── contact/index.html
-```
+- trust
+- complexity
+- authorization
+- governance
+- systems behavior
+- operational philosophy
+- enterprise architecture
+- human systems
+- organizational dynamics
 
-## GitHub Pages setup
+The platform combines long-form essays, books, field notes,
+frameworks, and operational reflections drawn from real-world experience
+across cybersecurity, military operations, systems engineering,
+leadership, and enterprise architecture.
 
-1. Create a new GitHub repo named `asymmetricprecision` or `asymmetricprecision-site`.
-2. Upload all files from this folder into the repo root.
-3. Go to Settings → Pages.
-4. Under “Build and deployment,” choose:
-   - Source: Deploy from a branch
-   - Branch: main
-   - Folder: /root
-5. Save.
+---
 
-## Custom domain setup
+## Site Structure
 
-1. In GitHub repo Settings → Pages, add:
+- `/books/` — Publication pages and book series
+- `/essays/` — Long-form essays and papers
+- `/frameworks/` — Systems models and conceptual frameworks
+- `/field-notes/` — Operational observations and reflections
+- `/projects/` — Selected projects and initiatives
 
-```text
-asymmetricprecision.com
-```
+---
 
-2. This creates or uses a `CNAME` file.
-3. In your DNS provider, point the domain to GitHub Pages.
+## Philosophy
 
-Recommended DNS records:
+Modern systems rarely fail randomly.
 
-```text
-A     @     185.199.108.153
-A     @     185.199.109.153
-A     @     185.199.110.153
-A     @     185.199.111.153
-CNAME www   your-github-username.github.io
-```
+They fail through misunderstood relationships:
+trust without verification,
+authority without accountability,
+complexity without visibility,
+and decisions made without understanding the systems that produced them.
 
-4. Enable “Enforce HTTPS” in GitHub Pages once available.
+Asymmetric Precision™ exists to explore those relationships.
 
-## Editing content
+---
 
-Each section has its own `index.html`. Edit the text directly. The design is centralized in:
+## Author
 
-```text
-assets/css/styles.css
-```
+Tommy Burke  
+Cybersecurity engineer, systems thinker,
+and retired U.S. Army veteran.
 
-The mobile navigation and copyright year are controlled by:
+---
 
-```text
-assets/js/main.js
-```
+© 2026 Tommy Burke. All rights reserved.
