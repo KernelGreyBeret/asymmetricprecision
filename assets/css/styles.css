@@ -339,3 +339,16 @@ h3 { font-size: 1.45rem; }
 .bottom-actions {
     margin-top: 4rem;
 }
+
+.essay-body h1, h2, h3 {
+    color: #b9afa0;
+}
+
+.essay-closing {
+    color: #c8a45d;
+    font-weight: bold;
+}
+
+.essay-signature {
+    color: #c8a45d;
+}
