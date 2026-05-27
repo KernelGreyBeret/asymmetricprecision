@@ -412,3 +412,59 @@ h3 { font-size: 1.45rem; }
     font-style: italic;
     opacity: 0.9;
 }
+
+.book-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.book-link:hover {
+    color: var(--accent);
+}
+
+.book-page {
+    display: flex;
+    justify-content: center;
+    padding: 6rem 1.5rem;
+}
+
+.book-content {
+    max-width: 820px;
+    width: 100%;
+}
+
+.book-actions {
+    margin: 2.5rem 0 4rem;
+}
+
+.book-body {
+    font-size: 1.12rem;
+    line-height: 1.9;
+}
+
+.book-body h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.book-body p {
+    margin-bottom: 1.75rem;
+}
+
+.book-emphasis {
+    margin: 3rem 0;
+    padding-left: 1.5rem;
+
+    border-left: 2px solid var(--accent);
+
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    opacity: 0.92;
+}
+
+.disabled-button {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+}
