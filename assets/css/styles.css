@@ -377,3 +377,20 @@ h3 { font-size: 1.45rem; }
     font-size: 0.82rem;
     opacity: 0.55;
 }
+
+.engagement-list {
+    margin: 1.5rem 0;
+    padding-left: 1.25rem;
+    line-height: 1.9;
+}
+
+.engagement-list li {
+    margin-bottom: 0.5rem;
+}
+
+.engagement-note {
+    margin-top: 1.5rem;
+    opacity: 0.72;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
