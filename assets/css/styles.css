@@ -358,8 +358,13 @@ h3 { font-size: 1.45rem; }
 
 .footer-logo {
     width: 48px;
-    height: auto;
+    height: 50px;
     opacity: 0.9;
+    margin-right: 10px;
+}
+
+.site-footer div {
+    display: flex;
 }
 
 .footer-copyright {
