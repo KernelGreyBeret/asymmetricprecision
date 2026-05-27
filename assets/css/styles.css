@@ -394,3 +394,21 @@ h3 { font-size: 1.45rem; }
     font-size: 0.95rem;
     line-height: 1.7;
 }
+
+.book-abstract {
+    margin-top: 1.5rem;
+}
+
+.book-abstract p {
+    margin-bottom: 1.4rem;
+    line-height: 1.85;
+}
+
+.book-emphasis {
+    margin: 2rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--accent);
+
+    font-style: italic;
+    opacity: 0.9;
+}
