@@ -254,10 +254,53 @@ h3 { font-size: 1.45rem; }
   border: 1px solid rgba(46,139,87,.35);
 }
 
-.status.draft {
+.status.live {
+  background: rgba(0,170,170,.18);
+  color: #7be0e0;
+  border: 1px solid rgba(0,170,170,.35);
+}
+
+.status.final-edits {
+  background: rgba(138,43,226,.18);
+  color: #c49bff;
+  border: 1px solid rgba(138,43,226,.35);
+}
+
+.status.development {
+  background: rgba(255,140,0,.18);
+  color: #ffb55a;
+  border: 1px solid rgba(255,140,0,.35);
+}
+
+.status.planned {
   background: rgba(128,128,128,.18);
-  color: #b0b0b0;
+  color: #b8b8b8;
   border: 1px solid rgba(128,128,128,.35);
+}
+
+.status.draft {
+  background: rgba(90,90,90,.18);
+  color: #999;
+  border: 1px solid rgba(90,90,90,.35);
+}
+
+.essay-category {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+
+  color: #c8a45d;
+
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+
+  border-bottom: 1px solid rgba(200,164,93,.25);
+}
+
+.essay-category::before {
+  content: "§ ";
+  opacity: 0.6;
 }
 
 .site-footer {
