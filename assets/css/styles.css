@@ -578,3 +578,14 @@ h3 { font-size: 1.45rem; }
 
   font-size: .95rem;
 }
+
+.email-capture button[type="submit"] {
+    background: var(--gold);
+    color: #15110a;
+    border-color: var(--gold);
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(200, 164, 93, .25);
+    border-radius: 6px;
+    color: #f0f0f0;
+    font-size: 0.95rem;
+}
