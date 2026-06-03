@@ -227,8 +227,6 @@ h3 { font-size: 1.45rem; }
 
 .status {
   display: inline-block;
-  color: #15110a;
-  background: var(--gold);
   border-radius: 999px;
   padding: 0.2rem 0.6rem;
   font-size: 0.72rem;
@@ -236,6 +234,30 @@ h3 { font-size: 1.45rem; }
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.8rem;
+}
+
+.status.featured {
+  background: rgba(200,164,93,.18);
+  color: #c8a45d;
+  border: 1px solid rgba(200,164,93,.35);
+}
+
+.status.new {
+  background: rgba(70,130,180,.18);
+  color: #6faee8;
+  border: 1px solid rgba(70,130,180,.35);
+}
+
+.status.published {
+  background: rgba(46,139,87,.18);
+  color: #7fd29d;
+  border: 1px solid rgba(46,139,87,.35);
+}
+
+.status.draft {
+  background: rgba(128,128,128,.18);
+  color: #b0b0b0;
+  border: 1px solid rgba(128,128,128,.35);
 }
 
 .site-footer {
