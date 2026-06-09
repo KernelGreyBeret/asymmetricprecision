@@ -222,7 +222,7 @@ h3 { font-size: 1.45rem; }
   padding: 1.25rem;
 }
 
-.list-item h2, .list-item h3 { margin-bottom: 0.5rem; }
+.list-item h2, .list-item h3 { margin-bottom: 0.5rem; font-size: 1.25rem; }
 .list-item p { color: var(--muted); margin-bottom: 0; }
 
 .status {
