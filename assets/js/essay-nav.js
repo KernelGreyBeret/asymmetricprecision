@@ -33,7 +33,7 @@
 
   if (previousEssay) {
     prevLink.href = previousEssay.url;
-    prevTitle.textContent = previousEssay.title;
+    prevTitle.textContent = `Essay ${previousEssay.number} — ${previousEssay.title}`;
   } else {
     prevLink.removeAttribute("href");
     prevLink.classList.add("essay-nav-disabled");
@@ -42,7 +42,7 @@
 
   if (nextEssay) {
     nextLink.href = nextEssay.url;
-    nextTitle.textContent = nextEssay.title;
+    nextTitle.textContent = `Essay ${nextEssay.number} — ${nextEssay.title}`;
   } else {
     nextLink.removeAttribute("href");
     nextLink.classList.add("essay-nav-disabled");
