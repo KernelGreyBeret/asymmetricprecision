@@ -2,7 +2,7 @@ window.AP_ESSAYS = [
   {
     number: "001",
     title: "The Three A's of Zero Trust",
-    url: "/essays/the-three-as-of-zero-trust.html"
+    url: "/essays/three-as.html"
   },
   {
     number: "002",
@@ -17,7 +17,7 @@ window.AP_ESSAYS = [
   {
     number: "004",
     title: "Authority Without Attribution",
-    url: "/essays/authority-without-attribution.html"
+    url: "/essays/authority-wo-attribution.html"
   },
   {
     number: "005",
@@ -122,7 +122,7 @@ window.AP_ESSAYS = [
   {
     number: "025",
     title: "The Department Can See. Now It Must Decide.",
-    url: "/essays/the-department-can-see-now-it-must-decide.html"
+    url: "/essays/department-can-see-now-it-must-decide.html"
   },
   {
     number: "026",
