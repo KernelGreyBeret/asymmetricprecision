@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Markdown Essay HTML Builder</title>
+  <style>
+    :root {
+      --bg: #101318;
+      --panel: #171b22;
+      --panel2: #1f2530;
+      --text: #e8edf5;
+      --muted: #aab3c2;
+      --border: #303846;
+      --accent: #9cc9ff;
+      --danger: #ffb4a8;
+      --good: #adf0c0;
+      --shadow: rgba(0,0,0,.35);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    header {
+      padding: 22px 28px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(135deg, #151a22, #101318);
+      box-shadow: 0 2px 14px var(--shadow);
+    }
+
+    header h1 {
+      margin: 0 0 4px;
+      font-size: 1.4rem;
+      letter-spacing: .02em;
+    }
+
+    header p { margin: 0; color: var(--muted); }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(380px, 1fr) minmax(380px, 1fr);
+      gap: 18px;
+      padding: 18px;
+    }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 18px var(--shadow);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1rem;
+      color: var(--accent);
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: 650;
+      color: var(--text);
+    }
+
+    input, textarea {
+      width: 100%;
+      background: var(--panel2);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px;
+      font: 14px/1.45 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      outline: none;
+    }
+
+    input:focus, textarea:focus { border-color: var(--accent); }
+
+    textarea { min-height: 180px; resize: vertical; }
+    #templateInput { min-height: 300px; }
+    #markdownInput { min-height: 360px; }
+    #outputHtml { min-height: 420px; }
+    #blockquoteInput { min-height: 90px; }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .custom-field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      gap: 10px;
+      align-items: end;
+      margin-top: 10px;
+    }
+
+    .custom-field-row button {
+      padding: 10px 12px;
+    }
+
+    @media (max-width: 640px) {
+      .custom-field-row { grid-template-columns: 1fr; }
+    }
+
+    button {
+      border: 1px solid var(--border);
+      background: var(--panel2);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover { border-color: var(--accent); }
+    button.primary { background: #20324a; border-color: #45617f; }
+    button.good { background: #203a2a; border-color: #4e815d; }
+
+    .hint {
+      color: var(--muted);
+      font-size: .88rem;
+      margin: 6px 0 0;
+    }
+
+    .status {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      background: var(--panel2);
+      color: var(--muted);
+      white-space: pre-wrap;
+    }
+
+    .status.good { color: var(--good); }
+    .status.bad { color: var(--danger); }
+
+    details {
+      margin-top: 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px;
+      background: rgba(255,255,255,.02);
+    }
+
+    summary { cursor: pointer; color: var(--accent); font-weight: 700; }
+    code { color: var(--accent); }
+
+    @media (max-width: 980px) {
+      main { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Markdown Essay HTML Builder</h1>
+    <p>Offline browser tool: Markdown essay + HTML template in, finished essay HTML file out.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Essay Metadata</h2>
+      <div class="row">
+        <div>
+          <label for="essayNumber">Essay Number</label>
+          <input id="essayNumber" placeholder="Example: 001" />
+        </div>
+        <div>
+          <label for="readingTime">Reading Time</label>
+          <input id="readingTime" placeholder="Example: 8 min read" />
+        </div>
+      </div>
+
+      <label for="titleInput">Title</label>
+      <input id="titleInput" placeholder="Example: The Three A's of Zero Trust" />
+
+      <label for="subtitleInput">Subtitle</label>
+      <input id="subtitleInput" placeholder="Example: Attribution, Authority, and Authorization" />
+
+      <p class="hint">Slug is generated automatically from the title: lowercase, punctuation removed, spaces become dashes.</p>
+
+      <h2 style="margin-top:18px;">Custom Template Fields</h2>
+      <div id="customFields"></div>
+      <div class="buttons">
+        <button type="button" onclick="addCustomField()">Add Custom Placeholder</button>
+      </div>
+      <p class="hint">Example: placeholder <code>{{AUTHOR}}</code> with value <code>Tommy Burke</code>. You may type <code>AUTHOR</code> or <code>{{AUTHOR}}</code>; the tool normalizes it.</p>
+
+      <h2 style="margin-top:18px;">2. Markdown Essay Body</h2>
+      <textarea id="markdownInput" placeholder="Paste your Markdown essay body here..."></textarea>
+
+      <label for="blockquoteInput">Optional Blockquote Lines</label>
+      <textarea id="blockquoteInput" placeholder="Paste exact line(s) from the essay that should become blockquotes. One quote block per separated paragraph or line."></textarea>
+      <p class="hint">Also supports normal Markdown blockquotes using lines that start with <code>&gt;</code>.</p>
+
+      <details>
+        <summary>Supported Markdown</summary>
+        <p class="hint">
+          Headings: <code>#</code>, <code>##</code>, <code>###</code><br />
+          Bold: <code>**text**</code> or <code>__text__</code><br />
+          Emphasis: <code>*text*</code> or <code>_text_</code><br />
+          Lists: lines starting with <code>-</code>, <code>*</code>, or <code>+</code><br />
+          Paragraphs, blank-line breaks, manual line breaks, and blockquotes.
+        </p>
+      </details>
+    </section>
+
+    <section>
+      <h2>3. HTML Template</h2>
+      <textarea id="templateInput"></textarea>
+      <p class="hint">Default placeholders: <code>{{TITLE}}</code>, <code>{{TITLE_SLUG}}</code>, <code>{{SUBTITLE}}</code>, <code>{{ESSAY_NUMBER}}</code>, <code>{{READING_TIME}}</code>, <code>{{ESSAY_BODY}}</code>, plus any custom placeholders you add.</p>
+
+      <div class="buttons">
+        <button class="primary" onclick="buildHtml()">Build HTML</button>
+        <button onclick="copyOutput()">Copy Output</button>
+        <button class="good" onclick="downloadHtml()">Download .html</button>
+        <button class="good" onclick="openPdfPrintView()">Open PDF / Print</button>
+        <button onclick="downloadPdfReadyHtml()">Download PDF-Ready HTML</button>
+        <button onclick="loadDefaultTemplate()">Reset Template</button>
+      </div>
+
+      <div id="status" class="status">Ready.</div>
+
+      <label for="outputHtml">Generated HTML</label>
+      <textarea id="outputHtml" readonly></textarea>
+    </section>
+  </main>
+
+  <script>
+    const DEFAULT_TEMPLATE = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{SUBTITLE}}" />
+  <link rel="canonical" href="https://example.com/essays/{{TITLE_SLUG}}.html" />
+</head>
+<body class="essay-page essay-{{ESSAY_NUMBER}} {{TITLE_SLUG}}">
+  <main>
+    <article id="{{TITLE_SLUG}}" class="essay">
+      <p class="essay-number">Essay {{ESSAY_NUMBER}}</p>
+      <p class="reading-time">{{READING_TIME}}</p>
+      <h1>{{TITLE}}</h1>
+      <p class="subtitle">{{SUBTITLE}}</p>
+
+      <div class="essay-body">
+{{ESSAY_BODY}}
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <img class="footer-logo" src="../assets/logo-mark.png" alt="Asymmetric Precision Logo">
+
+      <p class="footer-copyright">
+        © 2026 Tommy Burke. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>`;
+
+    window.addEventListener('DOMContentLoaded', loadDefaultTemplate);
+
+    function loadDefaultTemplate() {
+      document.getElementById('templateInput').value = DEFAULT_TEMPLATE;
+      setStatus('Default template loaded.', 'good');
+    }
+
+    function slugify(title) {
+      return title
+        .trim()
+        .toLowerCase()
+        .replace(/&/g, ' and ')
+        .replace(/['’]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '')
+        .replace(/-{2,}/g, '-');
+    }
+
+    function escapeHtml(text) {
+      return String(text)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function inlineMarkdown(text) {
+      let escaped = escapeHtml(text);
+      escaped = escaped.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      escaped = escaped.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+      escaped = escaped.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+      escaped = escaped.replace(/_([^_]+)_/g, '<em>$1</em>');
+      return escaped;
+    }
+
+    function normalizeLines(text) {
+      return String(text || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+    }
+
+    function getManualQuoteSet(text) {
+      return new Set(
+        normalizeLines(text)
+          .split('\n')
+          .map(line => line.trim())
+          .filter(Boolean)
+      );
+    }
+
+    function convertMarkdown(markdown, manualQuoteText) {
+      const quoteSet = getManualQuoteSet(manualQuoteText);
+      const lines = normalizeLines(markdown).split('\n');
+      const html = [];
+      let paragraph = [];
+      let list = [];
+      let quote = [];
+
+      function flushParagraph() {
+        if (!paragraph.length) return;
+        html.push(`<p>${paragraph.map(inlineMarkdown).join('<br>')}</p>`);
+        paragraph = [];
+      }
+
+      function flushList() {
+        if (!list.length) return;
+        html.push('<ul>');
+        for (const item of list) html.push(`  <li>${inlineMarkdown(item)}</li>`);
+        html.push('</ul>');
+        list = [];
+      }
+
+      function flushQuote() {
+        if (!quote.length) return;
+        
+        const content = quote
+          .filter(x => x !== '__QUOTE_BREAK__')
+          .map(inlineMarkdown)
+          .join('<br>\n');
+
+        html.push(
+           `<blockquote class="book-emphasis">\n` +
+           content +
+          `\n</blockquote>`
+        );
+
+        quote = [];
+      }
+
+      function flushAll() {
+        flushParagraph();
+        flushList();
+        flushQuote();
+      }
+
+      for (let rawLine of lines) {
+        const line = rawLine.trim();
+
+        if (!line) {
+          flushParagraph();
+          flushList();
+
+          if (!quote.length) {
+            continue;
+          }
+
+          // Keep collecting quote lines across blank lines
+          quote.push('__QUOTE_BREAK__');
+          continue;
+        }
+
+        const manualQuoteMatch = quoteSet.has(line);
+        const mdQuoteMatch = /^>\s?/.test(line);
+        if (manualQuoteMatch || mdQuoteMatch) {
+          flushParagraph();
+          flushList();
+          const quoteLine = mdQuoteMatch ? line.replace(/^>\s?/, '') : line;
+          quote.push(quoteLine);
+          continue;
+        }
+
+        const h1 = line.match(/^#\s+(.+)$/);
+        const h2 = line.match(/^##\s+(.+)$/);
+        const h3 = line.match(/^###\s+(.+)$/);
+        if (h3 || h2 || h1) {
+          flushAll();
+          if (h3) html.push(`<h3>${inlineMarkdown(h3[1])}</h3>`);
+          else if (h2) html.push(`<h2>${inlineMarkdown(h2[1])}</h2>`);
+          else html.push(`<h1>${inlineMarkdown(h1[1])}</h1>`);
+          continue;
+        }
+
+        const bullet = line.match(/^[-*+]\s+(.+)$/);
+        if (bullet) {
+          flushParagraph();
+          flushQuote();
+          list.push(bullet[1]);
+          continue;
+        }
+
+        flushList();
+        flushQuote();
+        paragraph.push(line);
+      }
+
+      flushAll();
+      return html.map(line => '        ' + line).join('\n');
+    }
+
+    function normalizePlaceholderName(name) {
+      const cleaned = String(name || '')
+        .trim()
+        .replace(/^{{?/, '')
+        .replace(/^{{/, '')
+        .replace(/}}$/, '')
+        .trim()
+        .toUpperCase()
+        .replace(/[^A-Z0-9_]+/g, '_')
+        .replace(/^_+|_+$/g, '');
+
+      return cleaned ? `{{${cleaned}}}` : '';
+    }
+
+    function addCustomField(placeholder = '', value = '') {
+      const container = document.getElementById('customFields');
+      const row = document.createElement('div');
+      row.className = 'custom-field-row';
+
+      row.innerHTML = `
+        <div>
+          <label>Placeholder</label>
+          <input class="custom-placeholder" placeholder="Example: AUTHOR or {{AUTHOR}}" value="${escapeAttribute(placeholder)}" />
+        </div>
+        <div>
+          <label>Value</label>
+          <input class="custom-value" placeholder="Replacement value" value="${escapeAttribute(value)}" />
+        </div>
+        <button type="button" onclick="this.closest('.custom-field-row').remove()">Remove</button>
+      `;
+
+      container.appendChild(row);
+    }
+
+    function escapeAttribute(text) {
+      return String(text || '')
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
+    function applyCustomPlaceholders(output) {
+      const rows = document.querySelectorAll('.custom-field-row');
+      const seen = new Set();
+
+      for (const row of rows) {
+        const rawName = row.querySelector('.custom-placeholder').value;
+        const placeholder = normalizePlaceholderName(rawName);
+        const value = row.querySelector('.custom-value').value;
+
+        if (!placeholder) continue;
+        if (seen.has(placeholder)) {
+          setStatus(`Duplicate custom placeholder ignored: ${placeholder}`, 'bad');
+          continue;
+        }
+
+        seen.add(placeholder);
+        output = output.replaceAll(placeholder, escapeHtml(value));
+      }
+
+      return output;
+    }
+
+    function calculateReadingTime(markdown) {
+      const words = markdown
+        .replace(/[#>*_\-`]/g, ' ')
+        .trim()
+        .split(/\s+/)
+        .filter(Boolean).length;
+
+      const minutes = Math.max(1, Math.ceil(words / 225));
+
+      return `${minutes} min read`;
+    }
+
+    function buildHtml() {
+      const title = document.getElementById('titleInput').value.trim();
+      const subtitle = document.getElementById('subtitleInput').value.trim();
+      const essayNumber = document.getElementById('essayNumber').value.trim();
+      let readingTime = document.getElementById('readingTime').value.trim();
+
+      const markdown = document.getElementById('markdownInput').value;
+
+      if (!readingTime) {
+        readingTime = calculateReadingTime(markdown);
+      }
+      const blockquoteText = document.getElementById('blockquoteInput').value;
+      const template = document.getElementById('templateInput').value;
+
+      if (!title) return setStatus('Missing title.', 'bad');
+      if (!template.includes('{{ESSAY_BODY}}')) return setStatus('Template must include {{ESSAY_BODY}}.', 'bad');
+
+      const slug = slugify(title);
+      const bodyHtml = convertMarkdown(markdown, blockquoteText);
+
+      let output = template
+        .replaceAll('{{TITLE}}', escapeHtml(title))
+        .replaceAll('{{TITLE_SLUG}}', slug)
+        .replaceAll('{{SUBTITLE}}', escapeHtml(subtitle))
+        .replaceAll('{{ESSAY_NUMBER}}', escapeHtml(essayNumber))
+        .replaceAll('{{READING_TIME}}', escapeHtml(readingTime))
+        .replaceAll('{{ESSAY_BODY}}', bodyHtml);
+
+      output = applyCustomPlaceholders(output);
+
+      document.getElementById('outputHtml').value = output;
+      setStatus(`Built successfully. Filename: ${slug}.html`, 'good');
+      return output;
+    }
+
+    function copyOutput() {
+      const output = document.getElementById('outputHtml').value || buildHtml();
+      if (!output) return;
+      navigator.clipboard.writeText(output)
+        .then(() => setStatus('Generated HTML copied to clipboard.', 'good'))
+        .catch(() => {
+          document.getElementById('outputHtml').select();
+          document.execCommand('copy');
+          setStatus('Generated HTML copied to clipboard.', 'good');
+        });
+    }
+
+    function downloadHtml() {
+      const output = document.getElementById('outputHtml').value || buildHtml();
+      if (!output) return;
+      const title = document.getElementById('titleInput').value.trim();
+      const filename = `${slugify(title)}.html`;
+      const blob = new Blob([output], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      setStatus(`Downloaded ${filename}.`, 'good');
+    }
+
+
+    function getPdfPrintStyles() {
+      return `
+<style id="asymmetric-pdf-print-styles">
+  @page {
+    size: Letter;
+    margin: 0.75in;
+  }
+
+  @media print {
+    @page {
+      size: Letter;
+      margin: 0.62in 0.7in 0.65in;
+    }
+
+    html,
+    body {
+      font-size: 10.5pt !important;
+      line-height: 1.42 !important;
+      background: #ffffff !important;
+      color: #111111 !important;
+    }
+
+    main,
+    article,
+    .essay,
+    .essay-body {
+      max-width: none !important;
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .essay-number,
+    .reading-time {
+      font-size: 8.5pt !important;
+      line-height: 1.2 !important;
+      margin: 0 0 0.08in !important;
+    }
+
+    h1 {
+      font-size: 21pt !important;
+      line-height: 1.08 !important;
+      margin: 0 0 0.08in !important;
+    }
+
+    .subtitle {
+      font-size: 12pt !important;
+      line-height: 1.25 !important;
+      margin: 0 0 0.25in !important;
+    }
+
+    h2 {
+      font-size: 14pt !important;
+      line-height: 1.18 !important;
+      margin: 0.26in 0 0.08in !important;
+    }
+
+    h3 {
+      font-size: 12pt !important;
+      line-height: 1.18 !important;
+      margin: 0.2in 0 0.06in !important;
+    }
+
+    p {
+      font-size: 10.5pt !important;
+      line-height: 1.42 !important;
+      margin: 0 0 0.105in !important;
+      orphans: 3;
+      widows: 3;
+    }
+
+    ul,
+    ol {
+      margin: 0.08in 0 0.14in 0.22in !important;
+      padding-left: 0.18in !important;
+    }
+
+    li {
+      font-size: 10.5pt !important;
+      line-height: 1.38 !important;
+      margin: 0 0 0.045in !important;
+    }
+
+    blockquote,
+    .book-emphasis {
+      font-size: 11pt !important;
+      line-height: 1.35 !important;
+      margin: 0.18in 0 !important;
+      padding: 0.08in 0.18in !important;
+    }
+
+    .site-footer,
+    .pdf-brand-footer {
+      margin-top: 0.35in !important;
+      padding-top: 0.12in !important;
+      font-size: 8.5pt !important;
+      line-height: 1.25 !important;
+      color: black;
+    }
+
+    .footer-logo {
+      width: 34px !important;
+      height: auto !important;
+      margin-bottom: 0.06in !important;
+    }
+
+    .footer-copyright {
+      font-size: 8.5pt !important;
+      line-height: 1.25 !important;
+      margin: 0 !important;
+    }
+
+    nav,
+    .site-nav,
+    .site-header,
+    .pdf-download,
+    .essay-actions,
+    .bottom-actions,
+    .email-capture,
+    .download-callout,
+    .no-print,
+    button {
+      display: none !important;
+    }
+  }
+</style>`;
+    }
+
+    function injectPdfPrintStyles(html) {
+      const styles = getPdfPrintStyles();
+      if (html.includes('</head>')) {
+        return html.replace('</head>', styles + '\n</head>');
+      }
+      return styles + '\n' + html;
+    }
+
+    function injectPdfBaseHref(html) {
+      // The print window is created from about:blank, so relative assets like
+      // ../assets/logo-mark.png need a base URL or the browser cannot find them.
+      if (/<base\s/i.test(html)) return html;
+      const baseTag = '<base href="https://asymmetricprecision.com/essays/">';
+      if (html.includes('<head>')) {
+        return html.replace('<head>', '<head>\n  ' + baseTag);
+      }
+      return html;
+    }
+
+    function ensurePdfFooter(html) {
+      // If your normal page template already contains the site footer/copyright,
+      // keep it. Otherwise add a PDF-only brand footer automatically.
+      if (/footer-copyright|site-footer/i.test(html)) return html;
+
+      const footer = `
+  <footer class="pdf-brand-footer">
+    <div>
+      <img class="pdf-footer-logo" src="https://asymmetricprecision.com/assets/logo-mark.png" alt="Asymmetric Precision Logo">
+      <p class="pdf-footer-copyright">© 2026 Tommy Burke. All rights reserved.</p>
+    </div>
+  </footer>
+`;
+
+      if (html.includes('</body>')) {
+        return html.replace('</body>', footer + '</body>');
+      }
+      return html + footer;
+    }
+
+    function buildPdfPrintHtml() {
+      const output = document.getElementById('outputHtml').value || buildHtml();
+      if (!output) return '';
+      return ensurePdfFooter(injectPdfBaseHref(injectPdfPrintStyles(output)));
+    }
+
+    function openPdfPrintView() {
+      const pdfHtml = buildPdfPrintHtml();
+      if (!pdfHtml) return;
+
+      const title = document.getElementById('titleInput').value.trim();
+      const filename = `${slugify(title)}.pdf`;
+      const printWindow = window.open('', '_blank');
+
+      if (!printWindow) {
+        setStatus('Popup blocked. Allow popups for this file, then try Open PDF / Print again.', 'bad');
+        return;
+      }
+
+      printWindow.document.open();
+      printWindow.document.write(pdfHtml);
+      printWindow.document.close();
+
+      printWindow.addEventListener('load', () => {
+        printWindow.document.title = filename;
+        printWindow.focus();
+        printWindow.print();
+      });
+
+      setStatus(`Opened print view. In the print dialog, choose “Save as PDF” and name it ${filename}.`, 'good');
+    }
+
+    function downloadPdfReadyHtml() {
+      const pdfHtml = buildPdfPrintHtml();
+      if (!pdfHtml) return;
+
+      const title = document.getElementById('titleInput').value.trim();
+      const filename = `${slugify(title)}-pdf-ready.html`;
+      const blob = new Blob([pdfHtml], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      setStatus(`Downloaded ${filename}. Open it in your browser and print/save as PDF whenever needed.`, 'good');
+    }
+
+    function setStatus(message, type) {
+      const el = document.getElementById('status');
+      el.textContent = message;
+      el.className = 'status' + (type ? ' ' + type : '');
+    }
+  </script>
+</body>
+</html>
