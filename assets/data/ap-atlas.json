@@ -1,7 +1,7 @@
 {
-  "version": "0.4",
+  "version": "0.5",
   "name": "AP Atlas Explorer Seed",
-  "description": "A relationship map for Asymmetric Precision v2. Relationships are first-class citizens.",
+  "description": "A relationship map for Asymmetric Precision v2. Relationships and content metadata are first-class citizens.",
   "nodes": [
     {
       "id": "ap",
@@ -179,43 +179,1280 @@
       "type": "laboratory",
       "domain": "Application",
       "summary": "A game laboratory where systems, feedback, constraints, and learning become playable."
+    },
+    {
+      "id": "book-operator-guide",
+      "label": "The Operator’s Guide to Complex Systems",
+      "type": "book",
+      "domain": "Systems",
+      "summary": "A field guide for understanding complex systems under pressure, uncertainty, constraints, incentives, failure, and adaptation.",
+      "url": "../books/operator-guide-complex-systems.html"
+    },
+    {
+      "id": "book-systems-thinking-operators",
+      "label": "Systems Thinking for Operators",
+      "type": "book",
+      "domain": "Operational Design",
+      "summary": "A practical guide for seeing systems clearly under real-world conditions of uncertainty, friction, incomplete information, and operational pressure.",
+      "url": "../books/systems-thinking-for-operators.html"
+    },
+    {
+      "id": "book-trust-constraints-control",
+      "label": "Trust, Constraints, and Control",
+      "type": "book",
+      "domain": "Trust",
+      "summary": "An exploration of authority, governance, policy, trust relationships, and systemic control across technical and human systems.",
+      "url": "../books/trust-constraints-control.html"
+    },
+    {
+      "id": "book-policy-engine-mindset",
+      "label": "The Policy Engine Mindset",
+      "type": "book",
+      "domain": "Decision Making",
+      "summary": "A practical way to think about policy, decisions, enforcement, and adaptive control in systems that must operate under changing conditions.",
+      "url": "../books/policy-engine-mindset.html"
+    },
+    {
+      "id": "book-zero-trust-explained",
+      "label": "Zero Trust Actually Explained",
+      "type": "book",
+      "domain": "Cybersecurity",
+      "summary": "A clear, architecture-first explanation of Zero Trust as a decision, evidence, and enforcement problem rather than a product category.",
+      "url": "../books/zero-trust-actually-explained.html"
+    },
+    {
+      "id": "book-asymmetric-precision",
+      "label": "Asymmetric Precision",
+      "type": "book",
+      "domain": "Applied Systems Thinking",
+      "summary": "The broader philosophy behind AP: seeing hidden systems, making better decisions, and improving difficult organizations with precision.",
+      "url": "../books/asymmetric-precision.html"
+    },
+    {
+      "id": "book-field-notes",
+      "label": "Field Notes from a Systems Architect",
+      "type": "book",
+      "domain": "Observation",
+      "summary": "A collection of operational observations from systems under pressure and the patterns that become visible through lived complexity.",
+      "url": "../books/field-notes-systems-architect.html"
+    },
+    {
+      "id": "essay-end-state",
+      "label": "The End State Is the Requirement",
+      "type": "essay",
+      "domain": "Cybersecurity",
+      "summary": "Why Zero Trust should be measured by required security conditions, operational evidence, and adaptive outcomes, not tool deployment or activity completion.",
+      "url": "../essays/end-state-is-the-requirement.html"
+    },
+    {
+      "id": "essay-three-as",
+      "label": "The Three A’s of Zero Trust",
+      "type": "essay",
+      "domain": "Cybersecurity",
+      "summary": "Attribution, Authority, and Authorization as the operational foundation beneath Zero Trust architecture.",
+      "url": "../essays/three-as.html"
+    },
+    {
+      "id": "essay-checkbox-fallacy",
+      "label": "The Checkbox Fallacy",
+      "type": "essay",
+      "domain": "Governance",
+      "summary": "How organizations begin measuring activity instead of capability and eventually mistake compliance for success.",
+      "url": "../essays/the-checkbox-fallacy.html"
+    },
+    {
+      "id": "essay-context-key",
+      "label": "Context Is Key",
+      "type": "essay",
+      "domain": "Decision Making",
+      "summary": "Why information has meaning only within context, and why understanding systems requires understanding the conditions around observable events.",
+      "url": "../essays/context-is-key.html"
+    },
+    {
+      "id": "essay-maps-territory",
+      "label": "Maps Are Not Territory",
+      "type": "essay",
+      "domain": "Visualization",
+      "summary": "A reflection on models, abstractions, and the dangers of confusing representations with reality itself.",
+      "url": "../essays/maps-are-not-territory.html"
+    },
+    {
+      "id": "essay-constraints",
+      "label": "Constraints Create Behavior",
+      "type": "essay",
+      "domain": "Constraints",
+      "summary": "Why behavior often emerges from incentives, pressure, permissions, friction, and constraints rather than intent alone.",
+      "url": "../essays/constraints-create-behavior.html"
+    },
+    {
+      "id": "essay-trust-binary",
+      "label": "Trust Is Not a Binary State",
+      "type": "essay",
+      "domain": "Trust",
+      "summary": "Trust is a continuously evolving assessment made under uncertainty and informed by evidence.",
+      "url": "../essays/trust-is-not-a-binary-state.html"
+    },
+    {
+      "id": "essay-authority-attribution",
+      "label": "Authority Without Attribution",
+      "type": "essay",
+      "domain": "Organizations",
+      "summary": "Why systems lose the ability to learn when decisions become detached from the people and conditions that created them.",
+      "url": "../essays/authority-wo-attribution.html"
+    },
+    {
+      "id": "essay-permission-power",
+      "label": "The Difference Between Permission and Power",
+      "type": "essay",
+      "domain": "Leadership",
+      "summary": "Why formal authority and actual influence are often very different things inside complex systems.",
+      "url": "../essays/the-difference-between-permission-and-power.html"
+    },
+    {
+      "id": "essay-survival",
+      "label": "Organizations Optimize for Survival",
+      "type": "essay",
+      "domain": "Organizations",
+      "summary": "Why organizations often prioritize their own continuity, even when doing so conflicts with their stated mission.",
+      "url": "../essays/organizations-optimize-for-survival.html"
+    },
+    {
+      "id": "essay-incentives",
+      "label": "Incentives Are Invisible Architecture",
+      "type": "essay",
+      "domain": "Incentives",
+      "summary": "How rewards, consequences, and measurements quietly shape behavior more powerfully than policies or intentions.",
+      "url": "../essays/incentives-are-invisible-architecture.html"
+    },
+    {
+      "id": "essay-alignment",
+      "label": "The Myth of Alignment",
+      "type": "essay",
+      "domain": "Organizations",
+      "summary": "Why agreement, awareness, and communication are not the same thing as true organizational alignment.",
+      "url": "../essays/the-myth-of-alignment.html"
+    },
+    {
+      "id": "essay-gravity",
+      "label": "Bureaucracies Create Their Own Gravity",
+      "type": "essay",
+      "domain": "Organizations",
+      "summary": "How successful organizations accumulate structure over time, and why that structure eventually resists change.",
+      "url": "../essays/bureaucracies-create-their-own-gravity.html"
+    },
+    {
+      "id": "essay-coordination",
+      "label": "The Cost of Coordination",
+      "type": "essay",
+      "domain": "Organizations",
+      "summary": "Why communication, dependencies, and alignment become some of the most expensive resources in complex systems.",
+      "url": "../essays/the-cost-of-coordination.html"
+    },
+    {
+      "id": "essay-normalcy",
+      "label": "Complexity Hides in Normalcy",
+      "type": "essay",
+      "domain": "Complexity",
+      "summary": "Why the most dangerous failures rarely appear dangerous until it is too late.",
+      "url": "../essays/complexity-hides-in-normalcy.html"
+    },
+    {
+      "id": "essay-produces-behavior",
+      "label": "Every System Produces Behavior",
+      "type": "essay",
+      "domain": "Systems",
+      "summary": "Why recurring outcomes often reveal more about the system than the people operating inside it.",
+      "url": "../essays/every-system-produces-behavior.html"
+    },
+    {
+      "id": "essay-system-truth",
+      "label": "The System Was Telling the Truth",
+      "type": "essay",
+      "domain": "Failure",
+      "summary": "A reflection on drift, failure, ignored signals, and the difference between what a system says and what leaders want to hear.",
+      "url": "../essays/the-system-was-telling-the-truth.html"
+    },
+    {
+      "id": "essay-feedback-loops",
+      "label": "Feedback Loops Are Everywhere",
+      "type": "essay",
+      "domain": "Feedback",
+      "summary": "Why important behaviors often emerge from cycles of reinforcement rather than isolated events.",
+      "url": "../essays/feedback-loops-are-everywhere.html"
+    },
+    {
+      "id": "essay-local-global",
+      "label": "Local Optimization, Global Failure",
+      "type": "essay",
+      "domain": "Systems",
+      "summary": "Why organizations can improve every metric, optimize every department, and still move further away from mission success.",
+      "url": "../essays/local-optimization-global-failure.html"
+    },
+    {
+      "id": "essay-second-order",
+      "label": "The Tyranny of Second-Order Effects",
+      "type": "essay",
+      "domain": "Complexity",
+      "summary": "Why the most important consequences of a decision often emerge only after the system has had time to react.",
+      "url": "../essays/the-tyranny-of-second-order-effects.html"
+    },
+    {
+      "id": "essay-knowing-understanding",
+      "label": "The Difference Between Knowing and Understanding",
+      "type": "essay",
+      "domain": "Learning",
+      "summary": "Why accumulating information is not the same thing as understanding reality, and why insight comes from relationships rather than facts alone.",
+      "url": "../essays/the-difference-between-knowing-and-understanding.html"
+    },
+    {
+      "id": "essay-curiosity",
+      "label": "Curiosity Is an Operational Skill",
+      "type": "essay",
+      "domain": "Learning",
+      "summary": "Why curiosity is one of the most valuable capabilities for navigating uncertainty, complexity, and change.",
+      "url": "../essays/curiosity-is-an-operational-skill.html"
+    },
+    {
+      "id": "essay-last-responsible",
+      "label": "The Last Responsible Moment",
+      "type": "essay",
+      "domain": "Decision Making",
+      "summary": "Why effective decision-making is about recognizing the point where additional waiting creates less value than action.",
+      "url": "../essays/the-last-responsible-moment.html"
+    },
+    {
+      "id": "essay-observation",
+      "label": "Observation Before Action",
+      "type": "essay",
+      "domain": "Observation",
+      "summary": "Why the instinct to immediately solve problems often makes them worse, and why effective operators diagnose before they intervene.",
+      "url": "../essays/observation-before-action.html"
+    },
+    {
+      "id": "essay-discovery",
+      "label": "Every Problem Is a Discovery Problem First",
+      "type": "essay",
+      "domain": "Learning",
+      "summary": "Why most failures begin with misunderstanding the problem itself, and why discovery is the first phase of every solution.",
+      "url": "../essays/every-problem-is-a-discovery-problem-first.html"
+    },
+    {
+      "id": "framework-three-as",
+      "label": "Attribution, Authority, Authorization",
+      "type": "framework",
+      "domain": "Cybersecurity",
+      "summary": "A model for understanding what Zero Trust capabilities are trying to establish before an access decision can be trusted.",
+      "url": "../frameworks/index.html#three-as"
+    },
+    {
+      "id": "framework-constraints",
+      "label": "Constraints Create Behavior",
+      "type": "framework",
+      "domain": "Systems",
+      "summary": "A practical model for diagnosing outcomes by examining incentives, pressure, permissions, friction, and constraints.",
+      "url": "../frameworks/index.html#constraints-create-behavior"
+    },
+    {
+      "id": "framework-decision-authority",
+      "label": "Decision Authority vs. Enforcement",
+      "type": "framework",
+      "domain": "Architecture",
+      "summary": "A model for separating who decides, who enforces, and how obligations survive translation into real tools.",
+      "url": "../frameworks/index.html#decision-authority-enforcement"
+    },
+    {
+      "id": "framework-pressure-drift",
+      "label": "Pressure, Drift, and Adaptation",
+      "type": "framework",
+      "domain": "Failure",
+      "summary": "A lens for spotting the slow movement that precedes obvious failure.",
+      "url": "../frameworks/index.html#pressure-drift-adaptation"
+    },
+    {
+      "id": "lab-kgb-arcade",
+      "label": "KGB Arcade",
+      "type": "laboratory",
+      "domain": "Application",
+      "summary": "A handcrafted micro-arcade where systems, feedback, constraints, and learning become playable.",
+      "url": "https://kgbarcade.com/index.html"
+    },
+    {
+      "id": "lab-taio",
+      "label": "TAIO Tool Suite",
+      "type": "laboratory",
+      "domain": "Tooling",
+      "summary": "A browser-based utility suite for field-expedient analysis, transformation, formatting, viewing, and technical work.",
+      "url": "../projects/index.html#taio-tool-suite"
+    },
+    {
+      "id": "lab-zero-trust-reference",
+      "label": "Zero Trust Reference Work",
+      "type": "laboratory",
+      "domain": "Cybersecurity",
+      "summary": "Models, diagrams, mappings, and explanatory material for architecture-first Zero Trust implementation.",
+      "url": "../projects/index.html#zero-trust-reference-work"
+    },
+    {
+      "id": "lab-asymmetric-utility",
+      "label": "Asymmetric Utility",
+      "type": "laboratory",
+      "domain": "Tooling",
+      "summary": "Practical field-ready builds designed around capability, constraint, and mission-focused problem solving.",
+      "url": "../projects/index.html#asymmetric-utility"
+    },
+    {
+      "id": "field-note-coordination",
+      "label": "The Cost of Coordination",
+      "type": "field-note",
+      "domain": "Organizations",
+      "summary": "Every coordination mechanism solves one problem by introducing another. Coordination is one of the most expensive activities a system can perform.",
+      "url": "../field-notes/index.html#cost-of-coordination"
+    },
+    {
+      "id": "field-note-normal",
+      "label": "Normal Is Not Always Healthy",
+      "type": "field-note",
+      "domain": "Failure",
+      "summary": "Many systems stabilize around dysfunction because the dysfunction becomes familiar, funded, defended, or invisible.",
+      "url": "../field-notes/index.html#normal-not-healthy"
+    },
+    {
+      "id": "field-note-pressure",
+      "label": "Pressure Reveals Architecture",
+      "type": "field-note",
+      "domain": "Architecture",
+      "summary": "When a system is stressed, the real decision paths, dependencies, incentives, and control points become harder to hide.",
+      "url": "../field-notes/index.html#pressure-reveals-architecture"
+    },
+    {
+      "id": "field-note-constraints",
+      "label": "Behavior Follows Constraints",
+      "type": "field-note",
+      "domain": "Constraints",
+      "summary": "People and organizations adapt to the system they are inside, not the system leaders describe on paper.",
+      "url": "../field-notes/index.html#behavior-follows-constraints"
     }
   ],
   "edges": [
-    { "from": "ap", "to": "oath", "relationship": "welcomes through" },
-    { "from": "ap", "to": "philosophy", "relationship": "explains itself through" },
-    { "from": "ap", "to": "concept-atlas", "relationship": "maps itself through" },
-    { "from": "ap", "to": "principle-see-system", "relationship": "is grounded in" },
-    { "from": "ap", "to": "principle-mental-models", "relationship": "is grounded in" },
-    { "from": "ap", "to": "principle-evidence", "relationship": "is grounded in" },
-    { "from": "ap", "to": "principle-outcomes", "relationship": "is grounded in" },
-    { "from": "ap", "to": "principle-practical", "relationship": "is grounded in" },
-    { "from": "ap", "to": "principle-intentional", "relationship": "is governed by" },
-    { "from": "principle-see-system", "to": "concept-hidden-systems", "relationship": "reveals" },
-    { "from": "principle-relationships", "to": "concept-atlas", "relationship": "enables" },
-    { "from": "principle-evidence", "to": "principle-outcomes", "relationship": "supports" },
-    { "from": "concept-tactical-compassion", "to": "principle-practical", "relationship": "disciplines" },
-    { "from": "principle-mental-models", "to": "concept-understanding", "relationship": "increases" },
-    { "from": "principle-intentional", "to": "concept-hsvl", "relationship": "shapes" },
-    { "from": "concept-hidden-systems", "to": "concept-hsvl", "relationship": "requires" },
-    { "from": "concept-atlas", "to": "concept-hsvl", "relationship": "uses" },
-    { "from": "ap", "to": "books", "relationship": "teaches through" },
-    { "from": "ap", "to": "essays", "relationship": "sharpens through" },
-    { "from": "ap", "to": "frameworks", "relationship": "operationalizes through" },
-    { "from": "ap", "to": "laboratories", "relationship": "tests through" },
-    { "from": "ap", "to": "field-notes", "relationship": "observes through" },
-    { "from": "frameworks", "to": "principle-outcomes", "relationship": "apply" },
-    { "from": "essays", "to": "principle-mental-models", "relationship": "develop" },
-    { "from": "field-notes", "to": "principle-evidence", "relationship": "capture" },
-    { "from": "books", "to": "concept-understanding", "relationship": "deepen" },
-    { "from": "laboratories", "to": "principle-practical", "relationship": "prove" },
-    { "from": "zero-trust", "to": "principle-outcomes", "relationship": "depends on" },
-    { "from": "zero-trust", "to": "principle-evidence", "relationship": "requires" },
-    { "from": "rmf", "to": "principle-evidence", "relationship": "communicates" },
-    { "from": "rmf", "to": "principle-outcomes", "relationship": "should support" },
-    { "from": "kgb-studio", "to": "laboratories", "relationship": "belongs to" },
-    { "from": "kgb-arcade", "to": "laboratories", "relationship": "belongs to" },
-    { "from": "kgb-arcade", "to": "principle-mental-models", "relationship": "teaches through play" },
-    { "from": "kgb-studio", "to": "principle-intentional", "relationship": "implements" }
+    {
+      "from": "ap",
+      "to": "oath",
+      "relationship": "welcomes through"
+    },
+    {
+      "from": "ap",
+      "to": "philosophy",
+      "relationship": "explains itself through"
+    },
+    {
+      "from": "ap",
+      "to": "concept-atlas",
+      "relationship": "maps itself through"
+    },
+    {
+      "from": "ap",
+      "to": "principle-see-system",
+      "relationship": "is grounded in"
+    },
+    {
+      "from": "ap",
+      "to": "principle-mental-models",
+      "relationship": "is grounded in"
+    },
+    {
+      "from": "ap",
+      "to": "principle-evidence",
+      "relationship": "is grounded in"
+    },
+    {
+      "from": "ap",
+      "to": "principle-outcomes",
+      "relationship": "is grounded in"
+    },
+    {
+      "from": "ap",
+      "to": "principle-practical",
+      "relationship": "is grounded in"
+    },
+    {
+      "from": "ap",
+      "to": "principle-intentional",
+      "relationship": "is governed by"
+    },
+    {
+      "from": "principle-see-system",
+      "to": "concept-hidden-systems",
+      "relationship": "reveals"
+    },
+    {
+      "from": "principle-relationships",
+      "to": "concept-atlas",
+      "relationship": "enables"
+    },
+    {
+      "from": "principle-evidence",
+      "to": "principle-outcomes",
+      "relationship": "supports"
+    },
+    {
+      "from": "concept-tactical-compassion",
+      "to": "principle-practical",
+      "relationship": "disciplines"
+    },
+    {
+      "from": "principle-mental-models",
+      "to": "concept-understanding",
+      "relationship": "increases"
+    },
+    {
+      "from": "principle-intentional",
+      "to": "concept-hsvl",
+      "relationship": "shapes"
+    },
+    {
+      "from": "concept-hidden-systems",
+      "to": "concept-hsvl",
+      "relationship": "requires"
+    },
+    {
+      "from": "concept-atlas",
+      "to": "concept-hsvl",
+      "relationship": "uses"
+    },
+    {
+      "from": "ap",
+      "to": "books",
+      "relationship": "teaches through"
+    },
+    {
+      "from": "ap",
+      "to": "essays",
+      "relationship": "sharpens through"
+    },
+    {
+      "from": "ap",
+      "to": "frameworks",
+      "relationship": "operationalizes through"
+    },
+    {
+      "from": "ap",
+      "to": "laboratories",
+      "relationship": "tests through"
+    },
+    {
+      "from": "ap",
+      "to": "field-notes",
+      "relationship": "observes through"
+    },
+    {
+      "from": "frameworks",
+      "to": "principle-outcomes",
+      "relationship": "apply"
+    },
+    {
+      "from": "essays",
+      "to": "principle-mental-models",
+      "relationship": "develop"
+    },
+    {
+      "from": "field-notes",
+      "to": "principle-evidence",
+      "relationship": "capture"
+    },
+    {
+      "from": "books",
+      "to": "concept-understanding",
+      "relationship": "deepen"
+    },
+    {
+      "from": "laboratories",
+      "to": "principle-practical",
+      "relationship": "prove"
+    },
+    {
+      "from": "zero-trust",
+      "to": "principle-outcomes",
+      "relationship": "depends on"
+    },
+    {
+      "from": "zero-trust",
+      "to": "principle-evidence",
+      "relationship": "requires"
+    },
+    {
+      "from": "rmf",
+      "to": "principle-evidence",
+      "relationship": "communicates"
+    },
+    {
+      "from": "rmf",
+      "to": "principle-outcomes",
+      "relationship": "should support"
+    },
+    {
+      "from": "kgb-studio",
+      "to": "laboratories",
+      "relationship": "belongs to"
+    },
+    {
+      "from": "kgb-arcade",
+      "to": "laboratories",
+      "relationship": "belongs to"
+    },
+    {
+      "from": "kgb-arcade",
+      "to": "principle-mental-models",
+      "relationship": "teaches through play"
+    },
+    {
+      "from": "kgb-studio",
+      "to": "principle-intentional",
+      "relationship": "implements"
+    },
+    {
+      "from": "book-operator-guide",
+      "to": "principle-see-system",
+      "relationship": "connects to"
+    },
+    {
+      "from": "book-operator-guide",
+      "to": "concept-hidden-systems",
+      "relationship": "connects to"
+    },
+    {
+      "from": "book-operator-guide",
+      "to": "concept-understanding",
+      "relationship": "connects to"
+    },
+    {
+      "from": "books",
+      "to": "book-operator-guide",
+      "relationship": "contains"
+    },
+    {
+      "from": "book-systems-thinking-operators",
+      "to": "principle-mental-models",
+      "relationship": "connects to"
+    },
+    {
+      "from": "book-systems-thinking-operators",
+      "to": "principle-practical",
+      "relationship": "connects to"
+    },
+    {
+      "from": "books",
+      "to": "book-systems-thinking-operators",
+      "relationship": "contains"
+    },
+    {
+      "from": "book-trust-constraints-control",
+      "to": "zero-trust",
+      "relationship": "connects to"
+    },
+    {
+      "from": "book-trust-constraints-control",
+      "to": "rmf",
+      "relationship": "connects to"
+    },
+    {
+      "from": "book-trust-constraints-control",
+      "to": "concept-tactical-compassion",
+      "relationship": "connects to"
+    },
+    {
+      "from": "books",
+      "to": "book-trust-constraints-control",
+      "relationship": "contains"
+    },
+    {
+      "from": "book-policy-engine-mindset",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "book-policy-engine-mindset",
+      "to": "principle-outcomes",
+      "relationship": "connects to"
+    },
+    {
+      "from": "book-policy-engine-mindset",
+      "to": "zero-trust",
+      "relationship": "connects to"
+    },
+    {
+      "from": "books",
+      "to": "book-policy-engine-mindset",
+      "relationship": "contains"
+    },
+    {
+      "from": "book-zero-trust-explained",
+      "to": "zero-trust",
+      "relationship": "connects to"
+    },
+    {
+      "from": "book-zero-trust-explained",
+      "to": "framework-three-as",
+      "relationship": "connects to"
+    },
+    {
+      "from": "books",
+      "to": "book-zero-trust-explained",
+      "relationship": "contains"
+    },
+    {
+      "from": "book-asymmetric-precision",
+      "to": "ap",
+      "relationship": "connects to"
+    },
+    {
+      "from": "book-asymmetric-precision",
+      "to": "philosophy",
+      "relationship": "connects to"
+    },
+    {
+      "from": "book-asymmetric-precision",
+      "to": "concept-hsvl",
+      "relationship": "connects to"
+    },
+    {
+      "from": "books",
+      "to": "book-asymmetric-precision",
+      "relationship": "contains"
+    },
+    {
+      "from": "book-field-notes",
+      "to": "field-notes",
+      "relationship": "connects to"
+    },
+    {
+      "from": "book-field-notes",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "books",
+      "to": "book-field-notes",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-end-state",
+      "to": "zero-trust",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-end-state",
+      "to": "principle-outcomes",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-end-state",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-end-state",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-three-as",
+      "to": "framework-three-as",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-three-as",
+      "to": "zero-trust",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-three-as",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-three-as",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-checkbox-fallacy",
+      "to": "rmf",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-checkbox-fallacy",
+      "to": "principle-outcomes",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-checkbox-fallacy",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-checkbox-fallacy",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-context-key",
+      "to": "principle-mental-models",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-context-key",
+      "to": "concept-understanding",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-context-key",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-maps-territory",
+      "to": "concept-hsvl",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-maps-territory",
+      "to": "concept-atlas",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-maps-territory",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-maps-territory",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-constraints",
+      "to": "framework-constraints",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-constraints",
+      "to": "concept-hidden-systems",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-constraints",
+      "to": "principle-see-system",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-constraints",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-trust-binary",
+      "to": "zero-trust",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-trust-binary",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-trust-binary",
+      "to": "concept-tactical-compassion",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-trust-binary",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-authority-attribution",
+      "to": "rmf",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-authority-attribution",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-authority-attribution",
+      "to": "principle-relationships",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-authority-attribution",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-permission-power",
+      "to": "concept-tactical-compassion",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-permission-power",
+      "to": "principle-relationships",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-permission-power",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-survival",
+      "to": "concept-hidden-systems",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-survival",
+      "to": "principle-see-system",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-survival",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-incentives",
+      "to": "concept-hidden-systems",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-incentives",
+      "to": "framework-constraints",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-incentives",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-alignment",
+      "to": "principle-relationships",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-alignment",
+      "to": "concept-understanding",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-alignment",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-gravity",
+      "to": "rmf",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-gravity",
+      "to": "concept-hidden-systems",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-gravity",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-coordination",
+      "to": "principle-relationships",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-coordination",
+      "to": "field-note-coordination",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-coordination",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-normalcy",
+      "to": "concept-hidden-systems",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-normalcy",
+      "to": "principle-see-system",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-normalcy",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-produces-behavior",
+      "to": "principle-see-system",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-produces-behavior",
+      "to": "framework-constraints",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-produces-behavior",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-system-truth",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-system-truth",
+      "to": "concept-hidden-systems",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-system-truth",
+      "to": "field-note-pressure",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-system-truth",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-feedback-loops",
+      "to": "principle-relationships",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-feedback-loops",
+      "to": "concept-hidden-systems",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-feedback-loops",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-local-global",
+      "to": "principle-outcomes",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-local-global",
+      "to": "principle-see-system",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-local-global",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-second-order",
+      "to": "principle-mental-models",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-second-order",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-second-order",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-knowing-understanding",
+      "to": "concept-understanding",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-knowing-understanding",
+      "to": "principle-relationships",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-knowing-understanding",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-curiosity",
+      "to": "concept-understanding",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-curiosity",
+      "to": "principle-mental-models",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-curiosity",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-last-responsible",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-last-responsible",
+      "to": "principle-outcomes",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-last-responsible",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-observation",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-observation",
+      "to": "concept-understanding",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-observation",
+      "relationship": "contains"
+    },
+    {
+      "from": "essay-discovery",
+      "to": "principle-mental-models",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essay-discovery",
+      "to": "principle-practical",
+      "relationship": "connects to"
+    },
+    {
+      "from": "essays",
+      "to": "essay-discovery",
+      "relationship": "contains"
+    },
+    {
+      "from": "framework-three-as",
+      "to": "essay-three-as",
+      "relationship": "connects to"
+    },
+    {
+      "from": "framework-three-as",
+      "to": "zero-trust",
+      "relationship": "connects to"
+    },
+    {
+      "from": "framework-three-as",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "frameworks",
+      "to": "framework-three-as",
+      "relationship": "contains"
+    },
+    {
+      "from": "framework-constraints",
+      "to": "essay-constraints",
+      "relationship": "connects to"
+    },
+    {
+      "from": "framework-constraints",
+      "to": "essay-incentives",
+      "relationship": "connects to"
+    },
+    {
+      "from": "framework-constraints",
+      "to": "principle-see-system",
+      "relationship": "connects to"
+    },
+    {
+      "from": "frameworks",
+      "to": "framework-constraints",
+      "relationship": "contains"
+    },
+    {
+      "from": "framework-decision-authority",
+      "to": "zero-trust",
+      "relationship": "connects to"
+    },
+    {
+      "from": "framework-decision-authority",
+      "to": "rmf",
+      "relationship": "connects to"
+    },
+    {
+      "from": "framework-decision-authority",
+      "to": "principle-outcomes",
+      "relationship": "connects to"
+    },
+    {
+      "from": "frameworks",
+      "to": "framework-decision-authority",
+      "relationship": "contains"
+    },
+    {
+      "from": "framework-pressure-drift",
+      "to": "essay-system-truth",
+      "relationship": "connects to"
+    },
+    {
+      "from": "framework-pressure-drift",
+      "to": "concept-hidden-systems",
+      "relationship": "connects to"
+    },
+    {
+      "from": "framework-pressure-drift",
+      "to": "principle-evidence",
+      "relationship": "connects to"
+    },
+    {
+      "from": "frameworks",
+      "to": "framework-pressure-drift",
+      "relationship": "contains"
+    },
+    {
+      "from": "lab-kgb-arcade",
+      "to": "kgb-arcade",
+      "relationship": "connects to"
+    },
+    {
+      "from": "lab-kgb-arcade",
+      "to": "concept-hsvl",
+      "relationship": "connects to"
+    },
+    {
+      "from": "laboratories",
+      "to": "lab-kgb-arcade",
+      "relationship": "contains"
+    },
+    {
+      "from": "lab-taio",
+      "to": "principle-practical",
+      "relationship": "connects to"
+    },
+    {
+      "from": "lab-taio",
+      "to": "principle-intentional",
+      "relationship": "connects to"
+    },
+    {
+      "from": "laboratories",
+      "to": "lab-taio",
+      "relationship": "contains"
+    },
+    {
+      "from": "lab-zero-trust-reference",
+      "to": "zero-trust",
+      "relationship": "connects to"
+    },
+    {
+      "from": "lab-zero-trust-reference",
+      "to": "essay-end-state",
+      "relationship": "connects to"
+    },
+    {
+      "from": "lab-zero-trust-reference",
+      "to": "framework-three-as",
+      "relationship": "connects to"
+    },
+    {
+      "from": "laboratories",
+      "to": "lab-zero-trust-reference",
+      "relationship": "contains"
+    },
+    {
+      "from": "lab-asymmetric-utility",
+      "to": "principle-practical",
+      "relationship": "connects to"
+    },
+    {
+      "from": "lab-asymmetric-utility",
+      "to": "principle-outcomes",
+      "relationship": "connects to"
+    },
+    {
+      "from": "laboratories",
+      "to": "lab-asymmetric-utility",
+      "relationship": "contains"
+    },
+    {
+      "from": "field-note-coordination",
+      "to": "essay-coordination",
+      "relationship": "connects to"
+    },
+    {
+      "from": "field-note-coordination",
+      "to": "principle-relationships",
+      "relationship": "connects to"
+    },
+    {
+      "from": "field-notes",
+      "to": "field-note-coordination",
+      "relationship": "contains"
+    },
+    {
+      "from": "field-note-normal",
+      "to": "essay-normalcy",
+      "relationship": "connects to"
+    },
+    {
+      "from": "field-note-normal",
+      "to": "concept-hidden-systems",
+      "relationship": "connects to"
+    },
+    {
+      "from": "field-notes",
+      "to": "field-note-normal",
+      "relationship": "contains"
+    },
+    {
+      "from": "field-note-pressure",
+      "to": "essay-system-truth",
+      "relationship": "connects to"
+    },
+    {
+      "from": "field-note-pressure",
+      "to": "framework-pressure-drift",
+      "relationship": "connects to"
+    },
+    {
+      "from": "field-notes",
+      "to": "field-note-pressure",
+      "relationship": "contains"
+    },
+    {
+      "from": "field-note-constraints",
+      "to": "essay-constraints",
+      "relationship": "connects to"
+    },
+    {
+      "from": "field-note-constraints",
+      "to": "framework-constraints",
+      "relationship": "connects to"
+    },
+    {
+      "from": "field-notes",
+      "to": "field-note-constraints",
+      "relationship": "contains"
+    }
   ]
 }

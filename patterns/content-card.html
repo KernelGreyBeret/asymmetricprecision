@@ -1,0 +1,15 @@
+<!-- AP Pattern: Content Card
+Purpose: render one idea as a node-aware learning object, not a generic card.
+Expected metadata: type, domain, path, status, difficulty, summary, connections.
+-->
+<a class="ap-content-card" href="{{url}}" data-ap-path="{{path}}">
+  <p class="card-label">{{type}} · {{domain}}</p>
+  <h3>{{title}}</h3>
+  <p>{{summary}}</p>
+  <div class="ap-content-meta">
+    <span class="ap-content-pill is-status">{{status}}</span>
+    <span class="ap-content-pill">{{path}}</span>
+    <span class="ap-content-pill">{{difficulty}}</span>
+  </div>
+  <div class="ap-connection-preview">Connections: {{connections}}</div>
+</a>

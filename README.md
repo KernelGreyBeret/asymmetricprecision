@@ -1,42 +1,49 @@
-# AP v2 Sprint 4 — Atlas Explorer
+# AP v2 Sprint 5 — Content Graph
 
-Sprint 4 turns the Atlas from a static relationship page into a working exploration surface.
+Sprint 5 turns AP content into a connected learning system.
 
 ## Principle
 
-**Exploration beats navigation.**
+Content is not a list. Content is a learning surface.
 
-Traditional sites ask visitors to browse folders. AP should help explorers follow relationships, compare domains, trace paths, and leave with clearer mental models.
+## Adds
 
-## What changed
+- `assets/data/ap-content.json`
+- Expanded `assets/data/ap-atlas.json` with content nodes and content edges
+- `assets/system/ap-content.css`
+- `assets/system/ap-content.js`
+- Updated `assets/system/ap-system.css`
+- Updated `assets/system/ap-system.js`
+- Updated index pages for:
+  - `books/`
+  - `essays/`
+  - `frameworks/`
+  - `projects/` as Laboratories
+  - `field-notes/`
+- New reusable patterns:
+  - `patterns/content-card.html`
+  - `patterns/metadata-surface.html`
 
-- Expanded `atlas/index.html` into an Atlas Explorer interface
-- Upgraded `assets/system/ap-atlas.js` with:
-  - search
-  - type filters
-  - domain filters
-  - selected-node detail panels
-  - highlighted connection neighborhoods
-  - understanding trail
-  - local-only reflection prompts
-- Upgraded `assets/system/ap-atlas.css` with:
-  - Atlas controls
-  - relationship SVG layer
-  - node states
-  - detail panels
-  - path/trail display
-- Expanded `assets/data/ap-atlas.json` with more AP v2 nodes and relationships
-- Added `patterns/atlas-explorer.html` as the reusable pattern reference
+## Intentional Design Decision
 
-## Design intent
+Books, essays, frameworks, laboratories, and field notes now share one metadata model:
 
-The Atlas is not a sitemap.
+- Type
+- Domain
+- Path
+- Status
+- Difficulty
+- Summary
+- Connections
 
-It is a relationship engine.
+That makes each item Atlas-ready. AP stops treating content as pages and starts treating content as nodes in a system.
 
-The point is not to show everything at once. The point is to help someone discover how ideas connect.
+## Sprint 5 Rule
 
-## Drop-in
+Every piece of content should answer:
 
-Copy the contents of this package into the `ap-v2` branch root and commit.
-
+1. What is this?
+2. What domain does it belong to?
+3. What path does it serve?
+4. What does it connect to?
+5. How does it increase understanding?
