@@ -1,0 +1,175 @@
+{
+  "version": "0.3",
+  "name": "AP Atlas Seed",
+  "description": "The first relationship map for Asymmetric Precision v2.",
+  "nodes": [
+    {
+      "id": "ap",
+      "label": "Asymmetric Precision",
+      "type": "core",
+      "domain": "Applied Systems Thinking",
+      "summary": "The public home of Applied Systems Thinking."
+    },
+    {
+      "id": "principle-see-system",
+      "label": "See the System",
+      "type": "principle",
+      "domain": "Systems",
+      "summary": "Understand the whole before optimizing the parts."
+    },
+    {
+      "id": "principle-mental-models",
+      "label": "Build Better Mental Models",
+      "type": "principle",
+      "domain": "Learning",
+      "summary": "Complex problems require better ways of thinking, not just more information."
+    },
+    {
+      "id": "principle-evidence",
+      "label": "Evidence Over Assumption",
+      "type": "principle",
+      "domain": "Decision Making",
+      "summary": "Good decisions come from understanding reality as it is."
+    },
+    {
+      "id": "principle-outcomes",
+      "label": "Design for Outcomes",
+      "type": "principle",
+      "domain": "Operational Design",
+      "summary": "Activities matter only insofar as they create meaningful outcomes."
+    },
+    {
+      "id": "principle-practical",
+      "label": "Practical Over Theoretical",
+      "type": "principle",
+      "domain": "Operational Design",
+      "summary": "Frameworks should improve real organizations, not just explain them."
+    },
+    {
+      "id": "concept-hidden-systems",
+      "label": "Hidden Systems",
+      "type": "concept",
+      "domain": "Complexity",
+      "summary": "Invisible relationships, incentives, constraints, trust, authority, and feedback that shape outcomes."
+    },
+    {
+      "id": "concept-tactical-compassion",
+      "label": "Tactical Compassion",
+      "type": "concept",
+      "domain": "Leadership",
+      "summary": "Precision with humanity; compassion with discipline."
+    },
+    {
+      "id": "books",
+      "label": "Books",
+      "type": "medium",
+      "domain": "Learning",
+      "summary": "The long-form AP curriculum."
+    },
+    {
+      "id": "essays",
+      "label": "Essays",
+      "type": "medium",
+      "domain": "Learning",
+      "summary": "Short, sharp explorations of AP ideas."
+    },
+    {
+      "id": "frameworks",
+      "label": "Frameworks",
+      "type": "medium",
+      "domain": "Architecture",
+      "summary": "Reusable mental models and decision structures."
+    },
+    {
+      "id": "laboratories",
+      "label": "Laboratories",
+      "type": "medium",
+      "domain": "Application",
+      "summary": "Practical implementations where AP ideas become tools, software, games, and experiments."
+    },
+    {
+      "id": "field-notes",
+      "label": "Field Notes",
+      "type": "medium",
+      "domain": "Observation",
+      "summary": "Operational observations from systems under pressure."
+    }
+  ],
+  "edges": [
+    {
+      "from": "ap",
+      "to": "principle-see-system",
+      "relationship": "is grounded in"
+    },
+    {
+      "from": "ap",
+      "to": "principle-mental-models",
+      "relationship": "is grounded in"
+    },
+    {
+      "from": "ap",
+      "to": "principle-evidence",
+      "relationship": "is grounded in"
+    },
+    {
+      "from": "ap",
+      "to": "principle-outcomes",
+      "relationship": "is grounded in"
+    },
+    {
+      "from": "ap",
+      "to": "principle-practical",
+      "relationship": "is grounded in"
+    },
+    {
+      "from": "principle-see-system",
+      "to": "concept-hidden-systems",
+      "relationship": "reveals"
+    },
+    {
+      "from": "principle-evidence",
+      "to": "principle-outcomes",
+      "relationship": "supports"
+    },
+    {
+      "from": "concept-tactical-compassion",
+      "to": "principle-practical",
+      "relationship": "disciplines"
+    },
+    {
+      "from": "ap",
+      "to": "books",
+      "relationship": "teaches through"
+    },
+    {
+      "from": "ap",
+      "to": "essays",
+      "relationship": "sharpens through"
+    },
+    {
+      "from": "ap",
+      "to": "frameworks",
+      "relationship": "operationalizes through"
+    },
+    {
+      "from": "ap",
+      "to": "laboratories",
+      "relationship": "tests through"
+    },
+    {
+      "from": "ap",
+      "to": "field-notes",
+      "relationship": "observes through"
+    },
+    {
+      "from": "frameworks",
+      "to": "principle-outcomes",
+      "relationship": "apply"
+    },
+    {
+      "from": "essays",
+      "to": "principle-mental-models",
+      "relationship": "develop"
+    }
+  ]
+}

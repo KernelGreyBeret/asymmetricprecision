@@ -1,34 +1,17 @@
-# AP v2 Sprint 2 — The AP System
+# AP v2 Sprint 3 — Atlas Foundations
 
-Sprint 2 converts the site from page-level styling into a reusable AP System layer.
+This package advances AP from a redesigned site into a connected knowledge system.
 
-## What changed
+## Adds
 
-- `assets/system/ap-system.css` is now an intentional entrypoint, not a monolithic stylesheet.
-- CSS is split into system layers:
-  - `ap-tokens.css`
-  - `ap-layout.css`
-  - `ap-components.css`
-  - `ap-hsvl.css`
-  - `ap-atlas.css`
-  - `ap-learning.css`
-  - `ap-motion.css`
-  - `ap-responsive.css`
-- JavaScript moved into intentional system modules:
-  - `ap-system.js`
-  - `ap-navigation.js`
-  - `ap-atlas.js`
-  - `ap-learning.js`
-  - `ap-reflection.js`
-- Pages now reference `assets/system/ap-system.js` instead of the legacy `assets/js/main.js`.
-- Added Atlas seed data under `assets/data/`.
-- Added reusable patterns under `patterns/`.
-- Added the first local-only Learning Checkpoint pattern.
+- `atlas/index.html` — first Atlas page
+- `assets/data/ap-atlas.json` — canonical starter node/edge map
+- Expanded `assets/system/ap-atlas.js` — renders Atlas from data
+- Expanded `assets/system/ap-atlas.css` — HSVL-inspired Atlas interface
+- Updated navigation across AP v2 pages to include Atlas
 
-## Sprint 2 principle
+## Sprint Principle
 
-We do not build pages. We build systems that express ideas.
+Relationships are first-class citizens.
 
-## Drop-in instructions
-
-Copy the contents of this package into the root of the `ap-v2` branch. It assumes Sprint 1 system-path pages are already applied.
+The Atlas is not a decorative sitemap. It is the AP knowledge model made visible.

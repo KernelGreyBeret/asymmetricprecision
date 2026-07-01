@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlas | Asymmetric Precision</title>
+  <meta name="description" content="The Asymmetric Precision Atlas maps the relationships between principles, domains, essays, frameworks, books, laboratories, and observations." />
+  <link rel="stylesheet" href="../assets/system/ap-system.css" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+</head>
+<body data-ap-system="v2">
+  <header class="site-header">
+    <a class="brand" href="../index.html"><img src="../assets/logo-mark.png" alt="Asymmetric Precision Logo" /><span>Asymmetric Precision</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="site-nav">
+      <a href="../start-here/index.html">Start Here</a>
+      <a href="../philosophy/index.html">Philosophy</a>
+      <a href="../atlas/index.html">Atlas</a>
+      <a href="../books/index.html">Books</a>
+      <a href="../essays/index.html">Essays</a>
+      <a href="../frameworks/index.html">Frameworks</a>
+      <a href="../field-notes/index.html">Field Notes</a>
+      <a href="../projects/index.html">Laboratories</a>
+      <a href="../about/index.html">About</a>
+      <a href="../contact/index.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Atlas</p>
+      <h1>The map of the AP system.</h1>
+      <p class="page-intro">The Atlas is where Asymmetric Precision becomes a connected knowledge system. It maps principles, domains, frameworks, essays, books, field notes, laboratories, and observations by relationship instead of by folder.</p>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="section-label">Sprint 3 Foundation</p>
+        <h2>Relationships are first-class citizens.</h2>
+      </div>
+      <p>This first Atlas build is intentionally simple. It proves the model: AP content can be represented as nodes, connected by meaningful edges, and explored through relationships. The visual language will mature, but the core idea starts here.</p>
+    </section>
+
+    <section class="section" data-ap-atlas="../assets/data/ap-atlas.json">
+      <div class="ap-atlas-interface">
+        <aside class="ap-atlas-panel">
+          <p class="section-label">Nodes</p>
+          <h2>Explore</h2>
+          <div class="ap-atlas-list" data-ap-atlas-list></div>
+        </aside>
+
+        <div class="ap-atlas-canvas" data-ap-atlas-map aria-label="Interactive AP Atlas map"></div>
+
+        <aside class="ap-atlas-panel" data-ap-atlas-detail>
+          <p>Loading Atlas...</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section quote-block">
+      <blockquote>The Atlas exists because ideas are useful, but relationships make them powerful.</blockquote>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><img class="footer-logo" src="../assets/logo-mark.png" alt="Asymmetric Precision Logo"><p class="footer-copyright">© 2026 Tommy Burke. All rights reserved.</p></div>
+    <p class="footer-description">Asymmetric Precision™ is an applied systems thinking platform focused on helping people understand complex systems, make better decisions, and improve organizations with precision.</p>
+  </footer>
+
+  <script type="module" src="../assets/system/ap-system.js"></script>
+</body>
+</html>
