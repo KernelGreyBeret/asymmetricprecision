@@ -1,67 +1,27 @@
-<p align="center">
-  <img src="assets/logo-banner.png" alt="Asymmetric Precision" width="700">
-</p>
+# AP v2 Sprint 1 Pages — Intentional Package
 
-# Asymmetric Precision™
+This package replaces the first Sprint 1 page drop with AP-aligned naming.
 
-Frameworks, essays, books, and operational philosophy
-from the edge of complexity.
+## Included
 
-https://asymmetricprecision.com
+- `index.html`
+- `about/index.html`
+- `contact/index.html`
+- `philosophy/index.html`
+- `start-here/index.html`
+- `assets/system/ap-system.css`
 
----
+## Naming Decision
 
-## About
+The stylesheet is intentionally named `ap-system.css`, not `styles.css`.
 
-Asymmetric Precision™ is a systems-thinking and operational architecture platform exploring:
+AP v2 is not a generic website skin. It is the public system for Asymmetric Precision's applied systems thinking, so the implementation language should reinforce the philosophy.
 
-- trust
-- complexity
-- authorization
-- governance
-- systems behavior
-- operational philosophy
-- enterprise architecture
-- human systems
-- organizational dynamics
+## Drop-in Notes
 
-The platform combines long-form essays, books, field notes,
-frameworks, and operational reflections drawn from real-world experience
-across cybersecurity, military operations, systems engineering,
-leadership, and enterprise architecture.
+Copy these files into the root of the `ap-v2` branch. The updated HTML pages already reference `ap-system.css`.
 
----
 
-## Site Structure
+## System Path
 
-- `/books/` — Publication pages and book series
-- `/essays/` — Long-form essays and papers
-- `/frameworks/` — Systems models and conceptual frameworks
-- `/field-notes/` — Operational observations and reflections
-- `/projects/` — Selected projects and initiatives
-
----
-
-## Philosophy
-
-Modern systems rarely fail randomly.
-
-They fail through misunderstood relationships:
-trust without verification,
-authority without accountability,
-complexity without visibility,
-and decisions made without understanding the systems that produced them.
-
-Asymmetric Precision™ exists to explore those relationships.
-
----
-
-## Author
-
-Tommy Burke  
-Cybersecurity engineer, systems thinker,
-and retired U.S. Army veteran.
-
----
-
-© 2026 Tommy Burke. All rights reserved.
+This package uses `assets/system/ap-system.css` to align Sprint 1 with the AP System architecture. Future system files belong beside it, such as `ap-components.css`, `ap-layout.css`, `ap-atlas.css`, `ap-hsvl.css`, and `ap-motion.css`.
