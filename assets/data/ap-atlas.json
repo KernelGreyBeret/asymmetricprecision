@@ -1,175 +1,221 @@
 {
-  "version": "0.3",
-  "name": "AP Atlas Seed",
-  "description": "The first relationship map for Asymmetric Precision v2.",
+  "version": "0.4",
+  "name": "AP Atlas Explorer Seed",
+  "description": "A relationship map for Asymmetric Precision v2. Relationships are first-class citizens.",
   "nodes": [
     {
       "id": "ap",
       "label": "Asymmetric Precision",
       "type": "core",
       "domain": "Applied Systems Thinking",
-      "summary": "The public home of Applied Systems Thinking."
+      "summary": "The public home of Applied Systems Thinking and the center of gravity for AP books, essays, frameworks, field notes, laboratories, and visual language.",
+      "url": "../index.html"
+    },
+    {
+      "id": "oath",
+      "label": "The AP Oath",
+      "type": "oath",
+      "domain": "Learning",
+      "summary": "The front-door invitation into the AP way of thinking: question assumptions, follow evidence, understand before judging, and leave systems better than you found them.",
+      "url": "../start-here/index.html"
+    },
+    {
+      "id": "philosophy",
+      "label": "AP Philosophy",
+      "type": "philosophy",
+      "domain": "Applied Systems Thinking",
+      "summary": "The core explanation of why AP exists, what it believes, and how it approaches complex systems.",
+      "url": "../philosophy/index.html"
     },
     {
       "id": "principle-see-system",
       "label": "See the System",
       "type": "principle",
       "domain": "Systems",
-      "summary": "Understand the whole before optimizing the parts."
+      "summary": "Understand the whole before optimizing the parts. Every action exists inside a larger pattern of relationships, incentives, and constraints."
     },
     {
       "id": "principle-mental-models",
       "label": "Build Better Mental Models",
       "type": "principle",
       "domain": "Learning",
-      "summary": "Complex problems require better ways of thinking, not just more information."
+      "summary": "Complex problems rarely require more information. They require better ways of thinking."
     },
     {
       "id": "principle-evidence",
       "label": "Evidence Over Assumption",
       "type": "principle",
       "domain": "Decision Making",
-      "summary": "Good decisions come from understanding reality as it is."
+      "summary": "Good decisions come from understanding reality as it is. The system is usually telling the truth."
     },
     {
       "id": "principle-outcomes",
       "label": "Design for Outcomes",
       "type": "principle",
       "domain": "Operational Design",
-      "summary": "Activities matter only insofar as they create meaningful outcomes."
+      "summary": "Activities matter only insofar as they create meaningful outcomes. Motion is not progress."
     },
     {
       "id": "principle-practical",
       "label": "Practical Over Theoretical",
       "type": "principle",
       "domain": "Operational Design",
-      "summary": "Frameworks should improve real organizations, not just explain them."
+      "summary": "Frameworks should improve real organizations, not just explain them. Ideas should survive contact with reality."
+    },
+    {
+      "id": "principle-relationships",
+      "label": "Relationships First",
+      "type": "principle",
+      "domain": "Systems",
+      "summary": "Objects matter, but relationships create behavior. The Atlas treats connections as first-class citizens."
+    },
+    {
+      "id": "principle-intentional",
+      "label": "Intentional All the Way Down",
+      "type": "principle",
+      "domain": "Design",
+      "summary": "Every decision communicates. Every name should teach. Nothing is just implementation."
     },
     {
       "id": "concept-hidden-systems",
       "label": "Hidden Systems",
       "type": "concept",
       "domain": "Complexity",
-      "summary": "Invisible relationships, incentives, constraints, trust, authority, and feedback that shape outcomes."
+      "summary": "Invisible relationships, incentives, constraints, trust, authority, culture, and feedback that shape outcomes before failure becomes visible."
     },
     {
       "id": "concept-tactical-compassion",
       "label": "Tactical Compassion",
       "type": "concept",
       "domain": "Leadership",
-      "summary": "Precision with humanity; compassion with discipline."
+      "summary": "Precision with humanity; compassion with discipline. The strongest systems balance both."
+    },
+    {
+      "id": "concept-understanding",
+      "label": "Understanding",
+      "type": "concept",
+      "domain": "Learning",
+      "summary": "The primary AP success measure: did someone leave seeing the system more clearly than when they arrived?"
+    },
+    {
+      "id": "concept-hsvl",
+      "label": "Hidden Systems Visual Language",
+      "type": "visual-language",
+      "domain": "Visualization",
+      "summary": "A visual language for making hidden relationships, telemetry, constraints, uncertainty, and system states visible."
+    },
+    {
+      "id": "concept-atlas",
+      "label": "Atlas",
+      "type": "system",
+      "domain": "Visualization",
+      "summary": "The connected map of AP ideas, domains, principles, frameworks, essays, books, observations, and laboratories.",
+      "url": "../atlas/index.html"
     },
     {
       "id": "books",
       "label": "Books",
       "type": "medium",
       "domain": "Learning",
-      "summary": "The long-form AP curriculum."
+      "summary": "The long-form AP curriculum for complex systems, leadership, trust, control, and operational architecture.",
+      "url": "../books/index.html"
     },
     {
       "id": "essays",
       "label": "Essays",
       "type": "medium",
       "domain": "Learning",
-      "summary": "Short, sharp explorations of AP ideas."
+      "summary": "Short, sharp explorations of AP ideas that help people name, frame, and understand systems.",
+      "url": "../essays/index.html"
     },
     {
       "id": "frameworks",
       "label": "Frameworks",
       "type": "medium",
       "domain": "Architecture",
-      "summary": "Reusable mental models and decision structures."
+      "summary": "Reusable mental models, maps, and decision structures for real systems under pressure.",
+      "url": "../frameworks/index.html"
     },
     {
       "id": "laboratories",
       "label": "Laboratories",
       "type": "medium",
       "domain": "Application",
-      "summary": "Practical implementations where AP ideas become tools, software, games, and experiments."
+      "summary": "Practical implementations where AP ideas become tools, software, games, and experiments.",
+      "url": "../projects/index.html"
     },
     {
       "id": "field-notes",
       "label": "Field Notes",
       "type": "medium",
       "domain": "Observation",
-      "summary": "Operational observations from systems under pressure."
+      "summary": "Operational observations from systems under pressure.",
+      "url": "../field-notes/index.html"
+    },
+    {
+      "id": "zero-trust",
+      "label": "Zero Trust",
+      "type": "application",
+      "domain": "Cybersecurity",
+      "summary": "A cybersecurity application space where AP thinking turns activity into outcomes, policy into architecture, and trust into evidence."
+    },
+    {
+      "id": "rmf",
+      "label": "RMF as Risk Communication",
+      "type": "application",
+      "domain": "Governance",
+      "summary": "RMF is most valuable when treated as governance and risk communication, not as a substitute for security engineering."
+    },
+    {
+      "id": "kgb-studio",
+      "label": "KGB Studio",
+      "type": "laboratory",
+      "domain": "Application",
+      "summary": "A software laboratory for turning AP system clarity into practical creative tooling."
+    },
+    {
+      "id": "kgb-arcade",
+      "label": "KGB Arcade",
+      "type": "laboratory",
+      "domain": "Application",
+      "summary": "A game laboratory where systems, feedback, constraints, and learning become playable."
     }
   ],
   "edges": [
-    {
-      "from": "ap",
-      "to": "principle-see-system",
-      "relationship": "is grounded in"
-    },
-    {
-      "from": "ap",
-      "to": "principle-mental-models",
-      "relationship": "is grounded in"
-    },
-    {
-      "from": "ap",
-      "to": "principle-evidence",
-      "relationship": "is grounded in"
-    },
-    {
-      "from": "ap",
-      "to": "principle-outcomes",
-      "relationship": "is grounded in"
-    },
-    {
-      "from": "ap",
-      "to": "principle-practical",
-      "relationship": "is grounded in"
-    },
-    {
-      "from": "principle-see-system",
-      "to": "concept-hidden-systems",
-      "relationship": "reveals"
-    },
-    {
-      "from": "principle-evidence",
-      "to": "principle-outcomes",
-      "relationship": "supports"
-    },
-    {
-      "from": "concept-tactical-compassion",
-      "to": "principle-practical",
-      "relationship": "disciplines"
-    },
-    {
-      "from": "ap",
-      "to": "books",
-      "relationship": "teaches through"
-    },
-    {
-      "from": "ap",
-      "to": "essays",
-      "relationship": "sharpens through"
-    },
-    {
-      "from": "ap",
-      "to": "frameworks",
-      "relationship": "operationalizes through"
-    },
-    {
-      "from": "ap",
-      "to": "laboratories",
-      "relationship": "tests through"
-    },
-    {
-      "from": "ap",
-      "to": "field-notes",
-      "relationship": "observes through"
-    },
-    {
-      "from": "frameworks",
-      "to": "principle-outcomes",
-      "relationship": "apply"
-    },
-    {
-      "from": "essays",
-      "to": "principle-mental-models",
-      "relationship": "develop"
-    }
+    { "from": "ap", "to": "oath", "relationship": "welcomes through" },
+    { "from": "ap", "to": "philosophy", "relationship": "explains itself through" },
+    { "from": "ap", "to": "concept-atlas", "relationship": "maps itself through" },
+    { "from": "ap", "to": "principle-see-system", "relationship": "is grounded in" },
+    { "from": "ap", "to": "principle-mental-models", "relationship": "is grounded in" },
+    { "from": "ap", "to": "principle-evidence", "relationship": "is grounded in" },
+    { "from": "ap", "to": "principle-outcomes", "relationship": "is grounded in" },
+    { "from": "ap", "to": "principle-practical", "relationship": "is grounded in" },
+    { "from": "ap", "to": "principle-intentional", "relationship": "is governed by" },
+    { "from": "principle-see-system", "to": "concept-hidden-systems", "relationship": "reveals" },
+    { "from": "principle-relationships", "to": "concept-atlas", "relationship": "enables" },
+    { "from": "principle-evidence", "to": "principle-outcomes", "relationship": "supports" },
+    { "from": "concept-tactical-compassion", "to": "principle-practical", "relationship": "disciplines" },
+    { "from": "principle-mental-models", "to": "concept-understanding", "relationship": "increases" },
+    { "from": "principle-intentional", "to": "concept-hsvl", "relationship": "shapes" },
+    { "from": "concept-hidden-systems", "to": "concept-hsvl", "relationship": "requires" },
+    { "from": "concept-atlas", "to": "concept-hsvl", "relationship": "uses" },
+    { "from": "ap", "to": "books", "relationship": "teaches through" },
+    { "from": "ap", "to": "essays", "relationship": "sharpens through" },
+    { "from": "ap", "to": "frameworks", "relationship": "operationalizes through" },
+    { "from": "ap", "to": "laboratories", "relationship": "tests through" },
+    { "from": "ap", "to": "field-notes", "relationship": "observes through" },
+    { "from": "frameworks", "to": "principle-outcomes", "relationship": "apply" },
+    { "from": "essays", "to": "principle-mental-models", "relationship": "develop" },
+    { "from": "field-notes", "to": "principle-evidence", "relationship": "capture" },
+    { "from": "books", "to": "concept-understanding", "relationship": "deepen" },
+    { "from": "laboratories", "to": "principle-practical", "relationship": "prove" },
+    { "from": "zero-trust", "to": "principle-outcomes", "relationship": "depends on" },
+    { "from": "zero-trust", "to": "principle-evidence", "relationship": "requires" },
+    { "from": "rmf", "to": "principle-evidence", "relationship": "communicates" },
+    { "from": "rmf", "to": "principle-outcomes", "relationship": "should support" },
+    { "from": "kgb-studio", "to": "laboratories", "relationship": "belongs to" },
+    { "from": "kgb-arcade", "to": "laboratories", "relationship": "belongs to" },
+    { "from": "kgb-arcade", "to": "principle-mental-models", "relationship": "teaches through play" },
+    { "from": "kgb-studio", "to": "principle-intentional", "relationship": "implements" }
   ]
 }

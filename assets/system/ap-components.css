@@ -24,7 +24,7 @@ h3 { font-size: 1.45rem; }
   font-weight: 700;
 }
 .button.primary, .button-primary, .ap-action.primary { background: var(--ap-gold); color: #15110a; border-color: var(--ap-gold); }
-.button.secondary, .ap-action.secondary { color: var(--ap-text); }
+.button.secondary, .ap-action.secondary, .ap-action-secondary { color: var(--ap-text); }
 .button:hover, .button-primary:hover, .ap-action:hover { transform: translateY(-1px); }
 .card, .ap-panel {
   background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));

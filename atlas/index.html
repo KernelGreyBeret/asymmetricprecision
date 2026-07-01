@@ -29,20 +29,36 @@
   <main>
     <section class="page-hero">
       <p class="eyebrow">Atlas</p>
-      <h1>The map of the AP system.</h1>
-      <p class="page-intro">The Atlas is where Asymmetric Precision becomes a connected knowledge system. It maps principles, domains, frameworks, essays, books, field notes, laboratories, and observations by relationship instead of by folder.</p>
+      <h1>Explore the AP system by relationship.</h1>
+      <p class="page-intro">The Atlas is not a sitemap. It is a relationship surface for following principles, domains, frameworks, essays, books, field notes, laboratories, and observations as a connected system.</p>
     </section>
 
     <section class="section split">
       <div>
-        <p class="section-label">Sprint 3 Foundation</p>
-        <h2>Relationships are first-class citizens.</h2>
+        <p class="section-label">Sprint 4 Explorer</p>
+        <h2>Exploration beats navigation.</h2>
       </div>
-      <p>This first Atlas build is intentionally simple. It proves the model: AP content can be represented as nodes, connected by meaningful edges, and explored through relationships. The visual language will mature, but the core idea starts here.</p>
+      <p>Traditional sites make people browse folders. AP helps people follow relationships. Search, filter, select a node, trace its connections, and use the reflection checkpoint to test whether the relationship made the system clearer.</p>
     </section>
 
     <section class="section" data-ap-atlas="../assets/data/ap-atlas.json">
-      <div class="ap-atlas-interface">
+      <div class="ap-atlas-controls" data-ap-atlas-controls>
+        <label>
+          <span>Search the Atlas</span>
+          <input type="search" data-ap-atlas-search placeholder="Search ideas, domains, relationships..." />
+        </label>
+        <label>
+          <span>Node Type</span>
+          <select data-ap-atlas-type></select>
+        </label>
+        <label>
+          <span>Domain</span>
+          <select data-ap-atlas-domain></select>
+        </label>
+        <button class="ap-action ap-action-secondary" type="button" data-ap-atlas-clear>Reset View</button>
+      </div>
+
+      <div class="ap-atlas-interface ap-atlas-interface-explorer">
         <aside class="ap-atlas-panel">
           <p class="section-label">Nodes</p>
           <h2>Explore</h2>
@@ -54,6 +70,10 @@
         <aside class="ap-atlas-panel" data-ap-atlas-detail>
           <p>Loading Atlas...</p>
         </aside>
+      </div>
+
+      <div class="ap-atlas-trail" data-ap-atlas-trail>
+        <p><strong>Understanding Trail:</strong> Select nodes to trace your path through the system.</p>
       </div>
     </section>
 

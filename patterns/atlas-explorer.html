@@ -1,0 +1,33 @@
+<section class="section" data-ap-atlas="../assets/data/ap-atlas.json">
+  <div class="ap-atlas-controls" data-ap-atlas-controls>
+    <label>
+      <span>Search the Atlas</span>
+      <input type="search" data-ap-atlas-search placeholder="Search ideas, domains, relationships..." />
+    </label>
+    <label>
+      <span>Node Type</span>
+      <select data-ap-atlas-type></select>
+    </label>
+    <label>
+      <span>Domain</span>
+      <select data-ap-atlas-domain></select>
+    </label>
+    <button class="ap-action ap-action-secondary" type="button" data-ap-atlas-clear>Reset View</button>
+  </div>
+
+  <div class="ap-atlas-interface ap-atlas-interface-explorer">
+    <aside class="ap-atlas-panel">
+      <p class="section-label">Nodes</p>
+      <h2>Explore</h2>
+      <div class="ap-atlas-list" data-ap-atlas-list></div>
+    </aside>
+
+    <div class="ap-atlas-canvas" data-ap-atlas-map aria-label="Interactive AP Atlas map"></div>
+
+    <aside class="ap-atlas-panel" data-ap-atlas-detail>
+      <p>Loading Atlas...</p>
+    </aside>
+  </div>
+
+  <div class="ap-atlas-trail" data-ap-atlas-trail></div>
+</section>
