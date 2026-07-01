@@ -1,0 +1,39 @@
+{
+  "version": "2.0-sprint2",
+  "domains": [
+    "Systems",
+    "Complexity",
+    "Leadership",
+    "Organizations",
+    "Architecture",
+    "Trust",
+    "Decision Making",
+    "Incentives",
+    "Constraints",
+    "Feedback",
+    "Failure",
+    "Learning",
+    "Visualization",
+    "Operational Design"
+  ],
+  "contentTypes": [
+    "Principle",
+    "Essay",
+    "Framework",
+    "Book",
+    "Field Note",
+    "Laboratory",
+    "Observation",
+    "Diagram",
+    "Question"
+  ],
+  "relationshipTypes": [
+    "explains",
+    "extends",
+    "challenges",
+    "applies",
+    "depends_on",
+    "illustrates",
+    "connects_to"
+  ]
+}

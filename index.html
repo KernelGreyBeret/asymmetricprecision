@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2235b039ebf949b3a2e63066d4691d12"}'></script>
 </head>
-<body>
+<body data-ap-system="v2">
   <header class="site-header">
     <a class="brand" href="index.html">
       <img src="assets/logo-mark.png" alt="Asymmetric Precision Logo" />
@@ -101,6 +101,19 @@
       </div>
     </section>
 
+<section class="ap-learning-checkpoint" data-ap-learning-checkpoint>
+  <p class="section-label">Learning Checkpoint</p>
+  <h2>Do you see the system more clearly?</h2>
+  <p>This is not a rating. It is a reflection on understanding.</p>
+  <div class="ap-learning-options">
+    <button type="button" data-ap-reflection="yes">Yes</button>
+    <button type="button" data-ap-reflection="thinking">I'm still thinking</button>
+    <button type="button" data-ap-reflection="notYet">Not yet</button>
+  </div>
+  <p class="ap-learning-response" data-ap-learning-response></p>
+</section>
+
+
     <section class="section quote-block">
       <blockquote>Complex systems rarely fail all at once. They drift, adapt, accumulate pressure, and reveal the truth only after the constraints have already shaped the outcome.</blockquote>
     </section>
@@ -111,6 +124,6 @@
     <p class="footer-description">Asymmetric Precision™ is an applied systems thinking platform focused on helping people understand complex systems, make better decisions, and improve organizations with precision.</p>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/system/ap-system.js"></script>
 </body>
 </html>

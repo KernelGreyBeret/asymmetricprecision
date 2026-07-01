@@ -1,0 +1,24 @@
+.atlas-preview { display: grid; grid-template-columns: 1fr 1fr; gap: var(--ap-gap-lg); align-items: center; }
+.atlas-map { min-height: 320px; position: relative; border: 1px solid var(--ap-line); border-radius: var(--ap-radius); background: radial-gradient(circle at center, rgba(200,164,93,0.13), transparent 55%); }
+.atlas-map::before, .atlas-map::after { content: ""; position: absolute; inset: 50% 12%; height: 1px; background: rgba(200,164,93,0.28); transform: rotate(25deg); }
+.atlas-map::after { transform: rotate(-25deg); }
+.node, .ap-node {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 96px;
+  border: 1px solid var(--ap-line-strong);
+  border-radius: 999px;
+  padding: 0.55rem 0.75rem;
+  background: rgba(11,12,13,0.88);
+  color: var(--ap-text);
+  font-size: 0.82rem;
+  box-shadow: 0 0 28px rgba(200,164,93,0.12);
+}
+.node-core { left: 50%; top: 45%; transform: translate(-50%, -50%); color: var(--ap-gold); }
+.node-a { left: 12%; top: 18%; }
+.node-b { right: 10%; top: 20%; }
+.node-c { left: 16%; bottom: 18%; }
+.node-d { right: 14%; bottom: 18%; }
+.node-e { left: 50%; bottom: 5%; transform: translateX(-50%); }

@@ -1,0 +1,21 @@
+.hero-system, .atlas-preview, .principle-card, .pathway-grid .card { position: relative; overflow: hidden; }
+.hero-system::after, .principle-card::after, .atlas-preview::after {
+  content: "";
+  position: absolute;
+  inset: auto 1rem 1rem auto;
+  width: 88px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--ap-gold));
+  opacity: 0.45;
+}
+.ap-telemetry {
+  display: inline-flex;
+  gap: 0.45rem;
+  align-items: center;
+  color: var(--ap-muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.ap-telemetry::before { content: ""; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--ap-gold); box-shadow: 0 0 18px rgba(200,164,93,0.7); }
+.ap-annotation { border-left: 2px solid var(--ap-gold); padding-left: 1rem; color: var(--ap-muted); }

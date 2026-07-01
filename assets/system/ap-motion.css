@@ -1,0 +1,4 @@
+@media (prefers-reduced-motion: no-preference) {
+  .card, .button, .ap-action, .node { transition: transform 160ms ease, border-color 160ms ease, background 160ms ease; }
+  .card:hover, .ap-panel:hover { transform: translateY(-2px); border-color: rgba(200,164,93,0.28); }
+}

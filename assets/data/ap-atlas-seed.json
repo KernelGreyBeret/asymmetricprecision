@@ -1,0 +1,51 @@
+{
+  "version": "2.0-sprint2",
+  "nodes": [
+    {
+      "id": "principle-see-the-system",
+      "type": "Principle",
+      "label": "See the System",
+      "domains": [
+        "Systems",
+        "Operational Design"
+      ]
+    },
+    {
+      "id": "principle-evidence-over-assumption",
+      "type": "Principle",
+      "label": "Evidence Over Assumption",
+      "domains": [
+        "Decision Making",
+        "Learning"
+      ]
+    },
+    {
+      "id": "domain-trust",
+      "type": "Domain",
+      "label": "Trust",
+      "domains": [
+        "Trust"
+      ]
+    },
+    {
+      "id": "domain-architecture",
+      "type": "Domain",
+      "label": "Architecture",
+      "domains": [
+        "Architecture"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "principle-see-the-system",
+      "to": "principle-evidence-over-assumption",
+      "type": "connects_to"
+    },
+    {
+      "from": "domain-trust",
+      "to": "domain-architecture",
+      "type": "connects_to"
+    }
+  ]
+}
