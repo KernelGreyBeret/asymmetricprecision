@@ -184,6 +184,42 @@ Purpose always beats decoration.
 
 ---
 
+## Intentional All the Way Down
+
+Every decision communicates.
+
+Words.
+
+Design.
+
+Architecture.
+
+Code.
+
+File names.
+
+Interactions.
+
+Navigation.
+
+Visual language.
+
+Nothing is "just implementation."
+
+Every choice should reinforce understanding.
+
+Every feature should have a purpose.
+
+Every name should teach.
+
+Every interaction should make the system easier to understand.
+
+Intentionality is not a design preference.
+
+It is a design requirement.
+
+---
+
 ## What We Build
 
 Everything we create exists to serve the mission.
