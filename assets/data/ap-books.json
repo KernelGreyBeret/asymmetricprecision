@@ -1,0 +1,117 @@
+{
+  "version": "0.11",
+  "principle": "A book is not a product. A book is a curriculum path.",
+  "curriculumStages": [
+    {
+      "id": "stage-foundation",
+      "label": "Foundation",
+      "summary": "Begin with how systems behave, why they drift, and how to see the whole before optimizing the parts."
+    },
+    {
+      "id": "stage-practice",
+      "label": "Practice",
+      "summary": "Turn systems thinking into operational habits, questions, models, and decision patterns."
+    },
+    {
+      "id": "stage-control",
+      "label": "Trust & Control",
+      "summary": "Explore governance, trust, constraints, authority, policy, and control inside real systems."
+    },
+    {
+      "id": "stage-application",
+      "label": "Application",
+      "summary": "Apply the AP model to Zero Trust, cybersecurity architecture, and enterprise decision systems."
+    },
+    {
+      "id": "stage-synthesis",
+      "label": "Synthesis",
+      "summary": "Connect the broader philosophy through field notes, essays, and durable mental models."
+    }
+  ],
+  "books": [
+    {
+      "id": "book-operator-guide",
+      "title": "The Operator’s Guide to Complex Systems",
+      "status": "Final Edits",
+      "stage": "Foundation",
+      "domain": "Systems",
+      "difficulty": 3,
+      "url": "../books/operator-guide-complex-systems.html",
+      "summary": "A field-driven approach to understanding behavior, constraints, failure, adaptation, trust, and control inside real systems.",
+      "readerOutcome": "The reader begins seeing systems as interacting forces rather than isolated events.",
+      "connections": ["principle-see-system", "concept-hidden-systems", "essay-constraints"]
+    },
+    {
+      "id": "book-systems-thinking-operators",
+      "title": "Systems Thinking for Operators",
+      "status": "In Development",
+      "stage": "Practice",
+      "domain": "Operational Design",
+      "difficulty": 3,
+      "url": "../books/systems-thinking-for-operators.html",
+      "summary": "A practical guide for seeing systems clearly under uncertainty, friction, incomplete information, and operational pressure.",
+      "readerOutcome": "The reader learns how to ask better questions and build better mental models under pressure.",
+      "connections": ["principle-mental-models", "principle-practical", "journey-operator"]
+    },
+    {
+      "id": "book-trust-constraints-control",
+      "title": "Trust, Constraints, and Control",
+      "status": "Planned",
+      "stage": "Trust & Control",
+      "domain": "Trust",
+      "difficulty": 4,
+      "url": "../books/trust-constraints-control.html",
+      "summary": "An exploration of authority, governance, policy, trust relationships, and systemic control across technical and human systems.",
+      "readerOutcome": "The reader sees trust and control as dynamic system properties shaped by evidence, authority, and constraints.",
+      "connections": ["concept-trust", "framework-rmf-governance", "principle-evidence"]
+    },
+    {
+      "id": "book-policy-engine-mindset",
+      "title": "The Policy Engine Mindset",
+      "status": "Planned",
+      "stage": "Trust & Control",
+      "domain": "Decision Making",
+      "difficulty": 4,
+      "url": "../books/policy-engine-mindset.html",
+      "summary": "A practical way to think about policy, decisions, enforcement, and adaptive control in systems that must operate under changing conditions.",
+      "readerOutcome": "The reader understands policy as an operational decision system rather than static documentation.",
+      "connections": ["principle-outcomes", "principle-evidence", "zero-trust"]
+    },
+    {
+      "id": "book-zero-trust-explained",
+      "title": "Zero Trust Actually Explained",
+      "status": "Planned",
+      "stage": "Application",
+      "domain": "Cybersecurity",
+      "difficulty": 3,
+      "url": "../books/zero-trust-actually-explained.html",
+      "summary": "A clear, architecture-first explanation of Zero Trust as a decision, evidence, and enforcement problem rather than a product category.",
+      "readerOutcome": "The reader understands Zero Trust as an adaptive authorization system driven by evidence and enforcement.",
+      "connections": ["framework-three-as", "essay-three-as", "framework-zt-outcomes"]
+    },
+    {
+      "id": "book-asymmetric-precision",
+      "title": "Asymmetric Precision",
+      "status": "Planned",
+      "stage": "Synthesis",
+      "domain": "Applied Systems Thinking",
+      "difficulty": 4,
+      "url": "../books/asymmetric-precision.html",
+      "summary": "The broader philosophy behind AP: seeing hidden systems, making better decisions, and improving difficult organizations with precision.",
+      "readerOutcome": "The reader sees AP as a coherent philosophy for understanding and improving complex systems.",
+      "connections": ["philosophy", "concept-hsvl", "concept-atlas"]
+    },
+    {
+      "id": "book-field-notes",
+      "title": "Field Notes from a Systems Architect",
+      "status": "Planned",
+      "stage": "Synthesis",
+      "domain": "Observation",
+      "difficulty": 2,
+      "url": "../books/field-notes-systems-architect.html",
+      "summary": "A collection of operational observations from systems under pressure and the patterns that become visible through lived complexity.",
+      "readerOutcome": "The reader learns to notice patterns, drift, incentives, and signals inside lived systems.",
+      "connections": ["field-notes", "principle-evidence", "learning"]
+    }
+  ]
+}

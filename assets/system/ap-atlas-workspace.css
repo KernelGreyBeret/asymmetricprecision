@@ -1,0 +1,157 @@
+/* Sprint 33 — Atlas Workspace
+   Principle: The map should have room to become a workspace. */
+
+.ap-atlas-interface.ap-atlas-interface-explorer {
+  grid-template-columns: minmax(0, 1fr);
+  align-items: stretch;
+}
+
+.ap-atlas-interface-explorer .ap-atlas-canvas {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  min-height: clamp(38rem, 72vh, 66rem);
+}
+
+.ap-atlas-interface-explorer > .ap-atlas-panel {
+  min-width: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 980px) {
+  .ap-atlas-interface.ap-atlas-interface-explorer {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  }
+
+  .ap-atlas-interface-explorer .ap-atlas-canvas {
+    grid-column: 1 / -1;
+  }
+
+  .ap-atlas-interface-explorer > .ap-atlas-panel:first-child {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .ap-atlas-interface-explorer > [data-ap-atlas-detail] {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+.ap-atlas-workspace-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+
+.ap-atlas-workspace-tools .ap-action,
+.ap-atlas-workspace-tools button {
+  white-space: normal;
+  min-height: 44px;
+}
+
+.ap-atlas-workspace-close {
+  display: none !important;
+}
+
+body.ap-atlas-workspace-open {
+  overflow: hidden;
+}
+
+section[data-ap-atlas].is-atlas-workspace {
+  position: fixed;
+  inset: clamp(0.45rem, 1vw, 1rem);
+  z-index: 9999;
+  max-width: none;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: clamp(0.8rem, 1.5vw, 1.35rem);
+  overflow: auto;
+  border: 1px solid rgba(200, 164, 93, 0.34);
+  border-radius: clamp(1rem, 2vw, 1.75rem);
+  background:
+    linear-gradient(rgba(200,164,93,0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200,164,93,0.045) 1px, transparent 1px),
+    radial-gradient(circle at 45% 30%, rgba(126,228,255,0.10), transparent 34rem),
+    linear-gradient(135deg, var(--ap-bg-deep, #070809), var(--ap-bg, #0b0c0d) 48%, #101216);
+  background-size: 36px 36px, 36px 36px, auto, auto;
+  box-shadow: 0 24px 90px rgba(0,0,0,0.72);
+}
+
+section[data-ap-atlas].is-atlas-workspace .ap-atlas-workspace-close {
+  display: inline-flex !important;
+}
+
+section[data-ap-atlas].is-atlas-workspace .ap-atlas-interface.ap-atlas-interface-explorer {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+section[data-ap-atlas].is-atlas-workspace .ap-atlas-canvas {
+  min-height: min(74vh, 56rem);
+}
+
+@media (min-width: 1100px) {
+  section[data-ap-atlas].is-atlas-workspace .ap-atlas-interface.ap-atlas-interface-explorer {
+    grid-template-columns: minmax(16rem, 0.45fr) minmax(0, 1.7fr) minmax(18rem, 0.55fr);
+  }
+
+  section[data-ap-atlas].is-atlas-workspace .ap-atlas-interface-explorer > .ap-atlas-panel:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  section[data-ap-atlas].is-atlas-workspace .ap-atlas-interface-explorer .ap-atlas-canvas {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  section[data-ap-atlas].is-atlas-workspace .ap-atlas-interface-explorer > [data-ap-atlas-detail] {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}
+
+.ap-atlas-canvas[data-ap-atlas-move="true"] {
+  cursor: grab;
+}
+
+.ap-atlas-canvas[data-ap-atlas-move="true"] .ap-atlas-node {
+  cursor: move;
+  border-style: dashed;
+  box-shadow: 0 0 0 1px rgba(126,228,255,0.18), 0 0 34px rgba(126,228,255,0.10);
+}
+
+.ap-atlas-canvas[data-ap-atlas-move="true"]::after {
+  content: "MOVE MODE / DRAG NODES TO REFRAME THE MAP";
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 4;
+  max-width: calc(100% - 2rem);
+  padding: 0.42rem 0.65rem;
+  border: 1px solid rgba(126,228,255,0.30);
+  border-radius: 999px;
+  background: rgba(7,8,9,0.72);
+  color: rgba(126,228,255,0.88);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+}
+
+@media (max-width: 760px) {
+  .ap-atlas-workspace-tools {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  section[data-ap-atlas].is-atlas-workspace {
+    inset: 0;
+    border-radius: 0;
+  }
+
+  section[data-ap-atlas].is-atlas-workspace .ap-atlas-canvas {
+    min-height: 70vh;
+  }
+}

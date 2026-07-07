@@ -1,0 +1,47 @@
+/* AP Controls
+   Principle: Controls should reduce uncertainty, not disappear into the surface. */
+
+button,
+input[type="submit"],
+.button,
+.button-primary,
+.button-secondary,
+.ap-action {
+  color: var(--ap-text, #f3efe6);
+}
+
+button:not(.nav-toggle),
+input[type="submit"],
+.button,
+.button-primary,
+.ap-action {
+  border: 1px solid var(--ap-border-strong, rgba(255,255,255,.26));
+  border-radius: var(--ap-radius-md, .75rem);
+  background: linear-gradient(135deg, rgba(200,164,93,.24), rgba(255,255,255,.055));
+  color: var(--ap-text, #f3efe6);
+  padding: .75rem 1rem;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+button:not(.nav-toggle):hover,
+button:not(.nav-toggle):focus-visible,
+input[type="submit"]:hover,
+input[type="submit"]:focus-visible,
+.button:hover,
+.button:focus-visible,
+.button-primary:hover,
+.button-primary:focus-visible,
+.ap-action:hover,
+.ap-action:focus-visible {
+  border-color: var(--ap-accent, #c8a45d);
+  outline: 2px solid color-mix(in srgb, var(--ap-accent, #c8a45d) 55%, transparent);
+  outline-offset: 2px;
+}
+
+button[disabled],
+.disabled-button {
+  cursor: not-allowed;
+  opacity: .68;
+}

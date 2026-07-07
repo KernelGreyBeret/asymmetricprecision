@@ -1,67 +1,27 @@
-<p align="center">
-  <img src="assets/logo-banner.png" alt="Asymmetric Precision" width="700">
-</p>
+# AP v2 Sprint 17 — Coherence / Intentionality Stabilization
 
-# Asymmetric Precision™
+## Principle
 
-Frameworks, essays, books, and operational philosophy
-from the edge of complexity.
+Intentionality is not a flourish. It is how the system protects clarity.
 
-https://asymmetricprecision.com
+## What this fixes
 
----
+- Dynamic AP modules were imported but exported initializers were not called.
+  - This prevented surfaces like the Essay Lens cards from hydrating.
+- Navigation drifted across pages.
+  - Some pages had Learning; some did not.
+  - Some pages ordered the AP surfaces differently.
+- Generic connection surfaces appeared too large and too internal-facing.
+  - "Do not leave the idea isolated" is a useful builder rule, but not the right visitor-facing language everywhere.
+- Overflow and boundary issues were accumulating.
+- Footer language drifted across generations of the site.
 
-## About
+## Files
 
-Asymmetric Precision™ is a systems-thinking and operational architecture platform exploring:
+- `assets/system/ap-system.js`
+- `assets/system/ap-system.css`
+- `assets/system/ap-coherence.js`
+- `assets/system/ap-coherence.css`
+- `docs/ap-v2/AP_COHERENCE_STABILIZATION.md`
 
-- trust
-- complexity
-- authorization
-- governance
-- systems behavior
-- operational philosophy
-- enterprise architecture
-- human systems
-- organizational dynamics
-
-The platform combines long-form essays, books, field notes,
-frameworks, and operational reflections drawn from real-world experience
-across cybersecurity, military operations, systems engineering,
-leadership, and enterprise architecture.
-
----
-
-## Site Structure
-
-- `/books/` — Publication pages and book series
-- `/essays/` — Long-form essays and papers
-- `/frameworks/` — Systems models and conceptual frameworks
-- `/field-notes/` — Operational observations and reflections
-- `/projects/` — Selected projects and initiatives
-
----
-
-## Philosophy
-
-Modern systems rarely fail randomly.
-
-They fail through misunderstood relationships:
-trust without verification,
-authority without accountability,
-complexity without visibility,
-and decisions made without understanding the systems that produced them.
-
-Asymmetric Precision™ exists to explore those relationships.
-
----
-
-## Author
-
-Tommy Burke  
-Cybersecurity engineer, systems thinker,
-and retired U.S. Army veteran.
-
----
-
-© 2026 Tommy Burke. All rights reserved.
+Drop into the repo root and overwrite.

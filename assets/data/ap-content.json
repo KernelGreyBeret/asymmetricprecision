@@ -1,0 +1,755 @@
+{
+  "version": "0.8",
+  "name": "AP Content Graph Seed",
+  "principle": "Content is not a list. Content is a learning surface. Laboratories prove that ideas can survive implementation.",
+  "items": [
+    {
+      "id": "book-operator-guide",
+      "type": "book",
+      "title": "The Operator\u2019s Guide to Complex Systems",
+      "status": "Final Edits",
+      "domain": "Systems",
+      "url": "../books/operator-guide-complex-systems.html",
+      "summary": "A field guide for understanding complex systems under pressure, uncertainty, constraints, incentives, failure, and adaptation.",
+      "path": "Learn",
+      "difficulty": 3,
+      "connections": [
+        "principle-see-system",
+        "concept-hidden-systems",
+        "concept-understanding"
+      ]
+    },
+    {
+      "id": "book-systems-thinking-operators",
+      "type": "book",
+      "title": "Systems Thinking for Operators",
+      "status": "In Development",
+      "domain": "Operational Design",
+      "url": "../books/systems-thinking-for-operators.html",
+      "summary": "A practical guide for seeing systems clearly under real-world conditions of uncertainty, friction, incomplete information, and operational pressure.",
+      "path": "Learn",
+      "difficulty": 3,
+      "connections": [
+        "principle-mental-models",
+        "principle-practical"
+      ]
+    },
+    {
+      "id": "book-trust-constraints-control",
+      "type": "book",
+      "title": "Trust, Constraints, and Control",
+      "status": "Planned",
+      "domain": "Trust",
+      "url": "../books/trust-constraints-control.html",
+      "summary": "An exploration of authority, governance, policy, trust relationships, and systemic control across technical and human systems.",
+      "path": "Learn",
+      "difficulty": 4,
+      "connections": [
+        "zero-trust",
+        "rmf",
+        "concept-tactical-compassion"
+      ]
+    },
+    {
+      "id": "book-policy-engine-mindset",
+      "type": "book",
+      "title": "The Policy Engine Mindset",
+      "status": "Planned",
+      "domain": "Decision Making",
+      "url": "../books/policy-engine-mindset.html",
+      "summary": "A practical way to think about policy, decisions, enforcement, and adaptive control in systems that must operate under changing conditions.",
+      "path": "Learn",
+      "difficulty": 4,
+      "connections": [
+        "principle-evidence",
+        "principle-outcomes",
+        "zero-trust"
+      ]
+    },
+    {
+      "id": "book-zero-trust-explained",
+      "type": "book",
+      "title": "Zero Trust Actually Explained",
+      "status": "Planned",
+      "domain": "Cybersecurity",
+      "url": "../books/zero-trust-actually-explained.html",
+      "summary": "A clear, architecture-first explanation of Zero Trust as a decision, evidence, and enforcement problem rather than a product category.",
+      "path": "Learn",
+      "difficulty": 3,
+      "connections": [
+        "zero-trust",
+        "framework-three-as"
+      ]
+    },
+    {
+      "id": "book-asymmetric-precision",
+      "type": "book",
+      "title": "Asymmetric Precision",
+      "status": "Planned",
+      "domain": "Applied Systems Thinking",
+      "url": "../books/asymmetric-precision.html",
+      "summary": "The broader philosophy behind AP: seeing hidden systems, making better decisions, and improving difficult organizations with precision.",
+      "path": "Learn",
+      "difficulty": 4,
+      "connections": [
+        "ap",
+        "philosophy",
+        "concept-hsvl"
+      ]
+    },
+    {
+      "id": "book-field-notes",
+      "type": "book",
+      "title": "Field Notes from a Systems Architect",
+      "status": "Planned",
+      "domain": "Observation",
+      "url": "../books/field-notes-systems-architect.html",
+      "summary": "A collection of operational observations from systems under pressure and the patterns that become visible through lived complexity.",
+      "path": "Learn",
+      "difficulty": 2,
+      "connections": [
+        "field-notes",
+        "principle-evidence"
+      ]
+    },
+    {
+      "id": "essay-end-state",
+      "type": "essay",
+      "title": "The End State Is the Requirement",
+      "status": "Featured",
+      "domain": "Cybersecurity",
+      "url": "../essays/end-state-is-the-requirement.html",
+      "summary": "Why Zero Trust should be measured by required security conditions, operational evidence, and adaptive outcomes, not tool deployment or activity completion.",
+      "path": "Think",
+      "difficulty": 4,
+      "connections": [
+        "zero-trust",
+        "principle-outcomes",
+        "principle-evidence"
+      ]
+    },
+    {
+      "id": "essay-three-as",
+      "type": "essay",
+      "title": "The Three A\u2019s of Zero Trust",
+      "status": "Featured",
+      "domain": "Cybersecurity",
+      "url": "../essays/three-as.html",
+      "summary": "Attribution, Authority, and Authorization as the operational foundation beneath Zero Trust architecture.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "framework-three-as",
+        "zero-trust",
+        "principle-evidence"
+      ]
+    },
+    {
+      "id": "essay-checkbox-fallacy",
+      "type": "essay",
+      "title": "The Checkbox Fallacy",
+      "status": "Published",
+      "domain": "Governance",
+      "url": "../essays/the-checkbox-fallacy.html",
+      "summary": "How organizations begin measuring activity instead of capability and eventually mistake compliance for success.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "rmf",
+        "principle-outcomes",
+        "principle-evidence"
+      ]
+    },
+    {
+      "id": "essay-context-key",
+      "type": "essay",
+      "title": "Context Is Key",
+      "status": "Published",
+      "domain": "Decision Making",
+      "url": "../essays/context-is-key.html",
+      "summary": "Why information has meaning only within context, and why understanding systems requires understanding the conditions around observable events.",
+      "path": "Think",
+      "difficulty": 2,
+      "connections": [
+        "principle-mental-models",
+        "concept-understanding"
+      ]
+    },
+    {
+      "id": "essay-maps-territory",
+      "type": "essay",
+      "title": "Maps Are Not Territory",
+      "status": "Published",
+      "domain": "Visualization",
+      "url": "../essays/maps-are-not-territory.html",
+      "summary": "A reflection on models, abstractions, and the dangers of confusing representations with reality itself.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "concept-hsvl",
+        "concept-atlas",
+        "principle-evidence"
+      ]
+    },
+    {
+      "id": "essay-constraints",
+      "type": "essay",
+      "title": "Constraints Create Behavior",
+      "status": "Published",
+      "domain": "Constraints",
+      "url": "../essays/constraints-create-behavior.html",
+      "summary": "Why behavior often emerges from incentives, pressure, permissions, friction, and constraints rather than intent alone.",
+      "path": "Think",
+      "difficulty": 2,
+      "connections": [
+        "framework-constraints",
+        "concept-hidden-systems",
+        "principle-see-system"
+      ]
+    },
+    {
+      "id": "essay-trust-binary",
+      "type": "essay",
+      "title": "Trust Is Not a Binary State",
+      "status": "Published",
+      "domain": "Trust",
+      "url": "../essays/trust-is-not-a-binary-state.html",
+      "summary": "Trust is a continuously evolving assessment made under uncertainty and informed by evidence.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "zero-trust",
+        "principle-evidence",
+        "concept-tactical-compassion"
+      ]
+    },
+    {
+      "id": "essay-authority-attribution",
+      "type": "essay",
+      "title": "Authority Without Attribution",
+      "status": "Published",
+      "domain": "Organizations",
+      "url": "../essays/authority-wo-attribution.html",
+      "summary": "Why systems lose the ability to learn when decisions become detached from the people and conditions that created them.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "rmf",
+        "principle-evidence",
+        "principle-relationships"
+      ]
+    },
+    {
+      "id": "essay-permission-power",
+      "type": "essay",
+      "title": "The Difference Between Permission and Power",
+      "status": "Published",
+      "domain": "Leadership",
+      "url": "../essays/the-difference-between-permission-and-power.html",
+      "summary": "Why formal authority and actual influence are often very different things inside complex systems.",
+      "path": "Think",
+      "difficulty": 2,
+      "connections": [
+        "concept-tactical-compassion",
+        "principle-relationships"
+      ]
+    },
+    {
+      "id": "essay-survival",
+      "type": "essay",
+      "title": "Organizations Optimize for Survival",
+      "status": "Published",
+      "domain": "Organizations",
+      "url": "../essays/organizations-optimize-for-survival.html",
+      "summary": "Why organizations often prioritize their own continuity, even when doing so conflicts with their stated mission.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "concept-hidden-systems",
+        "principle-see-system"
+      ]
+    },
+    {
+      "id": "essay-incentives",
+      "type": "essay",
+      "title": "Incentives Are Invisible Architecture",
+      "status": "Published",
+      "domain": "Incentives",
+      "url": "../essays/incentives-are-invisible-architecture.html",
+      "summary": "How rewards, consequences, and measurements quietly shape behavior more powerfully than policies or intentions.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "concept-hidden-systems",
+        "framework-constraints"
+      ]
+    },
+    {
+      "id": "essay-alignment",
+      "type": "essay",
+      "title": "The Myth of Alignment",
+      "status": "Published",
+      "domain": "Organizations",
+      "url": "../essays/the-myth-of-alignment.html",
+      "summary": "Why agreement, awareness, and communication are not the same thing as true organizational alignment.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "principle-relationships",
+        "concept-understanding"
+      ]
+    },
+    {
+      "id": "essay-gravity",
+      "type": "essay",
+      "title": "Bureaucracies Create Their Own Gravity",
+      "status": "Published",
+      "domain": "Organizations",
+      "url": "../essays/bureaucracies-create-their-own-gravity.html",
+      "summary": "How successful organizations accumulate structure over time, and why that structure eventually resists change.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "rmf",
+        "concept-hidden-systems"
+      ]
+    },
+    {
+      "id": "essay-coordination",
+      "type": "essay",
+      "title": "The Cost of Coordination",
+      "status": "Published",
+      "domain": "Organizations",
+      "url": "../essays/the-cost-of-coordination.html",
+      "summary": "Why communication, dependencies, and alignment become some of the most expensive resources in complex systems.",
+      "path": "Think",
+      "difficulty": 2,
+      "connections": [
+        "principle-relationships",
+        "field-note-coordination"
+      ]
+    },
+    {
+      "id": "essay-normalcy",
+      "type": "essay",
+      "title": "Complexity Hides in Normalcy",
+      "status": "Published",
+      "domain": "Complexity",
+      "url": "../essays/complexity-hides-in-normalcy.html",
+      "summary": "Why the most dangerous failures rarely appear dangerous until it is too late.",
+      "path": "Think",
+      "difficulty": 2,
+      "connections": [
+        "concept-hidden-systems",
+        "principle-see-system"
+      ]
+    },
+    {
+      "id": "essay-produces-behavior",
+      "type": "essay",
+      "title": "Every System Produces Behavior",
+      "status": "Published",
+      "domain": "Systems",
+      "url": "../essays/every-system-produces-behavior.html",
+      "summary": "Why recurring outcomes often reveal more about the system than the people operating inside it.",
+      "path": "Think",
+      "difficulty": 2,
+      "connections": [
+        "principle-see-system",
+        "framework-constraints"
+      ]
+    },
+    {
+      "id": "essay-system-truth",
+      "type": "essay",
+      "title": "The System Was Telling the Truth",
+      "status": "Published",
+      "domain": "Failure",
+      "url": "../essays/the-system-was-telling-the-truth.html",
+      "summary": "A reflection on drift, failure, ignored signals, and the difference between what a system says and what leaders want to hear.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "principle-evidence",
+        "concept-hidden-systems",
+        "field-note-pressure"
+      ]
+    },
+    {
+      "id": "essay-feedback-loops",
+      "type": "essay",
+      "title": "Feedback Loops Are Everywhere",
+      "status": "Published",
+      "domain": "Feedback",
+      "url": "../essays/feedback-loops-are-everywhere.html",
+      "summary": "Why important behaviors often emerge from cycles of reinforcement rather than isolated events.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "principle-relationships",
+        "concept-hidden-systems"
+      ]
+    },
+    {
+      "id": "essay-local-global",
+      "type": "essay",
+      "title": "Local Optimization, Global Failure",
+      "status": "Published",
+      "domain": "Systems",
+      "url": "../essays/local-optimization-global-failure.html",
+      "summary": "Why organizations can improve every metric, optimize every department, and still move further away from mission success.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "principle-outcomes",
+        "principle-see-system"
+      ]
+    },
+    {
+      "id": "essay-second-order",
+      "type": "essay",
+      "title": "The Tyranny of Second-Order Effects",
+      "status": "Published",
+      "domain": "Complexity",
+      "url": "../essays/the-tyranny-of-second-order-effects.html",
+      "summary": "Why the most important consequences of a decision often emerge only after the system has had time to react.",
+      "path": "Think",
+      "difficulty": 4,
+      "connections": [
+        "principle-mental-models",
+        "principle-evidence"
+      ]
+    },
+    {
+      "id": "essay-knowing-understanding",
+      "type": "essay",
+      "title": "The Difference Between Knowing and Understanding",
+      "status": "Published",
+      "domain": "Learning",
+      "url": "../essays/the-difference-between-knowing-and-understanding.html",
+      "summary": "Why accumulating information is not the same thing as understanding reality, and why insight comes from relationships rather than facts alone.",
+      "path": "Think",
+      "difficulty": 2,
+      "connections": [
+        "concept-understanding",
+        "principle-relationships"
+      ]
+    },
+    {
+      "id": "essay-curiosity",
+      "type": "essay",
+      "title": "Curiosity Is an Operational Skill",
+      "status": "Published",
+      "domain": "Learning",
+      "url": "../essays/curiosity-is-an-operational-skill.html",
+      "summary": "Why curiosity is one of the most valuable capabilities for navigating uncertainty, complexity, and change.",
+      "path": "Think",
+      "difficulty": 2,
+      "connections": [
+        "concept-understanding",
+        "principle-mental-models"
+      ]
+    },
+    {
+      "id": "essay-last-responsible",
+      "type": "essay",
+      "title": "The Last Responsible Moment",
+      "status": "Published",
+      "domain": "Decision Making",
+      "url": "../essays/the-last-responsible-moment.html",
+      "summary": "Why effective decision-making is about recognizing the point where additional waiting creates less value than action.",
+      "path": "Think",
+      "difficulty": 3,
+      "connections": [
+        "principle-evidence",
+        "principle-outcomes"
+      ]
+    },
+    {
+      "id": "essay-observation",
+      "type": "essay",
+      "title": "Observation Before Action",
+      "status": "Published",
+      "domain": "Observation",
+      "url": "../essays/observation-before-action.html",
+      "summary": "Why the instinct to immediately solve problems often makes them worse, and why effective operators diagnose before they intervene.",
+      "path": "Think",
+      "difficulty": 2,
+      "connections": [
+        "principle-evidence",
+        "concept-understanding"
+      ]
+    },
+    {
+      "id": "essay-discovery",
+      "type": "essay",
+      "title": "Every Problem Is a Discovery Problem First",
+      "status": "Published",
+      "domain": "Learning",
+      "url": "../essays/every-problem-is-a-discovery-problem-first.html",
+      "summary": "Why most failures begin with misunderstanding the problem itself, and why discovery is the first phase of every solution.",
+      "path": "Think",
+      "difficulty": 2,
+      "connections": [
+        "principle-mental-models",
+        "principle-practical"
+      ]
+    },
+    {
+      "id": "framework-three-as",
+      "type": "framework",
+      "title": "Attribution, Authority, Authorization",
+      "status": "In Development",
+      "domain": "Cybersecurity",
+      "url": "../frameworks/index.html#three-as",
+      "summary": "A model for understanding what Zero Trust capabilities are trying to establish before an access decision can be trusted.",
+      "path": "Build",
+      "difficulty": 3,
+      "connections": [
+        "essay-three-as",
+        "zero-trust",
+        "principle-evidence"
+      ]
+    },
+    {
+      "id": "framework-constraints",
+      "type": "framework",
+      "title": "Constraints Create Behavior",
+      "status": "In Development",
+      "domain": "Systems",
+      "url": "../frameworks/index.html#constraints-create-behavior",
+      "summary": "A practical model for diagnosing outcomes by examining incentives, pressure, permissions, friction, and constraints.",
+      "path": "Build",
+      "difficulty": 2,
+      "connections": [
+        "essay-constraints",
+        "essay-incentives",
+        "principle-see-system"
+      ]
+    },
+    {
+      "id": "framework-decision-authority",
+      "type": "framework",
+      "title": "Decision Authority vs. Enforcement",
+      "status": "In Development",
+      "domain": "Architecture",
+      "url": "../frameworks/index.html#decision-authority-enforcement",
+      "summary": "A model for separating who decides, who enforces, and how obligations survive translation into real tools.",
+      "path": "Build",
+      "difficulty": 4,
+      "connections": [
+        "zero-trust",
+        "rmf",
+        "principle-outcomes"
+      ]
+    },
+    {
+      "id": "framework-pressure-drift",
+      "type": "framework",
+      "title": "Pressure, Drift, and Adaptation",
+      "status": "In Development",
+      "domain": "Failure",
+      "url": "../frameworks/index.html#pressure-drift-adaptation",
+      "summary": "A lens for spotting the slow movement that precedes obvious failure.",
+      "path": "Build",
+      "difficulty": 3,
+      "connections": [
+        "essay-system-truth",
+        "concept-hidden-systems",
+        "principle-evidence"
+      ]
+    },
+    {
+      "id": "field-note-coordination",
+      "type": "field-note",
+      "title": "The Cost of Coordination",
+      "status": "Observation",
+      "domain": "Organizations",
+      "url": "../field-notes/index.html#cost-of-coordination",
+      "summary": "Every coordination mechanism solves one problem by introducing another. Coordination is one of the most expensive activities a system can perform.",
+      "path": "Apply",
+      "difficulty": 1,
+      "connections": [
+        "essay-coordination",
+        "principle-relationships"
+      ]
+    },
+    {
+      "id": "field-note-normal",
+      "type": "field-note",
+      "title": "Normal Is Not Always Healthy",
+      "status": "Observation",
+      "domain": "Failure",
+      "url": "../field-notes/index.html#normal-not-healthy",
+      "summary": "Many systems stabilize around dysfunction because the dysfunction becomes familiar, funded, defended, or invisible.",
+      "path": "Apply",
+      "difficulty": 1,
+      "connections": [
+        "essay-normalcy",
+        "concept-hidden-systems"
+      ]
+    },
+    {
+      "id": "field-note-pressure",
+      "type": "field-note",
+      "title": "Pressure Reveals Architecture",
+      "status": "Observation",
+      "domain": "Architecture",
+      "url": "../field-notes/index.html#pressure-reveals-architecture",
+      "summary": "When a system is stressed, the real decision paths, dependencies, incentives, and control points become harder to hide.",
+      "path": "Apply",
+      "difficulty": 1,
+      "connections": [
+        "essay-system-truth",
+        "framework-pressure-drift"
+      ]
+    },
+    {
+      "id": "field-note-constraints",
+      "type": "field-note",
+      "title": "Behavior Follows Constraints",
+      "status": "Observation",
+      "domain": "Constraints",
+      "url": "../field-notes/index.html#behavior-follows-constraints",
+      "summary": "People and organizations adapt to the system they are inside, not the system leaders describe on paper.",
+      "path": "Apply",
+      "difficulty": 1,
+      "connections": [
+        "essay-constraints",
+        "framework-constraints"
+      ]
+    },
+    {
+      "id": "system-learning",
+      "type": "system",
+      "title": "Learning System",
+      "status": "Sprint 6",
+      "domain": "Learning",
+      "url": "../learning/index.html",
+      "summary": "A local-first reflection surface that helps visitors track whether AP increased understanding.",
+      "path": "Reflect",
+      "difficulty": 1,
+      "connections": [
+        "concept-understanding",
+        "concept-atlas",
+        "principle-evidence-assumption"
+      ]
+    },
+    {
+      "id": "page-journeys",
+      "type": "page",
+      "title": "Learning Journeys",
+      "status": "New",
+      "domain": "Learning",
+      "url": "../journeys/index.html",
+      "summary": "Guided routes through AP for leaders, architects, cybersecurity practitioners, builders, and new explorers.",
+      "path": "Explore",
+      "difficulty": 2,
+      "connections": [
+        "concept-understanding",
+        "concept-atlas",
+        "principle-mental-models"
+      ]
+    },
+    {
+      "id": "lab-kgb-studio",
+      "type": "laboratory",
+      "title": "KGB Studio",
+      "status": "In Development",
+      "domain": "Tooling",
+      "url": "../laboratories/index.html#lab-kgb-studio",
+      "summary": "Creative systems improve when the workflow makes relationships visible and turns repeated decisions into reusable patterns.",
+      "path": "Explore",
+      "difficulty": 2,
+      "connections": [
+        "principle-intentional",
+        "principle-practical",
+        "concept-hsvl",
+        "journey-builder"
+      ]
+    },
+    {
+      "id": "lab-kgb-arcade",
+      "type": "laboratory",
+      "title": "KGB Arcade",
+      "status": "Live",
+      "domain": "Learning",
+      "url": "https://kgbarcade.com/index.html",
+      "summary": "Play is a systems-thinking environment. Every good game teaches the player to read signals, adapt to feedback, and improve decisions under constraint.",
+      "path": "Explore",
+      "difficulty": 2,
+      "connections": [
+        "concept-hsvl",
+        "principle-mental-models",
+        "principle-relationships",
+        "journey-builder"
+      ]
+    },
+    {
+      "id": "lab-hidden-systems-visual-language",
+      "type": "laboratory",
+      "title": "Hidden Systems Visual Language",
+      "status": "Active Pattern",
+      "domain": "Visualization",
+      "url": "../atlas/index.html",
+      "summary": "Visual language is not decoration. It is a cognitive instrument for revealing structure, pressure, state, and relationship.",
+      "path": "Explore",
+      "difficulty": 3,
+      "connections": [
+        "concept-hsvl",
+        "concept-atlas",
+        "principle-relationships",
+        "principle-intentional"
+      ]
+    },
+    {
+      "id": "lab-zero-trust-reference",
+      "type": "laboratory",
+      "title": "Zero Trust Reference Work",
+      "status": "In Development",
+      "domain": "Cybersecurity",
+      "url": "../frameworks/index.html",
+      "summary": "Security architecture improves when people can distinguish capability from compliance motion and outcomes from activities.",
+      "path": "Explore",
+      "difficulty": 3,
+      "connections": [
+        "zero-trust",
+        "framework-three-as",
+        "essay-end-state",
+        "principle-outcomes"
+      ]
+    },
+    {
+      "id": "lab-code-shield",
+      "type": "laboratory",
+      "title": "Code Shield",
+      "status": "Prototype",
+      "domain": "Cybersecurity",
+      "url": "../laboratories/index.html#lab-code-shield",
+      "summary": "Security tools should reduce uncertainty and help builders understand what matters, not bury them under noise.",
+      "path": "Explore",
+      "difficulty": 3,
+      "connections": [
+        "principle-evidence",
+        "principle-practical",
+        "principle-intentional"
+      ]
+    },
+    {
+      "id": "lab-asymmetric-utility",
+      "type": "laboratory",
+      "title": "Asymmetric Utility",
+      "status": "In Development",
+      "domain": "Tooling",
+      "url": "../laboratories/index.html#lab-asymmetric-utility",
+      "summary": "Useful tools should respect constraints. No backend is not a weakness when the problem can be solved locally and clearly.",
+      "path": "Explore",
+      "difficulty": 2,
+      "connections": [
+        "principle-practical",
+        "principle-outcomes",
+        "principle-intentional"
+      ]
+    }
+  ]
+}

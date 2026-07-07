@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "principle": "A visual system should reveal relationships, not decorate content.",
+  "elements": [
+    {
+      "id": "telemetry-label",
+      "name": "Telemetry Label",
+      "purpose": "Expose state, domain, confidence, or relationship without adding paragraph text."
+    },
+    {
+      "id": "connection-band",
+      "name": "Connection Band",
+      "purpose": "Show a vertical relationship path among related ideas, essays, frameworks, or observations."
+    },
+    {
+      "id": "system-map",
+      "name": "System Map Surface",
+      "purpose": "Frame a group of ideas as part of an interacting system rather than a flat list."
+    },
+    {
+      "id": "evidence-surface",
+      "name": "Evidence Surface",
+      "purpose": "Separate what is observed from what is assumed."
+    },
+    {
+      "id": "annotation",
+      "name": "System Annotation",
+      "purpose": "Add interpretive context without interrupting the primary reading path."
+    }
+  ],
+  "states": ["evidence", "risk", "unknown", "active", "related", "unresolved"]
+}

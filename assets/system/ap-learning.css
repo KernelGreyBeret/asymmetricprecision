@@ -1,0 +1,164 @@
+.ap-learning-checkpoint {
+  margin: 4rem 0;
+  border: 1px solid var(--ap-line-strong);
+  border-radius: var(--ap-radius);
+  padding: 1.5rem;
+  background:
+    linear-gradient(135deg, rgba(200,164,93,0.08), rgba(255,255,255,0.02)),
+    rgba(200,164,93,0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.ap-learning-checkpoint::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 36px 36px;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.ap-learning-checkpoint > * { position: relative; z-index: 1; }
+
+.ap-learning-options {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.ap-learning-options button,
+.ap-observation-actions button {
+  border: 1px solid var(--ap-line);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.035);
+  color: var(--ap-text);
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: border-color 160ms ease, transform 160ms ease, background 160ms ease;
+}
+
+.ap-learning-options button:hover,
+.ap-learning-options button[aria-pressed="true"],
+.ap-observation-actions button:hover {
+  border-color: var(--ap-gold);
+  background: rgba(200,164,93,0.11);
+  transform: translateY(-1px);
+}
+
+.ap-learning-response,
+.ap-observation-note {
+  color: var(--ap-muted);
+  margin-top: 1rem;
+}
+
+.ap-observation-surface {
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--ap-line);
+  padding-top: 1.25rem;
+}
+
+.ap-observation-label {
+  display: block;
+  color: var(--ap-text);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.ap-observation-surface textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--ap-line);
+  border-radius: calc(var(--ap-radius) * 0.75);
+  background: rgba(0,0,0,0.18);
+  color: var(--ap-text);
+  padding: 0.9rem 1rem;
+  resize: vertical;
+}
+
+.ap-observation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.9rem;
+}
+
+.ap-reflection-log {
+  margin: 3rem 0;
+}
+
+.ap-reflection-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.ap-learning-stat {
+  border: 1px solid var(--ap-line);
+  border-radius: var(--ap-radius);
+  padding: 1rem;
+  background: rgba(255,255,255,0.035);
+}
+
+.ap-learning-stat strong {
+  display: block;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  line-height: 1;
+  color: var(--ap-gold);
+}
+
+.ap-learning-stat span {
+  display: block;
+  color: var(--ap-muted);
+  margin-top: 0.35rem;
+}
+
+.ap-reflection-items {
+  display: grid;
+  gap: 1rem;
+}
+
+.ap-reflection-item {
+  border: 1px solid var(--ap-line);
+  border-radius: var(--ap-radius);
+  padding: 1.25rem;
+  background: rgba(255,255,255,0.028);
+}
+
+.ap-reflection-item h3 {
+  margin-top: 0.1rem;
+}
+
+.ap-reflection-observation {
+  border-left: 3px solid var(--ap-gold);
+  padding-left: 1rem;
+  color: var(--ap-text);
+}
+
+.ap-learning-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.ap-learning-ethic {
+  border: 1px solid var(--ap-line-strong);
+  border-radius: var(--ap-radius);
+  padding: 1.25rem;
+  background: rgba(255,255,255,0.025);
+}
+
+@media (max-width: 760px) {
+  .ap-reflection-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 520px) {
+  .ap-reflection-summary { grid-template-columns: 1fr; }
+}

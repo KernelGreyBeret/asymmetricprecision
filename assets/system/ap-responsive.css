@@ -1,0 +1,10 @@
+@media (max-width: 880px) {
+  .site-header { align-items: flex-start; }
+  .nav-toggle { display: inline-flex; border: 1px solid var(--ap-line); border-radius: 12px; background: transparent; color: var(--ap-text); padding: 0.5rem 0.7rem; }
+  .site-nav { display: none; position: absolute; left: 1.25rem; right: 1.25rem; top: 4.7rem; flex-direction: column; align-items: flex-start; background: rgba(11,12,13,0.96); border: 1px solid var(--ap-line); border-radius: var(--ap-radius-soft); padding: 1rem; }
+  .site-nav.is-open { display: flex; }
+  .split, .atlas-preview, .site-footer { grid-template-columns: 1fr; }
+  .card-grid.three, .card-grid.two { grid-template-columns: 1fr; }
+  .hero { min-height: auto; padding-top: 4rem; }
+  .atlas-map { min-height: 280px; }
+}

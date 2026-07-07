@@ -1,0 +1,96 @@
+/*
+  Asymmetric Precision v2 — Launch Candidate Layer
+  Principle: A launch is not a finish line. A launch is a declared standard.
+*/
+
+:root {
+  --ap-launch-border: rgba(255, 255, 255, 0.16);
+  --ap-launch-surface: rgba(255, 255, 255, 0.045);
+  --ap-launch-surface-strong: rgba(255, 255, 255, 0.075);
+  --ap-launch-text-muted: rgba(255, 255, 255, 0.72);
+  --ap-launch-radius: 18px;
+}
+
+.ap-launch-status {
+  border: 1px solid var(--ap-launch-border);
+  border-radius: var(--ap-launch-radius);
+  background:
+    linear-gradient(135deg, var(--ap-launch-surface), rgba(255, 255, 255, 0.018)),
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.07), transparent 34rem);
+  padding: clamp(1rem, 2vw, 1.35rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.ap-launch-status::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(120deg, rgba(0,0,0,.8), transparent 65%);
+  pointer-events: none;
+}
+
+.ap-launch-status > * {
+  position: relative;
+  z-index: 1;
+}
+
+.ap-launch-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--ap-launch-text-muted);
+}
+
+.ap-launch-kicker::before {
+  content: "";
+  width: .55rem;
+  height: .55rem;
+  border-radius: 999px;
+  background: currentColor;
+  box-shadow: 0 0 0 .28rem rgba(255,255,255,.06);
+}
+
+.ap-launch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ap-launch-check {
+  border: 1px solid var(--ap-launch-border);
+  border-radius: 14px;
+  background: var(--ap-launch-surface);
+  padding: 1rem;
+}
+
+.ap-launch-check h3 {
+  margin-top: 0;
+  margin-bottom: .35rem;
+}
+
+.ap-launch-check p {
+  margin-bottom: 0;
+  color: var(--ap-launch-text-muted);
+}
+
+.ap-release-note {
+  border-left: 3px solid currentColor;
+  padding: .85rem 1rem;
+  background: var(--ap-launch-surface);
+  border-radius: 0 12px 12px 0;
+}
+
+@media (max-width: 720px) {
+  .ap-launch-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,168 @@
+/* AP Availability System
+   Sprint 28 Principle: A missing node should still guide the learner. */
+
+.ap-availability-surface {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 1rem auto 2rem;
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.78fr) minmax(0, 1.42fr);
+  gap: clamp(1rem, 2vw, 1.5rem);
+  padding: clamp(1.1rem, 2.2vw, 1.6rem);
+  border: 1px solid rgba(200, 164, 93, 0.34);
+  border-radius: var(--ap-radius-lg, 1.25rem);
+  background:
+    linear-gradient(135deg, rgba(200, 164, 93, 0.13), rgba(126, 228, 255, 0.045)),
+    rgba(14, 17, 22, 0.86);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  position: relative;
+}
+
+.ap-availability-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(126, 228, 255, 0.12), transparent 25%),
+    radial-gradient(circle at 94% 0%, rgba(160, 255, 203, 0.12), transparent 18rem);
+  opacity: 0.55;
+}
+
+.ap-availability-surface > * {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+
+.ap-availability-status-column h2 {
+  margin: 0.2rem 0 1rem;
+  max-width: 18ch;
+}
+
+.ap-availability-meta,
+.ap-availability-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+.ap-availability-meta span,
+.ap-availability-badge {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0.35rem 0.62rem;
+  border: 1px solid rgba(242, 238, 230, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.045);
+  color: var(--ap-text, #f2eee6);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.ap-availability-guidance {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.ap-availability-guidance p {
+  margin: 0;
+  color: var(--ap-muted, #b7b0a6);
+  overflow-wrap: anywhere;
+}
+
+.ap-availability-guidance strong {
+  color: var(--ap-text, #f2eee6);
+}
+
+.ap-availability-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.55rem;
+  max-width: 100%;
+  padding: 0.72rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(126, 228, 255, 0.34);
+  background: rgba(126, 228, 255, 0.08);
+  color: var(--ap-text, #f2eee6);
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.ap-availability-action:hover,
+.ap-availability-action:focus-visible {
+  border-color: rgba(200, 164, 93, 0.8);
+  background: rgba(200, 164, 93, 0.16);
+}
+
+.ap-availability-card-note {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.8rem 0;
+  padding: 0.75rem;
+  border: 1px solid rgba(200, 164, 93, 0.22);
+  border-radius: 0.9rem;
+  background: rgba(200, 164, 93, 0.07);
+  min-width: 0;
+}
+
+.ap-availability-card-note span {
+  color: var(--ap-text, #f2eee6);
+  font-weight: 800;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.ap-availability-card-note p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ap-muted, #b7b0a6);
+  overflow-wrap: anywhere;
+}
+
+.ap-availability-planned .ap-availability-badge,
+[data-ap-availability="planned"] .ap-availability-badge {
+  border-color: rgba(200, 164, 93, 0.44);
+  background: rgba(200, 164, 93, 0.12);
+}
+
+.ap-availability-in-development .ap-availability-badge,
+[data-ap-availability="in-development"] .ap-availability-badge {
+  border-color: rgba(126, 228, 255, 0.44);
+  background: rgba(126, 228, 255, 0.1);
+}
+
+.ap-availability-final-edits .ap-availability-badge,
+[data-ap-availability="final-edits"] .ap-availability-badge {
+  border-color: rgba(160, 255, 203, 0.42);
+  background: rgba(160, 255, 203, 0.09);
+}
+
+[data-ap-availability] {
+  min-width: 0;
+}
+
+@media (max-width: 780px) {
+  .ap-availability-surface {
+    grid-template-columns: 1fr;
+    width: min(100% - 1rem, 100%);
+    margin-top: 0.75rem;
+  }
+
+  .ap-availability-status-column h2 {
+    max-width: none;
+  }
+
+  .ap-availability-action {
+    width: 100%;
+  }
+}

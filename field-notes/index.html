@@ -1,74 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Field Notes | Asymmetric Precision</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="icon" type="image/png" href="../assets/favicon.png"/>
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-            data-cf-beacon='{"token": "2235b039ebf949b3a2e63066d4691d12"}'></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Field Notes | Asymmetric Precision</title>
+  <meta name="description" content="Field Notes from Asymmetric Precision: grounded observations from real systems, organizations, operations, and lived complexity." />
+  <link rel="stylesheet" href="../assets/system/ap-system.css" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
 </head>
-<body>
-<header class="site-header"><a class="brand" href="../index.html">
-    <img src="../assets/logo-mark.png" alt="Asymmetric Precision Logo"/>
-    <span>Asymmetric Precision</span>
-</a>
+<body data-ap-page="field-notes" data-ap-layer="observations">
+  <header class="site-header">
+    <a class="brand" href="../index.html">
+      <img src="../assets/logo-mark.png" alt="Asymmetric Precision Logo" />
+      <span>Asymmetric Precision</span>
+    </a>
     <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    <nav class="site-nav"><a href="../books/index.html">Books</a><a href="../essays/index.html">Essays</a><a
-            href="../frameworks/index.html">Frameworks</a><a href="../field-notes/index.html">Field Notes</a><a
-            href="../projects/index.html">Projects</a><a href="../about/index.html">About</a><a
-            href="../contact/index.html">Contact</a></nav>
-</header>
-<main>
-    <section class="page-hero"><p class="eyebrow">Operational reflections</p>
-        <h1>Field Notes</h1>
-        <p class="page-intro">Short observations from the edge of complexity. Systems rarely announce themselves
-            cleanly. Field notes are where the signal gets captured before it becomes doctrine.</p></section>
-    <section class="list-stack">
-        <article class="list-item">
-            <h2>The Cost of Coordination</h2>
-            <p>Every coordination mechanism solves one problem by introducing another.
-          <br>
-          <br>The more people involved in a decision, the more coordination becomes
-          <br>necessary.
-          <br>
-          <br>The more coordination becomes necessary, the slower decisions become.
-          <br>
-          <br>Organizations often assume coordination is free.
-          <br>
-          <br>It is not.
-          <br>
-          <br>Coordination is one of the most expensive activities a system can perform.
-          <br></p>
-          </article>
-        <article class="list-item"><h2>Normal is not always healthy.</h2>
-            <p>Many systems stabilize around dysfunction because the dysfunction becomes familiar, funded, defended, or
-                invisible.</p></article>
-        <article class="list-item"><h2>Pressure reveals architecture.</h2>
-            <p>When the system is stressed, the real decision paths, dependencies, incentives, and control points become
-                harder to hide.</p></article>
-        <article class="list-item"><h2>Behavior follows constraints.</h2>
-            <p>People and organizations often adapt to the system they are inside, not the system leaders describe on
-                paper.</p></article>
+    <nav class="site-nav">
+      <a href="../start-here/index.html">Start Here</a>
+      <a href="../philosophy/index.html">Philosophy</a>
+      <a href="../atlas/index.html">Atlas</a>
+      <a href="../journeys/index.html">Journeys</a>
+      <a href="../books/index.html">Books</a>
+      <a href="../essays/index.html">Essays</a>
+      <a href="../frameworks/index.html">Frameworks</a>
+      <a href="../laboratories/index.html">Laboratories</a>
+      <a class="active" href="../field-notes/index.html">Field Notes</a>
+      <a href="../about/index.html">About</a>
+      <a href="../contact/index.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero ap-field-hero">
+      <p class="eyebrow">Field Notes</p>
+      <h1>A field note is not a post. A field note is an observation.</h1>
+      <p class="page-intro">Field Notes capture signal from lived systems: short, grounded observations about behavior, incentives, constraints, leadership, architecture, failure, trust, and organizational reality.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#observation-surface">Read Observations</a>
+        <a class="button secondary" href="../atlas/index.html">View in Atlas</a>
+      </div>
     </section>
-</main>
-<footer class="site-footer">
 
+    <section class="section split ap-field-intro">
+      <div>
+        <p class="section-label">Observation Surface</p>
+        <h2>Field Notes preserve what the system revealed.</h2>
+      </div>
+      <p>Essays develop lenses. Frameworks become operating models. Books form curriculum paths. Field Notes capture the smaller moments where a system briefly becomes visible.</p>
+    </section>
+
+    <section class="ap-observation-principles" aria-labelledby="field-note-principles">
+      <div class="section-heading">
+        <p class="section-label">How to read Field Notes</p>
+        <h2 id="field-note-principles">Observe before explaining.</h2>
+        <p>Field Notes are intentionally compact. Their job is not to settle an argument. Their job is to preserve a useful signal and connect it to the larger AP knowledge system.</p>
+      </div>
+      <div class="card-grid three">
+        <article class="card ap-observation-card">
+          <p class="card-label">Signal</p>
+          <h3>What happened?</h3>
+          <p>Each note begins with a concrete pattern, tension, behavior, or failure mode observed in a real system.</p>
+        </article>
+        <article class="card ap-observation-card">
+          <p class="card-label">Interpretation</p>
+          <h3>What might it reveal?</h3>
+          <p>The note offers a disciplined interpretation without pretending the observation explains everything.</p>
+        </article>
+        <article class="card ap-observation-card">
+          <p class="card-label">Connection</p>
+          <h3>Where does it connect?</h3>
+          <p>Each note points back into domains, lenses, frameworks, books, journeys, and Atlas relationships.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="observation-surface" class="ap-field-controls" aria-label="Field Note filters">
+      <label>
+        <span>Filter by domain</span>
+        <select id="field-domain-filter">
+          <option value="all">All domains</option>
+        </select>
+      </label>
+      <label>
+        <span>Filter by signal type</span>
+        <select id="field-signal-filter">
+          <option value="all">All signal types</option>
+        </select>
+      </label>
+      <label>
+        <span>Search observations</span>
+        <input id="field-search" type="search" placeholder="Trust, drift, incentives, failure..." />
+      </label>
+    </section>
+
+    <section id="field-note-grid" class="ap-field-grid" aria-live="polite">
+      <article class="ap-field-loading">Loading observations...</article>
+    </section>
+
+    <section class="ap-field-capture" aria-labelledby="capture-title">
+      <p class="section-label">Practice</p>
+      <h2 id="capture-title">Capture your own observation.</h2>
+      <p>What did a system reveal to you recently? Capture the signal before it gets explained away.</p>
+      <form id="field-observation-form" class="ap-field-form">
+        <label>
+          <span>Observation</span>
+          <textarea name="observation" rows="4" placeholder="I noticed that..."></textarea>
+        </label>
+        <label>
+          <span>Possible system signal</span>
+          <input name="signal" type="text" placeholder="Constraint, incentive, feedback loop, trust gap..." />
+        </label>
+        <button class="button primary" type="submit">Save Locally</button>
+      </form>
+      <div id="field-observation-log" class="ap-field-local-log" aria-live="polite"></div>
+    </section>
+
+    <section class="ap-connection-surface">
+      <p class="section-label">Where this connects</p>
+      <h2>Observations become stronger when they connect.</h2>
+      <p>Use the Atlas to connect Field Notes to principles, frameworks, essays, laboratories, and journeys. The observation is the entry point. The relationship is where learning compounds.</p>
+      <div class="hero-actions">
+        <a class="button secondary" href="../atlas/index.html">Explore the Atlas</a>
+        <a class="button secondary" href="../learning/index.html">Open the Learning System</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div>
-        <img class="footer-logo" src="../assets/logo-mark.png" alt="Asymmetric Precision Logo">
-
-        <p class="footer-copyright">
-            © 2026 Tommy Burke. All rights reserved.
-        </p>
+      <img class="footer-logo" src="../assets/logo-mark.png" alt="Asymmetric Precision Logo" />
+      <p class="footer-copyright">© 2026 Tommy Burke. All rights reserved.</p>
     </div>
+    <p class="footer-description">Asymmetric Precision™ is a school of applied systems thinking focused on trust, complexity, architecture, leadership, and modern organizations.</p>
+  </footer>
 
-    <p class="footer-description">
-        Asymmetric Precision™ is a systems-thinking and operational architecture platform focused on trust, complexity,
-        and modern enterprise systems.
-    </p>
-
-</footer>
-<script src="../assets/js/main.js"></script>
+  <script src="../assets/system/ap-system.js"></script>
+  <script src="../assets/system/ap-field-notes.js"></script>
 </body>
 </html>

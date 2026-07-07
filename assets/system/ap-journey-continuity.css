@@ -1,0 +1,94 @@
+/* AP Sprint 24 — Journey Continuity
+   Principle: A path should continue from wherever understanding begins.
+*/
+
+.ap-journey-continuity,
+.ap-path-continuation {
+  max-width: min(1120px, calc(100% - 2rem));
+  margin: 1.25rem auto;
+  border: 1px solid rgba(200, 164, 93, 0.32);
+  border-radius: 1.25rem;
+  background:
+    linear-gradient(135deg, rgba(200, 164, 93, 0.11), rgba(126, 228, 255, 0.055)),
+    rgba(15, 18, 22, 0.92);
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.03), 0 18px 45px rgba(0,0,0,0.24);
+}
+
+.ap-journey-continuity {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.1rem;
+  overflow: hidden;
+}
+
+.ap-journey-continuity__signal,
+.ap-path-continuation .section-label {
+  grid-column: 1 / -1;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ap-accent, #c8a45d);
+}
+
+.ap-journey-continuity__body {
+  min-width: 0;
+}
+
+.ap-journey-continuity__title,
+.ap-journey-continuity__step {
+  margin: 0;
+}
+
+.ap-journey-continuity__title {
+  font-weight: 750;
+  color: var(--ap-text, #f2eee6);
+}
+
+.ap-journey-continuity__step,
+.ap-journey-continuity__complete {
+  color: var(--ap-muted, #b8b0a3);
+  font-size: 0.95rem;
+}
+
+.ap-journey-continuity__next {
+  display: inline-flex;
+  margin-top: 0.65rem;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.ap-journey-continuity__clear {
+  align-self: center;
+  white-space: nowrap;
+}
+
+.ap-path-continuation {
+  padding: clamp(1.2rem, 2.5vw, 2rem);
+}
+
+.ap-path-continuation h2,
+.ap-path-continuation p {
+  max-width: 72ch;
+}
+
+.ap-path-continuation__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 720px) {
+  .ap-journey-continuity {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-journey-continuity__clear,
+  .ap-path-continuation__actions .button,
+  .ap-path-continuation__actions a {
+    width: 100%;
+    justify-content: center;
+  }
+}

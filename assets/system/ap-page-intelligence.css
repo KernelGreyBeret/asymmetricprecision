@@ -1,0 +1,249 @@
+/* AP Page Intelligence
+   Sprint 26 — Page Intelligence Pass
+   Principle: Every page should know what it is, where it sits, and what becomes clearer next.
+*/
+
+.ap-page-context-strip,
+.ap-page-companions,
+.ap-book-availability-intelligent {
+  max-width: min(1120px, calc(100vw - 2rem));
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+.ap-page-context-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) repeat(3, minmax(0, 1fr));
+  gap: .85rem;
+  padding: .9rem;
+  margin-top: clamp(1rem, 2vw, 1.75rem);
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+  border: 1px solid rgba(200, 164, 93, .26);
+  border-radius: 1.1rem;
+  background:
+    linear-gradient(135deg, rgba(200, 164, 93, .08), rgba(126, 228, 255, .045)),
+    rgba(12, 14, 18, .88);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, .22);
+  overflow: hidden;
+}
+
+.ap-context-cell {
+  min-width: 0;
+  padding: .85rem;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: .85rem;
+  background: rgba(255, 255, 255, .035);
+}
+
+.ap-context-cell-primary {
+  background: rgba(200, 164, 93, .075);
+}
+
+.ap-context-label {
+  display: block;
+  margin-bottom: .35rem;
+  color: var(--ap-accent, #c8a45d);
+  font-size: .68rem;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.ap-context-cell strong,
+.ap-context-cell small {
+  display: block;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.ap-context-cell strong {
+  color: var(--ap-text, #f2eee6);
+  font-size: .95rem;
+}
+
+.ap-context-cell small {
+  margin-top: .2rem;
+  color: var(--ap-muted, #a8a8a8);
+  line-height: 1.45;
+}
+
+.ap-context-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  min-width: 0;
+}
+
+.ap-context-chips span {
+  max-width: 100%;
+  padding: .28rem .55rem;
+  border: 1px solid rgba(126, 228, 255, .25);
+  border-radius: 999px;
+  color: var(--ap-text, #f2eee6);
+  background: rgba(126, 228, 255, .06);
+  font-size: .74rem;
+  overflow-wrap: anywhere;
+}
+
+.ap-context-actions .ap-action {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+}
+
+.ap-page-companions {
+  margin-top: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1rem, 3vw, 1.6rem);
+  border: 1px solid rgba(126, 228, 255, .18);
+  border-radius: 1.25rem;
+  background:
+    radial-gradient(circle at 6% 0%, rgba(126, 228, 255, .07), transparent 20rem),
+    rgba(12, 14, 18, .82);
+  overflow: hidden;
+}
+
+.ap-page-companions-intro {
+  max-width: 760px;
+  margin-bottom: 1rem;
+}
+
+.ap-page-companions h2,
+.ap-page-companions h3,
+.ap-page-companions p {
+  overflow-wrap: anywhere;
+}
+
+.ap-companion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: .85rem;
+  min-width: 0;
+}
+
+.ap-companion-group {
+  min-width: 0;
+  padding: .9rem;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .035);
+}
+
+.ap-companion-group h3 {
+  margin: 0 0 .75rem;
+  color: var(--ap-accent, #c8a45d);
+  font-size: .9rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.ap-companion-list {
+  display: grid;
+  gap: .55rem;
+  min-width: 0;
+}
+
+.ap-companion-link {
+  display: grid;
+  gap: .18rem;
+  min-width: 0;
+  padding: .72rem;
+  border: 1px solid rgba(126, 228, 255, .14);
+  border-radius: .8rem;
+  color: inherit;
+  text-decoration: none;
+  background: rgba(0, 0, 0, .16);
+  transition: border-color .18s ease, transform .18s ease, background .18s ease;
+}
+
+.ap-companion-link:hover,
+.ap-companion-link:focus-visible {
+  border-color: rgba(200, 164, 93, .55);
+  background: rgba(200, 164, 93, .08);
+  transform: translateY(-1px);
+}
+
+.ap-companion-link span {
+  color: var(--ap-accent-2, #7ee4ff);
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.ap-companion-link strong,
+.ap-companion-link small {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.ap-companion-link strong {
+  color: var(--ap-text, #f2eee6);
+  line-height: 1.25;
+}
+
+.ap-companion-link small {
+  color: var(--ap-muted, #a8a8a8);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ap-companion-journey {
+  border-color: rgba(200, 164, 93, .25);
+  background: linear-gradient(135deg, rgba(200, 164, 93, .07), rgba(255, 255, 255, .025));
+}
+
+.ap-book-availability-intelligent {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, .8fr);
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ap-book-availability-intelligent > * {
+  min-width: 0;
+}
+
+.ap-book-availability-actions {
+  display: grid;
+  gap: .55rem;
+  align-content: center;
+  min-width: 0;
+}
+
+.ap-book-availability-actions .ap-action {
+  width: 100%;
+  white-space: normal;
+  text-align: center;
+  justify-content: center;
+}
+
+.ap-page-intelligence-ready .ap-page-system-surface {
+  max-width: min(1120px, calc(100vw - 2rem));
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .ap-page-context-strip,
+  .ap-book-availability-intelligent {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .ap-page-context-strip,
+  .ap-page-companions,
+  .ap-book-availability-intelligent {
+    max-width: calc(100vw - 1rem);
+    border-radius: .9rem;
+  }
+
+  .ap-context-cell,
+  .ap-companion-group,
+  .ap-companion-link {
+    padding: .75rem;
+  }
+}

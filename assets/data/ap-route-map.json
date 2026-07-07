@@ -1,0 +1,34 @@
+{
+  "version": "0.1",
+  "name": "AP Route Map",
+  "principle": "A path should continue from wherever understanding begins.",
+  "purpose": "Describe how major AP pages participate in journeys, Atlas focus states, and continuity surfaces.",
+  "routes": [
+    {
+      "path": "philosophy/index.html",
+      "node": "philosophy",
+      "type": "philosophy",
+      "primaryJourneyRoles": ["journey-leader", "journey-newcomer"],
+      "atlasProjection": "focused"
+    },
+    {
+      "path": "atlas/index.html",
+      "node": "concept-atlas",
+      "type": "atlas",
+      "atlasProjection": "system"
+    },
+    {
+      "path": "learning/index.html",
+      "node": "concept-understanding",
+      "type": "learning",
+      "atlasProjection": "focused"
+    },
+    {
+      "path": "laboratories/index.html",
+      "node": "laboratories",
+      "type": "laboratory-index",
+      "primaryJourneyRoles": ["journey-builder", "journey-architect"],
+      "atlasProjection": "domain"
+    }
+  ]
+}

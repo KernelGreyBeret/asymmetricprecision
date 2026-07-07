@@ -1,0 +1,135 @@
+{
+  "version": "2.0-sprint28",
+  "name": "AP Availability Map",
+  "principle": "A missing node should still guide the learner.",
+  "contactEmail": "tommy@asymmetricprecision.com",
+  "defaults": {
+    "available": {
+      "label": "Available",
+      "tone": "available",
+      "summary": "This resource is available now. Use it as an active waypoint in the AP system."
+    },
+    "final-edits": {
+      "label": "Final Edits",
+      "tone": "near-release",
+      "summary": "This resource is close to release. Until it is published, AP should route the learner through adjacent essays, frameworks, and Atlas views."
+    },
+    "in-development": {
+      "label": "In Development",
+      "tone": "in-development",
+      "summary": "This resource is being built. It should be treated as a curriculum waypoint with useful substitutes, not a dead end."
+    },
+    "planned": {
+      "label": "Planned",
+      "tone": "planned",
+      "summary": "This resource is planned. AP should explain why it matters and offer a meaningful path forward."
+    }
+  },
+  "items": [
+    {
+      "id": "book-operator-guide",
+      "title": "The Operator’s Guide to Complex Systems",
+      "type": "book",
+      "status": "final-edits",
+      "url": "books/operator-guide-complex-systems.html",
+      "atlasFocus": "book-operator-guide",
+      "whyItMatters": "This book establishes the field guide foundation for seeing behavior, constraints, pressure, adaptation, and failure inside real systems.",
+      "currentAlternative": "Begin with the Philosophy page and the Systems journey, then explore essays connected to hidden systems and constraints.",
+      "actions": [
+        { "label": "View in Atlas", "type": "atlas", "focus": "book-operator-guide" },
+        { "label": "Start with the Philosophy", "type": "link", "url": "philosophy/index.html" },
+        { "label": "Ask about release", "type": "email", "subject": "The Operator’s Guide to Complex Systems" }
+      ]
+    },
+    {
+      "id": "book-systems-thinking-operators",
+      "title": "Systems Thinking for Operators",
+      "type": "book",
+      "status": "in-development",
+      "url": "books/systems-thinking-for-operators.html",
+      "atlasFocus": "book-systems-thinking-operators",
+      "whyItMatters": "This book turns systems thinking into an operational discipline for people making decisions under pressure.",
+      "currentAlternative": "Use the Leader or Architect journey and the essays on failure, constraints, and evidence until the full curriculum path is available.",
+      "actions": [
+        { "label": "Continue through Journeys", "type": "link", "url": "journeys/index.html" },
+        { "label": "View in Atlas", "type": "atlas", "focus": "book-systems-thinking-operators" },
+        { "label": "Ask about this book", "type": "email", "subject": "Systems Thinking for Operators" }
+      ]
+    },
+    {
+      "id": "book-trust-constraints-control",
+      "title": "Trust, Constraints, and Control",
+      "type": "book",
+      "status": "planned",
+      "url": "books/trust-constraints-control.html",
+      "atlasFocus": "book-trust-constraints-control",
+      "whyItMatters": "This book will explain the relationship between trust, constraint design, authority, and system behavior.",
+      "currentAlternative": "Explore the Trust, Evidence, and Design for Outcomes principles while this node is still planned.",
+      "actions": [
+        { "label": "Explore Trust in the Atlas", "type": "atlas", "focus": "concept-trust" },
+        { "label": "Read the Frameworks", "type": "link", "url": "frameworks/index.html" },
+        { "label": "Ask for updates", "type": "email", "subject": "Trust, Constraints, and Control" }
+      ]
+    },
+    {
+      "id": "book-policy-engine-mindset",
+      "title": "The Policy Engine Mindset",
+      "type": "book",
+      "status": "planned",
+      "url": "books/policy-engine-mindset.html",
+      "atlasFocus": "book-policy-engine-mindset",
+      "whyItMatters": "This book will connect decisions, policy, signals, obligations, and enforcement into a practical operating mindset.",
+      "currentAlternative": "Use the Architecture journey and the Zero Trust Outcome Framework as the active substitute until this book is written.",
+      "actions": [
+        { "label": "Open Architecture Journey", "type": "link", "url": "journeys/index.html?journey=journey-architect" },
+        { "label": "View in Atlas", "type": "atlas", "focus": "book-policy-engine-mindset" },
+        { "label": "Ask for updates", "type": "email", "subject": "The Policy Engine Mindset" }
+      ]
+    },
+    {
+      "id": "book-zero-trust-explained",
+      "title": "Zero Trust Actually Explained",
+      "type": "book",
+      "status": "planned",
+      "url": "books/zero-trust-actually-explained.html",
+      "atlasFocus": "book-zero-trust-explained",
+      "whyItMatters": "This book will explain Zero Trust as architecture and decision discipline rather than product stack or compliance slogan.",
+      "currentAlternative": "Read the Zero Trust essays and explore the Zero Trust Outcome Framework while the book remains planned.",
+      "actions": [
+        { "label": "Explore Zero Trust in Atlas", "type": "atlas", "focus": "concept-zero-trust" },
+        { "label": "Read related essays", "type": "link", "url": "essays/index.html?domain=Zero%20Trust" },
+        { "label": "Ask for updates", "type": "email", "subject": "Zero Trust Actually Explained" }
+      ]
+    },
+    {
+      "id": "book-asymmetric-precision",
+      "title": "Asymmetric Precision",
+      "type": "book",
+      "status": "planned",
+      "url": "books/asymmetric-precision.html",
+      "atlasFocus": "book-asymmetric-precision",
+      "whyItMatters": "This book will name the AP operating philosophy directly: how to apply precise thinking against complex systems without losing humanity.",
+      "currentAlternative": "Begin with the Oath, Philosophy, and Manifesto-derived principles that already define the school of thought.",
+      "actions": [
+        { "label": "Read the Philosophy", "type": "link", "url": "philosophy/index.html" },
+        { "label": "View AP Core in Atlas", "type": "atlas", "focus": "ap" },
+        { "label": "Ask for updates", "type": "email", "subject": "Asymmetric Precision" }
+      ]
+    },
+    {
+      "id": "book-field-notes",
+      "title": "Field Notes from a Systems Architect",
+      "type": "book",
+      "status": "planned",
+      "url": "books/field-notes-systems-architect.html",
+      "atlasFocus": "book-field-notes",
+      "whyItMatters": "This book will collect observations from lived complexity and turn them into reusable signal for leaders, architects, and builders.",
+      "currentAlternative": "Use the Field Notes section as the live observation stream until the book becomes a collected curriculum path.",
+      "actions": [
+        { "label": "Read Field Notes", "type": "link", "url": "field-notes/index.html" },
+        { "label": "View in Atlas", "type": "atlas", "focus": "book-field-notes" },
+        { "label": "Ask for updates", "type": "email", "subject": "Field Notes from a Systems Architect" }
+      ]
+    }
+  ]
+}

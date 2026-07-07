@@ -1,0 +1,156 @@
+/* AP Boundaries
+   Principle: every surface must contain its own signal. */
+
+.ap-framework-grid,
+.ap-essay-surface,
+.ap-book-grid,
+.ap-field-note-grid,
+.ap-laboratory-grid,
+.ap-journey-grid,
+.ap-content-grid,
+.card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  align-items: stretch;
+}
+
+.ap-framework-card,
+.ap-essay-card,
+.ap-book-card,
+.ap-field-note-card,
+.ap-laboratory-card,
+.ap-journey-card,
+.ap-content-card,
+.card,
+.ap-panel,
+.ap-atlas-panel,
+.ap-readable-surface,
+.ap-connection-card {
+  min-width: 0;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.ap-framework-card > *,
+.ap-essay-card > *,
+.ap-book-card > *,
+.ap-field-note-card > *,
+.ap-laboratory-card > *,
+.ap-journey-card > *,
+.ap-content-card > *,
+.card > *,
+.ap-panel > * {
+  min-width: 0;
+}
+
+.ap-framework-card h2,
+.ap-book-card h2,
+.ap-essay-card h2,
+.ap-laboratory-card h2,
+.ap-field-note-card h2,
+.ap-journey-card h2,
+.ap-content-card h2 {
+  font-size: clamp(1.85rem, 3.2vw, 3.35rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  overflow-wrap: anywhere;
+}
+
+.ap-framework-card p,
+.ap-framework-card li,
+.ap-framework-card span,
+.ap-framework-card strong,
+.ap-framework-card small {
+  max-width: 100%;
+}
+
+.ap-framework-domains,
+.ap-framework-connections,
+.ap-book-domains,
+.ap-essay-domains,
+.ap-journey-domains {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.ap-framework-domains span,
+.ap-framework-connections span,
+.ap-book-domains span,
+.ap-essay-domains span,
+.ap-journey-domain {
+  max-width: 100%;
+  white-space: normal;
+}
+
+.ap-atlas-interface {
+  grid-template-columns: minmax(240px, 0.85fr) minmax(340px, 1.25fr) minmax(260px, 0.9fr);
+}
+
+.ap-atlas-list-item,
+.ap-connection-actions button,
+.ap-atlas-node {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1040px) {
+  .ap-atlas-interface {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-atlas-canvas {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 760px) {
+  .ap-framework-card h2,
+  .ap-book-card h2,
+  .ap-essay-card h2,
+  .ap-laboratory-card h2,
+  .ap-field-note-card h2,
+  .ap-journey-card h2,
+  .ap-content-card h2 {
+    font-size: clamp(1.65rem, 10vw, 2.65rem);
+  }
+
+  .ap-framework-grid,
+  .ap-essay-surface,
+  .ap-book-grid,
+  .ap-field-note-grid,
+  .ap-laboratory-grid,
+  .ap-journey-grid,
+  .ap-content-grid,
+  .card-grid {
+    width: min(100%, calc(100% - 1rem));
+  }
+}
+
+/* Sprint 19: framework cards must behave like bounded operating models, not oversized posters. */
+.ap-framework-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+}
+
+.ap-framework-card {
+  contain: layout paint;
+  align-content: start;
+}
+
+.ap-framework-card h2 {
+  font-size: clamp(1.85rem, 2.35vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.ap-framework-card p,
+.ap-framework-card li {
+  overflow-wrap: break-word;
+}
+
+.ap-framework-domains,
+.ap-framework-connections {
+  overflow: hidden;
+}

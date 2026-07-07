@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0-rc1",
+  "name": "Asymmetric Precision v2 Launch Candidate",
+  "principle": "A launch is not a finish line. A launch is a declared standard.",
+  "status": "release-candidate",
+  "systems": [
+    "Identity System",
+    "AP System Layer",
+    "Atlas",
+    "Content Graph",
+    "Learning System",
+    "Journeys",
+    "Laboratories",
+    "Essay Experience",
+    "Framework Experience",
+    "Book Curriculum",
+    "Field Notes",
+    "HSVL",
+    "Mobile and Accessibility"
+  ],
+  "launchQuestions": [
+    "Does the site communicate AP's purpose within seconds?",
+    "Does every major page explain what it is, why it matters, how to apply it, and where to go next?",
+    "Do the systems connect instead of merely coexist?",
+    "Does the experience increase understanding instead of chasing engagement?",
+    "Is the site ready to become the public standard for AP v2?"
+  ]
+}

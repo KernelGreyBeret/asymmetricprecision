@@ -1,0 +1,205 @@
+/* AP Books System
+   Principle: A book is not a product. A book is a curriculum path. */
+
+.ap-books-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.ap-books-hero::after {
+  content: "CURRICULUM / PATH / SYNTHESIS";
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1rem;
+  opacity: 0.22;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.ap-curriculum-intro,
+.ap-curriculum-map,
+.ap-book-controls,
+.ap-book-grid,
+.ap-book-metadata-surface {
+  margin-inline: auto;
+  max-width: 1120px;
+}
+
+.ap-curriculum-map {
+  padding: 3rem 1.25rem;
+}
+
+.ap-curriculum-path {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.ap-curriculum-stage {
+  border: 1px solid var(--ap-border, rgba(255,255,255,0.14));
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background: var(--ap-surface, rgba(255,255,255,0.045));
+  position: relative;
+}
+
+.ap-curriculum-stage::before {
+  content: attr(data-stage-index);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0.36;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+}
+
+.ap-curriculum-stage h3,
+.ap-book-card h3 {
+  margin-top: 0;
+}
+
+.ap-curriculum-stage-books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+}
+
+.ap-book-pill {
+  border: 1px solid var(--ap-border, rgba(255,255,255,0.14));
+  border-radius: 999px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.82rem;
+  background: rgba(255,255,255,0.035);
+}
+
+.ap-book-controls {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 1rem 1.25rem 2rem;
+}
+
+.ap-book-controls label {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.ap-book-controls span {
+  font-size: 0.78rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  opacity: 0.78;
+}
+
+.ap-book-controls select,
+.ap-book-controls input {
+  width: 100%;
+  border: 1px solid var(--ap-border, rgba(255,255,255,0.14));
+  border-radius: 0.8rem;
+  padding: 0.7rem 0.8rem;
+  background: var(--ap-surface, rgba(255,255,255,0.045));
+  color: inherit;
+}
+
+.ap-book-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 0 1.25rem 3rem;
+}
+
+.ap-book-card {
+  display: grid;
+  gap: 0.9rem;
+  border: 1px solid var(--ap-border, rgba(255,255,255,0.14));
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.055), rgba(255,255,255,0.025));
+}
+
+.ap-book-card header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ap-book-stage,
+.ap-book-status,
+.ap-book-domain {
+  display: inline-flex;
+  width: fit-content;
+  border: 1px solid var(--ap-border, rgba(255,255,255,0.14));
+  border-radius: 999px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.86;
+}
+
+.ap-book-outcome {
+  border-left: 3px solid var(--ap-accent, currentColor);
+  padding-left: 0.8rem;
+  opacity: 0.92;
+}
+
+.ap-book-meta-row,
+.ap-book-connections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.ap-book-connection {
+  font-size: 0.78rem;
+  opacity: 0.75;
+}
+
+.ap-book-metadata-surface {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 2rem 1.25rem;
+}
+
+.ap-book-metadata-surface article {
+  border: 1px solid var(--ap-border, rgba(255,255,255,0.14));
+  border-radius: 1rem;
+  padding: 1rem;
+  background: var(--ap-surface, rgba(255,255,255,0.045));
+}
+
+.ap-book-metadata-surface strong,
+.ap-book-metadata-surface span {
+  display: block;
+}
+
+.ap-book-metadata-surface strong {
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.ap-book-loading,
+.ap-book-empty {
+  border: 1px dashed var(--ap-border, rgba(255,255,255,0.18));
+  border-radius: 1rem;
+  padding: 1rem;
+  opacity: 0.78;
+}
+
+@media (max-width: 800px) {
+  .ap-book-controls,
+  .ap-book-grid,
+  .ap-book-metadata-surface {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-book-card header {
+    display: grid;
+  }
+}

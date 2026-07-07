@@ -1,0 +1,149 @@
+/* AP Field Notes System
+   A field note is not a post. A field note is an observation. */
+
+.ap-field-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.ap-field-hero::after {
+  content: "OBSERVATION SURFACE";
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  opacity: 0.42;
+}
+
+.ap-observation-principles,
+.ap-field-capture {
+  margin: 4rem auto;
+  width: min(1120px, calc(100% - 2rem));
+}
+
+.ap-field-controls {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 3rem auto 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.ap-field-controls label,
+.ap-field-form label {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.ap-field-controls span,
+.ap-field-form span {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.ap-field-controls select,
+.ap-field-controls input,
+.ap-field-form input,
+.ap-field-form textarea {
+  width: 100%;
+  border: 1px solid var(--ap-line, rgba(255,255,255,0.16));
+  border-radius: 0.85rem;
+  background: var(--ap-panel, rgba(255,255,255,0.045));
+  color: inherit;
+  padding: 0.85rem 0.95rem;
+  font: inherit;
+}
+
+.ap-field-grid {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.ap-field-note {
+  border: 1px solid var(--ap-line, rgba(255,255,255,0.16));
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+  padding: 1.15rem;
+  min-height: 100%;
+  position: relative;
+}
+
+.ap-field-note::before {
+  content: "";
+  position: absolute;
+  inset: 0.8rem auto auto 0.8rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0.4;
+}
+
+.ap-field-note h3 {
+  margin-top: 0.75rem;
+}
+
+.ap-field-meta,
+.ap-field-domains,
+.ap-field-connections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+}
+
+.ap-field-pill {
+  border: 1px solid var(--ap-line, rgba(255,255,255,0.16));
+  border-radius: 999px;
+  padding: 0.24rem 0.55rem;
+  font-size: 0.72rem;
+  opacity: 0.84;
+}
+
+.ap-field-signal {
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.66;
+}
+
+.ap-field-loading,
+.ap-field-empty {
+  grid-column: 1 / -1;
+  border: 1px dashed var(--ap-line, rgba(255,255,255,0.18));
+  border-radius: 1rem;
+  padding: 1.25rem;
+  opacity: 0.75;
+}
+
+.ap-field-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ap-field-local-log {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.ap-local-observation {
+  border-left: 3px solid currentColor;
+  padding: 0.75rem 1rem;
+  background: var(--ap-panel, rgba(255,255,255,0.045));
+  border-radius: 0.75rem;
+}
+
+@media (max-width: 860px) {
+  .ap-field-controls,
+  .ap-field-grid {
+    grid-template-columns: 1fr;
+  }
+}

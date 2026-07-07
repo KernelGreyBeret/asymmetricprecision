@@ -1,0 +1,96 @@
+/* AP Accessibility Hardening
+   Principle: access is part of understanding. */
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 9999;
+  transform: translateY(-150%);
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: Canvas;
+  color: CanvasText;
+  border: 2px solid currentColor;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
+.site-nav a[aria-current="page"],
+.site-nav a.is-active {
+  text-decoration: underline;
+  text-underline-offset: 0.35em;
+  text-decoration-thickness: 0.16em;
+}
+
+button:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.ap-sr-only,
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.ap-status,
+.ap-live-region {
+  min-height: 1.25rem;
+}
+
+.ap-accessibility-note {
+  border: 1px solid currentColor;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .card,
+  .ap-panel,
+  .ap-node,
+  .ap-surface,
+  .list-item,
+  .button,
+  .button-primary,
+  .ap-action {
+    border: 1px solid ButtonText;
+  }
+
+  .button,
+  .button-primary,
+  .ap-action {
+    forced-color-adjust: auto;
+  }
+}

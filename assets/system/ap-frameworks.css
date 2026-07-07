@@ -1,0 +1,139 @@
+/* AP Framework Experience
+   Principle: A framework is not a document. A framework is an operating model. */
+
+.ap-framework-hero {
+  position: relative;
+}
+
+.ap-framework-hero::after {
+  content: "MODEL // EVIDENCE // APPLICATION";
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  opacity: 0.72;
+}
+
+.ap-framework-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 2rem auto;
+  width: min(1100px, calc(100% - 2rem));
+}
+
+.ap-framework-controls label {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.ap-framework-controls span {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.ap-framework-controls input,
+.ap-framework-controls select {
+  width: 100%;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid var(--ap-border, rgba(255,255,255,0.18));
+  border-radius: var(--ap-radius, 14px);
+  background: var(--ap-surface, rgba(255,255,255,0.05));
+  color: inherit;
+}
+
+.ap-framework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  width: min(1100px, calc(100% - 2rem));
+  margin: 2rem auto;
+}
+
+.ap-framework-card,
+.ap-framework-loading,
+.ap-application-surface,
+.ap-evidence-surface,
+.ap-framework-metadata,
+.ap-connection-surface {
+  border: 1px solid var(--ap-border, rgba(255,255,255,0.16));
+  border-radius: var(--ap-radius-lg, 22px);
+  background: var(--ap-panel, rgba(255,255,255,0.055));
+  box-shadow: var(--ap-shadow-soft, 0 20px 70px rgba(0,0,0,0.18));
+}
+
+.ap-framework-card {
+  padding: 1.25rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.ap-framework-card h2 {
+  margin: 0;
+}
+
+.ap-framework-status {
+  width: fit-content;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--ap-border, rgba(255,255,255,0.18));
+  border-radius: 999px;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.78;
+}
+
+.ap-framework-domains,
+.ap-framework-connections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.ap-framework-domains span,
+.ap-framework-connections span,
+.ap-framework-metadata span {
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: var(--ap-chip, rgba(255,255,255,0.075));
+  font-size: 0.78rem;
+}
+
+.ap-framework-problem,
+.ap-framework-model {
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--ap-border, rgba(255,255,255,0.12));
+}
+
+.ap-framework-card h3 {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.74;
+  margin: 0 0 0.35rem;
+}
+
+.ap-framework-card ol,
+.ap-framework-card ul,
+.ap-application-surface ol,
+.ap-evidence-surface ul {
+  padding-left: 1.2rem;
+}
+
+.ap-framework-metadata,
+.ap-connection-surface,
+.ap-application-surface,
+.ap-evidence-surface,
+.ap-framework-loading {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 2rem auto;
+  padding: 1.25rem;
+}
+
+.ap-framework-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}

@@ -1,0 +1,107 @@
+/* AP Content Page Migration
+   Principle: Legacy content must be brought into the system it helped create. */
+
+.ap-content-page {
+  max-width: var(--ap-content-wide, 1120px);
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 3vw, 1.5rem) var(--ap-space-2xl, 4rem);
+}
+
+.ap-content-hero {
+  margin-top: var(--ap-space-xl, 2rem);
+}
+
+.ap-content-metadata-surface {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: .75rem;
+  margin: var(--ap-space-xl, 2rem) auto;
+}
+
+.ap-content-metadata-surface article {
+  border: 1px solid var(--ap-border, rgba(255,255,255,.14));
+  border-radius: var(--ap-radius-lg, 1rem);
+  background: var(--ap-surface, rgba(255,255,255,.045));
+  padding: 1rem;
+}
+
+.ap-content-metadata-surface strong,
+.ap-content-metadata-surface span { display:block; }
+.ap-content-metadata-surface strong {
+  color: var(--ap-muted, #a9b4c0);
+  font-size: .74rem;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  margin-bottom: .35rem;
+}
+
+.ap-readable-surface {
+  max-width: var(--ap-content, 780px);
+  margin: var(--ap-space-xl, 2rem) auto;
+  border: 1px solid var(--ap-border, rgba(255,255,255,.14));
+  border-radius: var(--ap-radius-xl, 1.25rem);
+  background: linear-gradient(135deg, rgba(255,255,255,.052), rgba(255,255,255,.018));
+  padding: clamp(1.15rem, 4vw, 2.35rem);
+}
+
+.ap-readable-surface p {
+  line-height: 1.82;
+  margin: 0 0 1rem;
+}
+.ap-readable-surface h2 {
+  margin-top: 2.25rem;
+  padding-top: .25rem;
+}
+.ap-readable-surface ul,
+.ap-readable-surface ol {
+  line-height: 1.75;
+  margin: 1rem 0 1.25rem 1.3rem;
+}
+.ap-readable-surface blockquote,
+.ap-readable-surface .book-emphasis {
+  border-left: 3px solid var(--ap-accent, #c8a45d);
+  margin: 1.5rem 0;
+  padding: 1rem 1rem 1rem 1.15rem;
+  background: rgba(255,255,255,.035);
+  border-radius: .85rem;
+}
+
+.ap-content-question,
+.ap-pdf-request,
+.ap-content-connections {
+  max-width: var(--ap-content, 780px);
+  margin: var(--ap-space-xl, 2rem) auto;
+}
+
+.ap-content-nav {
+  max-width: var(--ap-content, 780px);
+  margin: var(--ap-space-xl, 2rem) auto;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: .75rem;
+}
+
+.ap-pdf-request {
+  border: 1px solid var(--ap-border, rgba(255,255,255,.14));
+  border-radius: var(--ap-radius-lg, 1rem);
+  background: var(--ap-surface, rgba(255,255,255,.045));
+  padding: 1.25rem;
+}
+.ap-pdf-request form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+.ap-pdf-request input[type="email"] {
+  flex: 1 1 220px;
+  border: 1px solid var(--ap-border, rgba(255,255,255,.14));
+  border-radius: var(--ap-radius-md, .75rem);
+  padding: .8rem .9rem;
+  background: rgba(255,255,255,.045);
+  color: inherit;
+}
+
+@media (max-width: 740px) {
+  .ap-content-page { padding-inline: .85rem; }
+  .ap-readable-surface { padding: 1rem; }
+}

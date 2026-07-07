@@ -1,0 +1,89 @@
+{
+  "version": "2.0-integration-sprint",
+  "principle": "The system must feel like one system.",
+  "rule": "Every surface should answer what it is, why it matters, how it connects, and where to go next.",
+  "navigation": [
+    {
+      "id": "home",
+      "path": "index.html",
+      "layer": "entry"
+    },
+    {
+      "id": "start-here",
+      "path": "start-here/index.html",
+      "layer": "orientation"
+    },
+    {
+      "id": "philosophy",
+      "path": "philosophy/index.html",
+      "layer": "foundation"
+    },
+    {
+      "id": "atlas",
+      "path": "atlas/index.html",
+      "layer": "knowledge"
+    },
+    {
+      "id": "learning",
+      "path": "learning/index.html",
+      "layer": "reflection"
+    },
+    {
+      "id": "journeys",
+      "path": "journeys/index.html",
+      "layer": "guidance"
+    },
+    {
+      "id": "laboratories",
+      "path": "laboratories/index.html",
+      "layer": "application"
+    },
+    {
+      "id": "books",
+      "path": "books/index.html",
+      "layer": "curriculum"
+    },
+    {
+      "id": "essays",
+      "path": "essays/index.html",
+      "layer": "thinking"
+    },
+    {
+      "id": "frameworks",
+      "path": "frameworks/index.html",
+      "layer": "models"
+    },
+    {
+      "id": "field-notes",
+      "path": "field-notes/index.html",
+      "layer": "observation"
+    },
+    {
+      "id": "about",
+      "path": "about/index.html",
+      "layer": "context"
+    },
+    {
+      "id": "contact",
+      "path": "contact/index.html",
+      "layer": "conversation"
+    }
+  ],
+  "systems": [
+    "Identity",
+    "Design",
+    "Knowledge",
+    "Learning",
+    "Journeys",
+    "Laboratories",
+    "Integration"
+  ],
+  "checks": [
+    "All public pages use assets/system/ap-system.css",
+    "All public pages use assets/system/ap-system.js",
+    "All public pages expose data-ap-page and data-ap-layer",
+    "Primary navigation has an active-page state",
+    "Major pages include a connection surface",
+    "Projects path redirects to Laboratories for compatibility"
+  ]
+}

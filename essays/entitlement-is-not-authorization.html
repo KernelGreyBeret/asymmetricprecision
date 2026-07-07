@@ -3,495 +3,466 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Entitlement Is Not Authorization | Asymmetric Precision</title>
-
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <meta name="description" content="An Operational Reflection on Access and Decision-Making" />
+  <link rel="stylesheet" href="../assets/system/ap-system.css" />
   <link rel="icon" type="image/png" href="../assets/favicon.png" />
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2235b039ebf949b3a2e63066d4691d12"}'></script>
 </head>
-
-<body>
-
+<body class="ap-page ap-essay-detail" data-ap-system="v2">
 <header class="site-header">
-  <a class="brand" href="../index.html">
-    <img src="../assets/logo-mark.png" alt="Asymmetric Precision Logo" />
-    <span>Asymmetric Precision</span>
-  </a>
-  <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-  <nav class="site-nav">
+  <a class="brand" href="../index.html"><img alt="Asymmetric Precision Logo" src="../assets/logo-mark.png"/><span>Asymmetric Precision</span></a>
+  <button aria-label="Toggle navigation" class="nav-toggle">☰</button>
+  <nav aria-label="Primary navigation" class="site-nav" data-ap-nav="">
+    <a href="../start-here/index.html">Start Here</a>
+    <a href="../journeys/index.html">Journeys</a>
+    <a href="../philosophy/index.html">Philosophy</a>
+    <a href="../atlas/index.html">Atlas</a>
+    <a href="../learning/index.html">Learning</a>
     <a href="../books/index.html">Books</a>
     <a href="../essays/index.html">Essays</a>
     <a href="../frameworks/index.html">Frameworks</a>
     <a href="../field-notes/index.html">Field Notes</a>
-    <a href="../projects/index.html">Projects</a>
+    <a href="../laboratories/index.html">Laboratories</a>
     <a href="../about/index.html">About</a>
     <a href="../contact/index.html">Contact</a>
   </nav>
 </header>
-
-<main class="essay-page">
-
-  <article class="essay-content">
-
-    <p class="essay-eyebrow">Essay 002</p>
-
+<main class="ap-content-page ap-essay-page" data-ap-page="essay-detail" data-ap-layer="thinking">
+  <section class="page-hero ap-content-hero ap-essay-detail-hero">
+    <p class="eyebrow">Essay Lens / Essay 002</p>
     <h1>Entitlement Is Not Authorization</h1>
-
-    <p class="essay-subtitle">
-      An Operational Reflection on Access and Decision-Making
-    </p>
-
-    <div class="essay-meta">
-      <span>Tommy Burke</span>
-      <span>•</span>
-      <span>2026</span>
-      <span>•</span>
-      <span>~6 minute read</span>
-    </div>
-
-    <div class="essay-actions">
-      <a class="button-primary" href="../assets/pdfs/entitlement-is-not-authorization.pdf" target="_blank">
-        Download PDF
-      </a>
-    </div>
-
-    <section class="essay-body">
-      <p>
+    <p class="page-intro">An Operational Reflection on Access and Decision-Making</p>
+  </section>
+  <section class="ap-content-metadata-surface" aria-label="Content metadata">
+<article><strong>Type</strong><span>Essay Lens</span></article>
+<article><strong>Author</strong><span>Tommy Burke</span></article>
+<article><strong>Signal</strong><span>Tommy Burke • 2026 • ~6 minute read</span></article>
+<article><strong>Domains</strong><span>Zero Trust, Systems, Organizations, Leadership</span></article>
+</section>
+  <section class="ap-essay-lens-surface ap-content-question">
+    <p class="section-label">Central Lens</p>
+    <h2>What does this help you see?</h2>
+    <p>An Operational Reflection on Access and Decision-Making</p>
+  </section>
+  <article class="ap-readable-surface ap-essay-body">
+    
+<p>
         One of the biggest conceptual shifts in Zero Trust is understanding the difference between entitlement and authorization.
       </p>
-      <p>
+<p>
         Many organizations still unconsciously treat them as the same thing.
       </p>
-      <p>
+<p>
         They are not.
       </p>
-      <p>
+<p>
         And failing to separate the two is one of the primary reasons many Zero Trust implementations struggle to move beyond traditional access control models.
       </p>
-      <p>
+<p>
         This confusion is especially common in military, government, and classified environments because legacy access models conditioned generations of operators, administrators, and leaders to think in largely static terms.
       </p>
-      <p>
+<p>
         If someone had the proper clearance and a valid need-to-know, access was generally expected.
       </p>
-      <p>
+<p>
         That mindset made sense in environments where trust decisions were relatively static, systems were centrally controlled, and operational boundaries were easier to define.
       </p>
-      <p>
+<p>
         But modern enterprise environments no longer operate under those conditions.
       </p>
-      <p>
+<p>
         Zero Trust fundamentally changes the relationship between entitlement and authorization.
       </p>
-      <p>
+<p>
         Understanding that distinction changes everything.
       </p>
-      <h2>The Legacy Model</h2>
-      <p>
+<h2>The Legacy Model</h2>
+<p>
         In traditional classified environments, access decisions often followed a relatively linear pattern:
       </p>
-      <ul>
-        <li>Clearance established eligibility.</li>
-        <li>Need-to-know established authorization.</li>
-      </ul>
-      <p>
+<ul>
+<li>Clearance established eligibility.</li>
+<li>Need-to-know established authorization.</li>
+</ul>
+<p>
         If both conditions were met, access was generally granted.
       </p>
-      <p>
+<p>
         This model worked because authorization itself was largely treated as static.
       </p>
-      <p>
+<p>
         The system assumed:
       </p>
-      <ul>
-        <li>the user remained trustworthy</li>
-        <li>the device remained trustworthy</li>
-        <li>the environment remained trustworthy</li>
-        <li>the request remained trustworthy</li>
-        <li>the session remained trustworthy</li>
-      </ul>
-      <p>
+<ul>
+<li>the user remained trustworthy</li>
+<li>the device remained trustworthy</li>
+<li>the environment remained trustworthy</li>
+<li>the request remained trustworthy</li>
+<li>the session remained trustworthy</li>
+</ul>
+<p>
         In other words, once trust was established, it was rarely reevaluated in a meaningful way.
       </p>
-      <p>
+<p>
         The access decision effectively became permanent for the duration of the interaction.
       </p>
-      <p>
+<p>
         This model created an important cultural assumption that still exists today:
       </p>
-      <p>
+<p>
         “If I am entitled to the information, I should receive access to it.”
       </p>
-      <p>
+<p>
         That assumption is deeply embedded across many organizations.
       </p>
-      <p>
+<p>
         And it becomes a major obstacle during Zero Trust transformation.
       </p>
-      <h2>Zero Trust Changes the Model</h2>
-      <p>
+<h2>Zero Trust Changes the Model</h2>
+<p>
         Zero Trust does not eliminate entitlements.
       </p>
-      <p>
+<p>
         It changes their role.
       </p>
-      <p>
+<p>
         Under Zero Trust, clearance does not become irrelevant.
       </p>
-      <p>
+<p>
         Need-to-know does not disappear.
       </p>
-      <p>
+<p>
         Roles, group memberships, permissions, and identity attributes still matter.
       </p>
-      <p>
+<p>
         But they no longer directly establish authorization.
       </p>
-      <p>
+<p>
         Instead, they become inputs into authorization.
       </p>
-      <p>
+<p>
         That distinction is critical.
       </p>
-      <p>
+<p>
         Under a Zero Trust model:
       </p>
-      <ul>
-        <li>Clearance becomes an entitlement attribute.</li>
-        <li>Need-to-know becomes an entitlement attribute.</li>
-        <li>Role becomes an entitlement attribute.</li>
-        <li>Mission assignment becomes an entitlement attribute.</li>
-        <li>Training status becomes an entitlement attribute.</li>
-        <li>Organizational affiliation becomes an entitlement attribute.</li>
-      </ul>
-      <p>
+<ul>
+<li>Clearance becomes an entitlement attribute.</li>
+<li>Need-to-know becomes an entitlement attribute.</li>
+<li>Role becomes an entitlement attribute.</li>
+<li>Mission assignment becomes an entitlement attribute.</li>
+<li>Training status becomes an entitlement attribute.</li>
+<li>Organizational affiliation becomes an entitlement attribute.</li>
+</ul>
+<p>
         Together, these attributes establish that access may be permissible.
       </p>
-      <p>
+<p>
         But they do not automatically authorize access.
       </p>
-      <p>
+<p>
         Authorization becomes a separate runtime decision.
       </p>
-      <p>
+<p>
         That decision evaluates current conditions continuously and contextually.
       </p>
-      <h2>Entitlement Answers One Question</h2>
-      <p>
+<h2>Entitlement Answers One Question</h2>
+<p>
         Entitlement answers:
       </p>
-      <p>
+<p>
         “Could this entity potentially access this resource under some acceptable set of conditions?”
       </p>
-      <p>
+<p>
         That is all.
       </p>
-      <p>
+<p>
         Entitlement establishes eligibility boundaries.
       </p>
-      <p>
+<p>
         It defines possibility.
       </p>
-      <p>
+<p>
         It does not define approval.
       </p>
-      <p>
+<p>
         This is where many organizations become stuck.
       </p>
-      <p>
+<p>
         They continue designing systems where entitlement itself implicitly becomes authorization.
       </p>
-      <p>
+<p>
         For example:
       </p>
-      <ul>
-        <li>If a user has the role, grant access.</li>
-        <li>If a user belongs to the group, grant access.</li>
-        <li>If a user has clearance, grant access.</li>
-        <li>If a user has need-to-know, grant access.</li>
-      </ul>
-      <p>
+<ul>
+<li>If a user has the role, grant access.</li>
+<li>If a user belongs to the group, grant access.</li>
+<li>If a user has clearance, grant access.</li>
+<li>If a user has need-to-know, grant access.</li>
+</ul>
+<p>
         Those are not authorization models.
       </p>
-      <p>
+<p>
         Those are entitlement-driven access assumptions.
       </p>
-      <p>
+<p>
         And those assumptions are precisely what Zero Trust attempts to reduce.
       </p>
-      <h2>Authorization Answers a Different Question</h2>
-      <p>
+<h2>Authorization Answers a Different Question</h2>
+<p>
         Authorization answers:
       </p>
-      <p>
+<p>
         “Should this specific request be approved right now under these exact conditions?”
       </p>
-      <p>
+<p>
         That is a fundamentally different question.
       </p>
-      <p>
+<p>
         Authorization evaluates:
       </p>
-      <ul>
-        <li>current device posture</li>
-        <li>session assurance</li>
-        <li>network conditions</li>
-        <li>behavioral indicators</li>
-        <li>environmental context</li>
-        <li>geolocation</li>
-        <li>operational risk</li>
-        <li>time-based restrictions</li>
-        <li>data sensitivity</li>
-        <li>anomaly detection</li>
-        <li>active threat intelligence</li>
-        <li>mission context</li>
-        <li>enforcement obligations</li>
-        <li>policy constraints</li>
-      </ul>
-      <p>
+<ul>
+<li>current device posture</li>
+<li>session assurance</li>
+<li>network conditions</li>
+<li>behavioral indicators</li>
+<li>environmental context</li>
+<li>geolocation</li>
+<li>operational risk</li>
+<li>time-based restrictions</li>
+<li>data sensitivity</li>
+<li>anomaly detection</li>
+<li>active threat intelligence</li>
+<li>mission context</li>
+<li>enforcement obligations</li>
+<li>policy constraints</li>
+</ul>
+<p>
         Authorization is dynamic.
       </p>
-      <p>
+<p>
         It is contextual.
       </p>
-      <p>
+<p>
         It is continuously reevaluated.
       </p>
-      <p>
+<p>
         And importantly: authorization can change even when entitlement remains unchanged.
       </p>
-      <p>
+<p>
         A user may still possess:
       </p>
-      <ul>
-        <li>the correct clearance</li>
-        <li>the correct role</li>
-        <li>the correct mission assignment</li>
-        <li>the correct need-to-know</li>
-      </ul>
-      <p>
+<ul>
+<li>the correct clearance</li>
+<li>the correct role</li>
+<li>the correct mission assignment</li>
+<li>the correct need-to-know</li>
+</ul>
+<p>
         …and still not be authorized right now because:
       </p>
-      <ul>
-        <li>the device is unmanaged</li>
-        <li>the session risk increased</li>
-        <li>behavior became anomalous</li>
-        <li>the request pattern changed</li>
-        <li>the location is inconsistent</li>
-        <li>the environment is degraded</li>
-        <li>the access path violates policy</li>
-        <li>the requested action exceeds operational context</li>
-      </ul>
-      <p>
+<ul>
+<li>the device is unmanaged</li>
+<li>the session risk increased</li>
+<li>behavior became anomalous</li>
+<li>the request pattern changed</li>
+<li>the location is inconsistent</li>
+<li>the environment is degraded</li>
+<li>the access path violates policy</li>
+<li>the requested action exceeds operational context</li>
+</ul>
+<p>
         This is one of the most important conceptual transitions in Zero Trust architecture:
       </p>
-      <p>
+<p>
         Eligibility does not guarantee approval.
       </p>
-      <h2>Why This Distinction Matters</h2>
-      <p>
+<h2>Why This Distinction Matters</h2>
+<p>
         The distinction between entitlement and authorization matters because modern environments are no longer static.
       </p>
-      <p>
+<p>
         Users move constantly. Devices change continuously. Threats evolve in real time. Sessions degrade. Credentials are compromised. Behavior shifts. Operational conditions change by the minute.
       </p>
-      <p>
+<p>
         Static authorization assumptions cannot adequately manage dynamic environments.
       </p>
-      <p>
+<p>
         That is why Zero Trust emphasizes:
       </p>
-      <ul>
-        <li>continuous verification</li>
-        <li>contextual evaluation</li>
-        <li>runtime policy enforcement</li>
-        <li>adaptive access decisions</li>
-        <li>conditional authorization</li>
-      </ul>
-      <p>
+<ul>
+<li>continuous verification</li>
+<li>contextual evaluation</li>
+<li>runtime policy enforcement</li>
+<li>adaptive access decisions</li>
+<li>conditional authorization</li>
+</ul>
+<p>
         The architecture is no longer asking:
       </p>
-      <p>
+<p>
         “Was this user trusted at login?”
       </p>
-      <p>
+<p>
         It is asking:
       </p>
-      <p>
+<p>
         “Should this action be permitted right now?”
       </p>
-      <p>
+<p>
         Those are radically different security models.
       </p>
-      <blockquote class="book-emphasis">
-        Entitlement defines what may be possible.<br>
+<blockquote class="book-emphasis">
+        Entitlement defines what may be possible.<br/>
         Authorization determines what is permissible right now.
       </blockquote>
-      <h2>The Organizational Challenge</h2>
-      <p>
+<h2>The Organizational Challenge</h2>
+<p>
         The technical implementation is often easier than the cultural transition.
       </p>
-      <p>
+<p>
         Many organizations are comfortable implementing:
       </p>
-      <ul>
-        <li>MFA</li>
-        <li>identity providers</li>
-        <li>PAM</li>
-        <li>DLP</li>
-        <li>DRM</li>
-        <li>segmentation</li>
-        <li>logging</li>
-        <li>analytics</li>
-      </ul>
-      <p>
+<ul>
+<li>MFA</li>
+<li>identity providers</li>
+<li>PAM</li>
+<li>DLP</li>
+<li>DRM</li>
+<li>segmentation</li>
+<li>logging</li>
+<li>analytics</li>
+</ul>
+<p>
         But they still operate mentally from static authorization assumptions.
       </p>
-      <p>
+<p>
         This creates friction during Zero Trust implementation because users and administrators often expect entitlement to guarantee access.
       </p>
-      <p>
+<p>
         Operationally, this usually sounds like:
       </p>
-      <ul>
-        <li>“But I already have access.”</li>
-        <li>“I’m cleared for this.”</li>
-        <li>“I’ve always been able to do this.”</li>
-        <li>“I’m in the right group.”</li>
-        <li>“I have the role assigned.”</li>
-        <li>“I have need-to-know.”</li>
-      </ul>
-      <p>
+<ul>
+<li>“But I already have access.”</li>
+<li>“I’m cleared for this.”</li>
+<li>“I’ve always been able to do this.”</li>
+<li>“I’m in the right group.”</li>
+<li>“I have the role assigned.”</li>
+<li>“I have need-to-know.”</li>
+</ul>
+<p>
         Under traditional models, those statements often ended the discussion.
       </p>
-      <p>
+<p>
         Under Zero Trust, they simply become additional contextual inputs into the authorization process.
       </p>
-      <p>
+<p>
         That transition is uncomfortable for many organizations because it changes expectations around trust itself.
       </p>
-      <h2>Zero Trust Is a Runtime Security Model</h2>
-      <p>
+<h2>Zero Trust Is a Runtime Security Model</h2>
+<p>
         One of the clearest ways to understand Zero Trust is this:
       </p>
-      <p>
+<p>
         Traditional security models often treated authorization as static.
       </p>
-      <p>
+<p>
         Zero Trust treats authorization as continuously conditional.
       </p>
-      <p>
+<p>
         That is the shift.
       </p>
-      <p>
+<p>
         Not merely stronger authentication.
       </p>
-      <p>
+<p>
         Not merely more security tools.
       </p>
-      <p>
+<p>
         Not merely segmentation.
       </p>
-      <p>
+<p>
         The real transformation is the movement from static trust assumptions toward continuous contextual authorization.
       </p>
-      <p>
+<p>
         This is why runtime context becomes so important.
       </p>
-      <p>
+<p>
         Because authorization is no longer simply a property of identity.
       </p>
-      <p>
+<p>
         It becomes a property of:
       </p>
-      <ul>
-        <li>identity</li>
-        <li>device</li>
-        <li>behavior</li>
-        <li>environment</li>
-        <li>data sensitivity</li>
-        <li>operational conditions</li>
-        <li>observed risk</li>
-        <li>current mission context</li>
-        <li>policy evaluation</li>
-        <li>trust state</li>
-      </ul>
-      <p>
+<ul>
+<li>identity</li>
+<li>device</li>
+<li>behavior</li>
+<li>environment</li>
+<li>data sensitivity</li>
+<li>operational conditions</li>
+<li>observed risk</li>
+<li>current mission context</li>
+<li>policy evaluation</li>
+<li>trust state</li>
+</ul>
+<p>
         evaluated together, continuously.
       </p>
-      <h2>Final Thought</h2>
-      <p>
+<h2>Final Thought</h2>
+<p>
         Entitlement defines what may be possible.
       </p>
-      <p>
+<p>
         Authorization determines what is permissible right now.
       </p>
-      <p>
+<p>
         Confusing the two creates static trust assumptions.
       </p>
-      <p>
+<p>
         Separating the two enables Zero Trust.
       </p>
 
-      <hr style="width: 80%;border-color: #c8a45d;">
-    
-      <p class="essay-signature">
-        <em>
-          Tommy Burke is a cybersecurity engineer, systems thinker, author, and retired U.S. Army veteran exploring complexity, trust, authority, and the behavior of human, organizational, and technical systems.
-        </em>
-      </p>
-    
-      <p class="essay-closing">
-        <em>“Asymmetric Precision”</em>
-      </p>
-    
-    </section>
 
-    <nav class="essay-nav no-print" aria-label="Essay navigation">
-      <a id="essayPrev" class="essay-nav-link essay-nav-prev" href="#">
-        <span class="essay-nav-label">Previous Essay</span>
-        <span id="essayPrevTitle" class="essay-nav-title">Previous</span>
-      </a>
-    
-      <a class="essay-nav-link essay-nav-all" href="/essays/index.html">
-        <span class="essay-nav-label">All Essays</span>
-        <span class="essay-nav-title">Return to Essay Index</span>
-      </a>
-    
-      <a id="essayNext" class="essay-nav-link essay-nav-next" href="#">
-        <span class="essay-nav-label">Next Essay</span>
-        <span id="essayNextTitle" class="essay-nav-title">Next</span>
-      </a>
-    </nav>
-    
-    <script src="/assets/js/essay-index.js"></script>
-    <script src="/assets/js/essay-nav.js"></script>
 
-    <div class="essay-actions bottom-actions">
-      <a class="button-primary" href="../assets/pdfs/entitlement-is-not-authorization.pdf" target="_blank">
-        Download PDF
-      </a>
-    </div>
 
   </article>
-
-</main>
-
-<footer class="site-footer">
-
-  <div>
-      <img class="footer-logo" src="../assets/logo-mark.png" alt="Asymmetric Precision Logo">
-
-      <p class="footer-copyright">
-        © 2026 Tommy Burke. All rights reserved.
-      </p>
+  <section class="ap-learning-checkpoint" data-ap-learning-checkpoint="entitlement-is-not-authorization">
+  <p class="section-label">Reflection</p>
+  <h2>Do you understand this system more clearly than when you began?</h2>
+  <div class="ap-reflection-actions">
+    <button data-ap-reflection="clearer">Yes</button>
+    <button data-ap-reflection="thinking">I’m still thinking about it</button>
+    <button data-ap-reflection="unclear">Not yet</button>
   </div>
-
-  <p class="footer-description">
-    Asymmetric Precision™ is a systems-thinking and operational architecture platform focused on trust, complexity, and modern enterprise systems.
-  </p>
-
+</section>
+  <section class="ap-connection-surface ap-content-connections">
+  <p class="section-label">Where this connects</p>
+  <h2>This lens belongs to a larger system.</h2>
+  <div class="ap-connection-grid">
+    <a class="ap-connection-card" href="../atlas/index.html"><strong>View the Atlas</strong><span>See the relationships around this idea.</span></a>
+    <a class="ap-connection-card" href="../journeys/index.html"><strong>Find a Journey</strong><span>Place this idea inside a guided path.</span></a>
+    <a class="ap-connection-card" href="../learning/index.html"><strong>Capture a Reflection</strong><span>Record what became clearer or what remains unclear.</span></a>
+  </div>
+</section>
+  <nav class="ap-content-nav no-print" aria-label="Essay navigation"><a class="ap-connection-card" href="three-as.html"><strong>Previous Lens</strong><span>Three As</span></a><a class="ap-connection-card" href="index.html"><strong>All Essays</strong><span>Return to the essay index.</span></a><a class="ap-connection-card" href="department-can-see-now-it-must-decide.html"><strong>Next Lens</strong><span>Department Can See Now It Must Decide</span></a></nav>
+  <section class="ap-pdf-request no-print">
+  <p class="section-label">Portable Copy</p>
+  <h2>Prefer a PDF copy?</h2>
+  <p>Enter your email and AP will send this essay directly to you.</p>
+  <form action="https://script.google.com/macros/s/AKfycbwKCcvLHh6689ajndYz2Uj2dlG61pm35OSPID-ERZI6Cj7Qd-vkZt8ShIitFFz3u8R-/exec" method="POST" target="_blank">
+    <input type="email" name="email" placeholder="Email address" required>
+    <input type="hidden" name="essay" value="Entitlement Is Not Authorization">
+    <input type="hidden" name="page" value="entitlement-is-not-authorization">
+    <input type="hidden" name="pdf" value="https://asymmetricprecision.com/assets/pdfs/entitlement-is-not-authorization.pdf">
+    <button type="submit">Send Me the PDF</button>
+  </form>
+</section>
+</main>
+<footer class="site-footer">
+  <div><img alt="Asymmetric Precision Logo" class="footer-logo" src="../assets/logo-mark.png"/><p class="footer-copyright">© 2026 Tommy Burke. All rights reserved.</p></div>
+  <p class="footer-description">Asymmetric Precision™ is a school of applied systems thinking focused on trust, complexity, architecture, leadership, and modern organizations.</p>
 </footer>
+<script src="../assets/system/ap-system.js" type="module"></script>
 </body>
 </html>

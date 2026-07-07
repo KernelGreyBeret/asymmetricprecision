@@ -1,0 +1,170 @@
+/* AP Mobile Hardening
+   Principle: small screens should reduce uncertainty, not hide the system. */
+
+:root {
+  --ap-touch-target: 44px;
+  --ap-mobile-gutter: clamp(1rem, 4vw, 1.5rem);
+  --ap-readable-line: 72ch;
+}
+
+html {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main,
+section,
+article {
+  min-width: 0;
+}
+
+img,
+svg,
+canvas,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.ap-readable,
+.page-intro,
+.hero-copy,
+.card p,
+.list-item p,
+.ap-panel p,
+.ap-node-detail p {
+  max-width: var(--ap-readable-line);
+}
+
+.site-header {
+  gap: 1rem;
+}
+
+.site-nav a,
+.nav-toggle,
+.button,
+.button-primary,
+.ap-action,
+button,
+input[type="submit"] {
+  min-height: var(--ap-touch-target);
+  min-width: var(--ap-touch-target);
+}
+
+.site-nav a,
+.button,
+.button-primary,
+.ap-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 780px) {
+  .site-header {
+    align-items: center;
+    padding-inline: var(--ap-mobile-gutter);
+  }
+
+  .brand span {
+    font-size: 0.95rem;
+  }
+
+  .site-nav {
+    width: 100%;
+  }
+
+  .site-nav.is-open {
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .site-nav a {
+    justify-content: flex-start;
+    width: 100%;
+    border-radius: 0.75rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .hero,
+  .page-hero,
+  .section,
+  .list-stack,
+  .card-grid,
+  .ap-system-surface,
+  .ap-connection-surface,
+  .ap-learning-surface,
+  .ap-atlas-surface {
+    padding-inline: var(--ap-mobile-gutter);
+  }
+
+  .hero-actions,
+  .page-actions,
+  .ap-actions,
+  .ap-filter-row,
+  .ap-journey-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .button,
+  .button-primary,
+  .ap-action {
+    width: 100%;
+  }
+
+  .card-grid,
+  .card-grid.three,
+  .ap-card-grid,
+  .ap-principle-grid,
+  .ap-laboratory-grid,
+  .ap-journey-grid,
+  .ap-content-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .section.split,
+  .split,
+  .ap-split {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ap-atlas-layout,
+  .ap-explorer-layout,
+  .ap-detail-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ap-node-detail,
+  .ap-atlas-detail {
+    position: static;
+    max-height: none;
+  }
+
+  .ap-connection-band,
+  .ap-hsvl-connection-band {
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: clamp(2rem, 12vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 8vw, 2.25rem);
+  }
+
+  .eyebrow,
+  .section-label,
+  .card-label {
+    letter-spacing: 0.08em;
+  }
+}

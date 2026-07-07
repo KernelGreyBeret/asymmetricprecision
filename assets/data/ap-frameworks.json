@@ -1,0 +1,78 @@
+{
+  "version": "1.0",
+  "principle": "A framework is not a document. A framework is an operating model.",
+  "frameworks": [
+    {
+      "id": "zt-outcome-framework",
+      "title": "Zero Trust Outcome Framework",
+      "status": "active",
+      "type": "operating-model",
+      "domains": ["Architecture", "Trust", "Decision Making", "Cybersecurity"],
+      "summary": "A practical model for translating Zero Trust activity into measurable architectural outcomes.",
+      "problem": "Organizations often measure Zero Trust progress by activity completion instead of operational capability or security outcomes.",
+      "model": "Strategic outcomes connect to required conditions, architectural functions, capabilities, activities, and evidence.",
+      "application": [
+        "Identify the outcome the organization claims it is pursuing.",
+        "Map that outcome to required conditions and architectural functions.",
+        "Evaluate whether current activities produce the required conditions.",
+        "Collect evidence that capability exists and is operating.",
+        "Use gaps to drive implementation, not paperwork completion."
+      ],
+      "evidenceQuestions": [
+        "What changed in the actual environment?",
+        "What capability now exists that did not exist before?",
+        "What decision can leadership make more confidently now?",
+        "What attack path, exposure, or uncertainty was reduced?"
+      ],
+      "connections": ["ap-principle-design-for-outcomes", "ap-domain-trust", "essay-activities-vs-outcomes"]
+    },
+    {
+      "id": "rmf-risk-communication-model",
+      "title": "RMF Risk Communication Model",
+      "status": "draft",
+      "type": "mental-model",
+      "domains": ["Governance", "Risk", "Decision Making", "Organizations"],
+      "summary": "A model for treating RMF as governance and risk communication rather than as a substitute for cybersecurity engineering.",
+      "problem": "Organizations often expect RMF artifacts to create security instead of using them to communicate risk and support authorization decisions.",
+      "model": "Security implementation, evidence, risk interpretation, and authorization are distinct responsibilities that must reinforce one another.",
+      "application": [
+        "Separate implementation from evidence collection.",
+        "Separate evidence from risk interpretation.",
+        "Separate risk interpretation from authorization authority.",
+        "Make uncertainty visible instead of burying it in artifacts.",
+        "Use RMF to clarify decisions, not replace them."
+      ],
+      "evidenceQuestions": [
+        "What does this artifact prove?",
+        "What does it fail to prove?",
+        "What risk decision is this evidence meant to support?",
+        "Who owns the action required to reduce the risk?"
+      ],
+      "connections": ["ap-domain-decision-making", "ap-principle-evidence-over-assumption", "essay-rmf-governance-not-security"]
+    },
+    {
+      "id": "hidden-systems-visual-language",
+      "title": "Hidden Systems Visual Language",
+      "status": "active",
+      "type": "visual-framework",
+      "domains": ["Visualization", "Complexity", "Learning", "Operational Design"],
+      "summary": "A visual language for making relationships, constraints, signals, uncertainty, and system state easier to perceive.",
+      "problem": "Many important system forces are invisible until they produce failure, friction, or surprise.",
+      "model": "Nodes, edges, overlays, telemetry, annotations, states, and uncertainty markers reveal the hidden structure behind visible behavior.",
+      "application": [
+        "Identify the visible system objects.",
+        "Identify the invisible relationships that shape behavior.",
+        "Represent constraints, signals, incentives, and uncertainty visually.",
+        "Use visual hierarchy to distinguish evidence from assumption.",
+        "Iterate until the diagram improves understanding rather than decoration."
+      ],
+      "evidenceQuestions": [
+        "What relationship is now visible?",
+        "What uncertainty remains?",
+        "What decision does this visualization support?",
+        "What would the viewer misunderstand without this layer?"
+      ],
+      "connections": ["ap-domain-visualization", "ap-principle-hidden-systems-matter", "laboratory-ap-atlas"]
+    }
+  ]
+}

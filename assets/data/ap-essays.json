@@ -1,0 +1,465 @@
+{
+  "version": "0.9",
+  "name": "AP Essay Experience",
+  "principle": "An essay is not a post. An essay is a lens.",
+  "items": [
+    {
+      "id": "essay-end-state",
+      "title": "The End State Is the Requirement",
+      "status": "Featured",
+      "domain": "Cybersecurity",
+      "url": "../essays/end-state-is-the-requirement.html",
+      "summary": "Why Zero Trust should be measured by required security conditions, operational evidence, and adaptive outcomes, not tool deployment or activity completion.",
+      "lens": "A cyber-governance lens for separating activity, authority, evidence, and outcomes.",
+      "centralQuestion": "What is the system actually trying to secure, decide, or authorize?",
+      "difficulty": 4,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "zero-trust",
+        "principle-outcomes",
+        "principle-evidence"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-three-as",
+      "title": "The Three A\u2019s of Zero Trust",
+      "status": "Featured",
+      "domain": "Cybersecurity",
+      "url": "../essays/three-as.html",
+      "summary": "Attribution, Authority, and Authorization as the operational foundation beneath Zero Trust architecture.",
+      "lens": "A cyber-governance lens for separating activity, authority, evidence, and outcomes.",
+      "centralQuestion": "What is the system actually trying to secure, decide, or authorize?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "framework-three-as",
+        "zero-trust",
+        "principle-evidence"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-checkbox-fallacy",
+      "title": "The Checkbox Fallacy",
+      "status": "Published",
+      "domain": "Governance",
+      "url": "../essays/the-checkbox-fallacy.html",
+      "summary": "How organizations begin measuring activity instead of capability and eventually mistake compliance for success.",
+      "lens": "A governance lens for seeing a difficult system more clearly.",
+      "centralQuestion": "When does governance improve reality, and when does it only describe it?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "rmf",
+        "principle-outcomes",
+        "principle-evidence"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-context-key",
+      "title": "Context Is Key",
+      "status": "Published",
+      "domain": "Decision Making",
+      "url": "../essays/context-is-key.html",
+      "summary": "Why information has meaning only within context, and why understanding systems requires understanding the conditions around observable events.",
+      "lens": "A decision making lens for seeing a difficult system more clearly.",
+      "centralQuestion": "What context changes the meaning of the information we already have?",
+      "difficulty": 2,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "principle-mental-models",
+        "concept-understanding"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-maps-territory",
+      "title": "Maps Are Not Territory",
+      "status": "Published",
+      "domain": "Visualization",
+      "url": "../essays/maps-are-not-territory.html",
+      "summary": "A reflection on models, abstractions, and the dangers of confusing representations with reality itself.",
+      "lens": "A visualization lens for seeing a difficult system more clearly.",
+      "centralQuestion": "What does the map reveal, and what does it hide?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "concept-hsvl",
+        "concept-atlas",
+        "principle-evidence"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-constraints",
+      "title": "Constraints Create Behavior",
+      "status": "Published",
+      "domain": "Constraints",
+      "url": "../essays/constraints-create-behavior.html",
+      "summary": "Why behavior often emerges from incentives, pressure, permissions, friction, and constraints rather than intent alone.",
+      "lens": "An organizational lens for seeing the forces that shape behavior before people act.",
+      "centralQuestion": "Which invisible constraints are shaping visible behavior?",
+      "difficulty": 2,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "framework-constraints",
+        "concept-hidden-systems",
+        "principle-see-system"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-trust-binary",
+      "title": "Trust Is Not a Binary State",
+      "status": "Published",
+      "domain": "Trust",
+      "url": "../essays/trust-is-not-a-binary-state.html",
+      "summary": "Trust is a continuously evolving assessment made under uncertainty and informed by evidence.",
+      "lens": "A trust lens for seeing a difficult system more clearly.",
+      "centralQuestion": "What evidence should change the trust decision?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "zero-trust",
+        "principle-evidence",
+        "concept-tactical-compassion"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-authority-attribution",
+      "title": "Authority Without Attribution",
+      "status": "Published",
+      "domain": "Organizations",
+      "url": "../essays/authority-wo-attribution.html",
+      "summary": "Why systems lose the ability to learn when decisions become detached from the people and conditions that created them.",
+      "lens": "An organizational lens for seeing the forces that shape behavior before people act.",
+      "centralQuestion": "What behavior is the organization structurally producing?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "rmf",
+        "principle-evidence",
+        "principle-relationships"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-permission-power",
+      "title": "The Difference Between Permission and Power",
+      "status": "Published",
+      "domain": "Leadership",
+      "url": "../essays/the-difference-between-permission-and-power.html",
+      "summary": "Why formal authority and actual influence are often very different things inside complex systems.",
+      "lens": "An organizational lens for seeing the forces that shape behavior before people act.",
+      "centralQuestion": "Where is influence operating outside formal authority?",
+      "difficulty": 2,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "concept-tactical-compassion",
+        "principle-relationships"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-survival",
+      "title": "Organizations Optimize for Survival",
+      "status": "Published",
+      "domain": "Organizations",
+      "url": "../essays/organizations-optimize-for-survival.html",
+      "summary": "Why organizations often prioritize their own continuity, even when doing so conflicts with their stated mission.",
+      "lens": "An organizational lens for seeing the forces that shape behavior before people act.",
+      "centralQuestion": "What behavior is the organization structurally producing?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "concept-hidden-systems",
+        "principle-see-system"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-incentives",
+      "title": "Incentives Are Invisible Architecture",
+      "status": "Published",
+      "domain": "Incentives",
+      "url": "../essays/incentives-are-invisible-architecture.html",
+      "summary": "How rewards, consequences, and measurements quietly shape behavior more powerfully than policies or intentions.",
+      "lens": "An organizational lens for seeing the forces that shape behavior before people act.",
+      "centralQuestion": "What is the system rewarding, punishing, or ignoring?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "concept-hidden-systems",
+        "framework-constraints"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-alignment",
+      "title": "The Myth of Alignment",
+      "status": "Published",
+      "domain": "Organizations",
+      "url": "../essays/the-myth-of-alignment.html",
+      "summary": "Why agreement, awareness, and communication are not the same thing as true organizational alignment.",
+      "lens": "An organizational lens for seeing the forces that shape behavior before people act.",
+      "centralQuestion": "What behavior is the organization structurally producing?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "principle-relationships",
+        "concept-understanding"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-gravity",
+      "title": "Bureaucracies Create Their Own Gravity",
+      "status": "Published",
+      "domain": "Organizations",
+      "url": "../essays/bureaucracies-create-their-own-gravity.html",
+      "summary": "How successful organizations accumulate structure over time, and why that structure eventually resists change.",
+      "lens": "An organizational lens for seeing the forces that shape behavior before people act.",
+      "centralQuestion": "What behavior is the organization structurally producing?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "rmf",
+        "concept-hidden-systems"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-coordination",
+      "title": "The Cost of Coordination",
+      "status": "Published",
+      "domain": "Organizations",
+      "url": "../essays/the-cost-of-coordination.html",
+      "summary": "Why communication, dependencies, and alignment become some of the most expensive resources in complex systems.",
+      "lens": "An organizational lens for seeing the forces that shape behavior before people act.",
+      "centralQuestion": "What behavior is the organization structurally producing?",
+      "difficulty": 2,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "principle-relationships",
+        "field-note-coordination"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-normalcy",
+      "title": "Complexity Hides in Normalcy",
+      "status": "Published",
+      "domain": "Complexity",
+      "url": "../essays/complexity-hides-in-normalcy.html",
+      "summary": "Why the most dangerous failures rarely appear dangerous until it is too late.",
+      "lens": "A systems lens for seeing the hidden structure behind visible behavior.",
+      "centralQuestion": "What looks normal because the system has adapted around it?",
+      "difficulty": 2,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "concept-hidden-systems",
+        "principle-see-system"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-produces-behavior",
+      "title": "Every System Produces Behavior",
+      "status": "Published",
+      "domain": "Systems",
+      "url": "../essays/every-system-produces-behavior.html",
+      "summary": "Why recurring outcomes often reveal more about the system than the people operating inside it.",
+      "lens": "A systems lens for seeing the hidden structure behind visible behavior.",
+      "centralQuestion": "What recurring behavior is the system producing?",
+      "difficulty": 2,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "principle-see-system",
+        "framework-constraints"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-system-truth",
+      "title": "The System Was Telling the Truth",
+      "status": "Published",
+      "domain": "Failure",
+      "url": "../essays/the-system-was-telling-the-truth.html",
+      "summary": "A reflection on drift, failure, ignored signals, and the difference between what a system says and what leaders want to hear.",
+      "lens": "A systems lens for seeing the hidden structure behind visible behavior.",
+      "centralQuestion": "What signal did the system provide before the failure became visible?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "principle-evidence",
+        "concept-hidden-systems",
+        "field-note-pressure"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-feedback-loops",
+      "title": "Feedback Loops Are Everywhere",
+      "status": "Published",
+      "domain": "Feedback",
+      "url": "../essays/feedback-loops-are-everywhere.html",
+      "summary": "Why important behaviors often emerge from cycles of reinforcement rather than isolated events.",
+      "lens": "A systems lens for seeing the hidden structure behind visible behavior.",
+      "centralQuestion": "What loop is reinforcing the behavior?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "principle-relationships",
+        "concept-hidden-systems"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-local-global",
+      "title": "Local Optimization, Global Failure",
+      "status": "Published",
+      "domain": "Systems",
+      "url": "../essays/local-optimization-global-failure.html",
+      "summary": "Why organizations can improve every metric, optimize every department, and still move further away from mission success.",
+      "lens": "A systems lens for seeing the hidden structure behind visible behavior.",
+      "centralQuestion": "What recurring behavior is the system producing?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "principle-outcomes",
+        "principle-see-system"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-second-order",
+      "title": "The Tyranny of Second-Order Effects",
+      "status": "Published",
+      "domain": "Complexity",
+      "url": "../essays/the-tyranny-of-second-order-effects.html",
+      "summary": "Why the most important consequences of a decision often emerge only after the system has had time to react.",
+      "lens": "A systems lens for seeing the hidden structure behind visible behavior.",
+      "centralQuestion": "What looks normal because the system has adapted around it?",
+      "difficulty": 4,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "principle-mental-models",
+        "principle-evidence"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-knowing-understanding",
+      "title": "The Difference Between Knowing and Understanding",
+      "status": "Published",
+      "domain": "Learning",
+      "url": "../essays/the-difference-between-knowing-and-understanding.html",
+      "summary": "Why accumulating information is not the same thing as understanding reality, and why insight comes from relationships rather than facts alone.",
+      "lens": "A learning lens for seeing a difficult system more clearly.",
+      "centralQuestion": "What mental model must improve before action makes sense?",
+      "difficulty": 2,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "concept-understanding",
+        "principle-relationships"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-curiosity",
+      "title": "Curiosity Is an Operational Skill",
+      "status": "Published",
+      "domain": "Learning",
+      "url": "../essays/curiosity-is-an-operational-skill.html",
+      "summary": "Why curiosity is one of the most valuable capabilities for navigating uncertainty, complexity, and change.",
+      "lens": "A learning lens for seeing a difficult system more clearly.",
+      "centralQuestion": "What mental model must improve before action makes sense?",
+      "difficulty": 2,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "concept-understanding",
+        "principle-mental-models"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-last-responsible",
+      "title": "The Last Responsible Moment",
+      "status": "Published",
+      "domain": "Decision Making",
+      "url": "../essays/the-last-responsible-moment.html",
+      "summary": "Why effective decision-making is about recognizing the point where additional waiting creates less value than action.",
+      "lens": "A decision making lens for seeing a difficult system more clearly.",
+      "centralQuestion": "What context changes the meaning of the information we already have?",
+      "difficulty": 3,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "principle-evidence",
+        "principle-outcomes"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-observation",
+      "title": "Observation Before Action",
+      "status": "Published",
+      "domain": "Observation",
+      "url": "../essays/observation-before-action.html",
+      "summary": "Why the instinct to immediately solve problems often makes them worse, and why effective operators diagnose before they intervene.",
+      "lens": "A observation lens for seeing a difficult system more clearly.",
+      "centralQuestion": "What should be understood before anyone intervenes?",
+      "difficulty": 2,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "principle-evidence",
+        "concept-understanding"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    },
+    {
+      "id": "essay-discovery",
+      "title": "Every Problem Is a Discovery Problem First",
+      "status": "Published",
+      "domain": "Learning",
+      "url": "../essays/every-problem-is-a-discovery-problem-first.html",
+      "summary": "Why most failures begin with misunderstanding the problem itself, and why discovery is the first phase of every solution.",
+      "lens": "A learning lens for seeing a difficult system more clearly.",
+      "centralQuestion": "What mental model must improve before action makes sense?",
+      "difficulty": 2,
+      "readingMode": "Lens",
+      "path": "Think",
+      "connections": [
+        "principle-mental-models",
+        "principle-practical"
+      ],
+      "reflectionPrompt": "Do you understand this system more clearly than when you began?"
+    }
+  ]
+}

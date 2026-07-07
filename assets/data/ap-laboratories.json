@@ -1,0 +1,85 @@
+{
+  "version": "0.8",
+  "name": "AP Laboratories",
+  "principle": "Laboratories are proof. They show whether an idea can survive implementation.",
+  "laboratories": [
+    {
+      "id": "lab-kgb-studio",
+      "title": "KGB Studio",
+      "status": "In Development",
+      "type": "Builder Laboratory",
+      "domain": "Tooling",
+      "question": "Can a browser-based studio reduce the friction between idea, asset, scene, runtime, and playable game?",
+      "thesis": "Creative systems improve when the workflow makes relationships visible and turns repeated decisions into reusable patterns.",
+      "application": "Game tooling, asset systems, scene building, runtime packaging, and reusable production workflows.",
+      "evidence": "A growing modular studio built from real production needs rather than abstract feature lists.",
+      "url": "../laboratories/index.html#lab-kgb-studio",
+      "connections": ["principle-intentional", "principle-practical", "concept-hsvl", "journey-builder"]
+    },
+    {
+      "id": "lab-kgb-arcade",
+      "title": "KGB Arcade",
+      "status": "Live",
+      "type": "Play Laboratory",
+      "domain": "Learning",
+      "question": "Can games teach systems, feedback, constraints, and adaptation without becoming lectures?",
+      "thesis": "Play is a systems-thinking environment. Every good game teaches the player to read signals, adapt to feedback, and improve decisions under constraint.",
+      "application": "Browser games, arcade systems, toddler learning games, MiniMission control surfaces, and systems-based play.",
+      "evidence": "A live browser arcade with handcrafted games, mobile-first constraints, and a growing reusable engine approach.",
+      "url": "https://kgbarcade.com/index.html",
+      "connections": ["concept-hsvl", "principle-mental-models", "principle-relationships", "journey-builder"]
+    },
+    {
+      "id": "lab-hidden-systems-visual-language",
+      "title": "Hidden Systems Visual Language",
+      "status": "Active Pattern",
+      "type": "Visual Laboratory",
+      "domain": "Visualization",
+      "question": "Can interfaces help people see relationships, dependencies, telemetry, and uncertainty before those forces become obvious failures?",
+      "thesis": "Visual language is not decoration. It is a cognitive instrument for revealing structure, pressure, state, and relationship.",
+      "application": "AP site design, Atlas surfaces, diagrams, MiniMission concepts, presentations, and framework maps.",
+      "evidence": "A shared design direction built around topology, nodes, overlays, signal panels, relationship lines, and tactical annotations.",
+      "url": "../atlas/index.html",
+      "connections": ["concept-hsvl", "concept-atlas", "principle-relationships", "principle-intentional"]
+    },
+    {
+      "id": "lab-zero-trust-reference",
+      "title": "Zero Trust Reference Work",
+      "status": "In Development",
+      "type": "Architecture Laboratory",
+      "domain": "Cybersecurity",
+      "question": "Can Zero Trust be explained as outcomes, evidence, decisions, and enforcement instead of products, slogans, and activity lists?",
+      "thesis": "Security architecture improves when people can distinguish capability from compliance motion and outcomes from activities.",
+      "application": "Zero Trust frameworks, capability mapping, outcome models, executive explanation, and implementation guidance.",
+      "evidence": "Architecture-first models and explanatory frameworks derived from real enterprise implementation work.",
+      "url": "../frameworks/index.html",
+      "connections": ["zero-trust", "framework-three-as", "essay-end-state", "principle-outcomes"]
+    },
+    {
+      "id": "lab-code-shield",
+      "title": "Code Shield",
+      "status": "Prototype",
+      "type": "Security Tool Laboratory",
+      "domain": "Cybersecurity",
+      "question": "Can defensive review workflows become clearer, faster, and more useful for builders?",
+      "thesis": "Security tools should reduce uncertainty and help builders understand what matters, not bury them under noise.",
+      "application": "AppSec review, secure development, code analysis, and practical security guidance.",
+      "evidence": "A practical project space for experimenting with lightweight defensive tooling and builder-friendly security feedback.",
+      "url": "../laboratories/index.html#lab-code-shield",
+      "connections": ["principle-evidence", "principle-practical", "principle-intentional"]
+    },
+    {
+      "id": "lab-asymmetric-utility",
+      "title": "Asymmetric Utility",
+      "status": "In Development",
+      "type": "Utility Laboratory",
+      "domain": "Tooling",
+      "question": "Can small local-first tools solve real workflow problems without requiring accounts, servers, subscriptions, or vendor lock-in?",
+      "thesis": "Useful tools should respect constraints. No backend is not a weakness when the problem can be solved locally and clearly.",
+      "application": "File utilities, metadata tools, zip tools, viewers, converters, and field-expedient browser utilities.",
+      "evidence": "A growing set of practical HTML/CSS/JS utilities designed around ownership, simplicity, portability, and low friction.",
+      "url": "../laboratories/index.html#lab-asymmetric-utility",
+      "connections": ["principle-practical", "principle-outcomes", "principle-intentional"]
+    }
+  ]
+}

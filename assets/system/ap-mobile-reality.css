@@ -1,0 +1,443 @@
+/* AP Mobile Reality Pass
+   Sprint 29 Principle: Mobile is not a smaller desktop. Mobile is a different operating environment.
+
+   This layer intentionally imports late. It does not redesign AP; it stabilizes AP on real handheld
+   screens where context surfaces, Atlas controls, rails, cards, and long relationship language can
+   otherwise create overflow or uncertainty.
+*/
+
+:root {
+  --ap-mobile-safe-gutter: clamp(0.95rem, 4.5vw, 1.35rem);
+  --ap-mobile-panel-gap: 0.9rem;
+  --ap-mobile-radius: 1rem;
+}
+
+html.ap-mobile-reality,
+html.ap-touch-reality {
+  scroll-padding-top: 5.5rem;
+}
+
+html.ap-mobile-reality *,
+html.ap-touch-reality * {
+  box-sizing: border-box;
+}
+
+html.ap-mobile-reality body,
+html.ap-touch-reality body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Universal containment: AP pages should never force sideways scrolling just because the system has depth. */
+main,
+.site-header,
+.site-footer,
+.hero,
+.page-hero,
+.section,
+.list-stack,
+.card-grid,
+.ap-surface,
+.ap-panel,
+.ap-system-surface,
+.ap-page-system-surface,
+.ap-content-surface,
+.ap-connection-surface,
+.ap-learning-surface,
+.ap-atlas-surface,
+.ap-journey-surface,
+.ap-lab-surface,
+.ap-field-hero,
+.ap-framework-hero,
+.ap-books-hero,
+.ap-content-hero {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.ap-card,
+.card,
+.list-item,
+.ap-panel,
+.ap-content-card,
+.ap-essay-card,
+.ap-book-card,
+.ap-framework-card,
+.ap-lab-card,
+.ap-field-note-card,
+.ap-journey-card,
+.ap-relationship-row,
+.ap-page-context-strip,
+.ap-system-context-strip,
+.ap-availability-surface,
+.ap-contextual-surface,
+.ap-system-weave-rail,
+.ap-readalong-panel,
+.ap-node-detail,
+.ap-atlas-detail,
+.ap-atlas-detail-panel {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+pre,
+code,
+.ap-code,
+.ap-telemetry-row,
+.ap-relationship-list,
+.ap-connection-list,
+.ap-context-chips,
+.ap-book-domains,
+.ap-essay-domains,
+.ap-framework-domains,
+.ap-journey-domains,
+.ap-field-domains {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+img,
+svg,
+canvas,
+video {
+  max-width: 100%;
+}
+
+/* Prevent generated pills/chips from creating horizontal layout pressure. */
+.ap-context-chips,
+.ap-book-domains,
+.ap-essay-domains,
+.ap-framework-domains,
+.ap-journey-domains,
+.ap-field-domains,
+.ap-lab-meta,
+.ap-actions,
+.hero-actions,
+.page-actions,
+.ap-journey-actions,
+.ap-availability-actions,
+.ap-book-availability-actions,
+.ap-context-actions,
+.ap-connection-actions,
+.ap-reflection-actions,
+.ap-learning-controls,
+.ap-atlas-projection-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+/* Real mobile layout. */
+@media (max-width: 860px) {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding-inline: var(--ap-mobile-safe-gutter);
+    backdrop-filter: blur(16px);
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .brand img {
+    flex: 0 0 auto;
+  }
+
+  .brand span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .site-nav {
+    max-height: min(72vh, 34rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .site-nav.is-open {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav a {
+    min-height: 46px;
+    width: 100%;
+  }
+
+  main,
+  .hero,
+  .page-hero,
+  .section,
+  .list-stack,
+  .ap-content-page,
+  .ap-content-surface,
+  .ap-page-system-surface,
+  .ap-system-surface,
+  .ap-learning-surface,
+  .ap-atlas-surface,
+  .ap-journey-surface,
+  .ap-lab-surface {
+    padding-inline: var(--ap-mobile-safe-gutter);
+  }
+
+  .hero h1,
+  .page-hero h1,
+  .ap-content-hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.1rem, 12vw, 4rem);
+    line-height: 0.98;
+  }
+
+  h2 {
+    font-size: clamp(1.55rem, 7.5vw, 2.5rem);
+  }
+
+  h3 {
+    font-size: clamp(1.1rem, 5.5vw, 1.55rem);
+  }
+
+  .card-grid,
+  .card-grid.three,
+  .ap-card-grid,
+  .ap-principle-grid,
+  .ap-content-grid,
+  .ap-essay-metadata-grid,
+  .ap-book-grid,
+  .ap-framework-grid,
+  .ap-lab-grid,
+  .ap-field-note-grid,
+  .ap-journey-grid,
+  .ap-companion-grid,
+  .ap-connection-grid,
+  .ap-launch-grid,
+  .ap-curriculum-map,
+  .ap-curriculum-stage-books {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .split,
+  .section.split,
+  .ap-split,
+  .ap-detail-layout,
+  .ap-explorer-layout,
+  .ap-atlas-layout,
+  .ap-readalong-layout,
+  .ap-weave-layout,
+  .ap-atlas-interface,
+  .ap-atlas-interface-explorer {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .ap-system-weave-rail,
+  .ap-readalong-panel,
+  .ap-node-detail,
+  .ap-atlas-detail,
+  .ap-atlas-detail-panel,
+  .ap-page-companions,
+  .ap-context-related {
+    position: static !important;
+    top: auto !important;
+    max-height: none !important;
+    width: 100%;
+  }
+
+  .ap-page-context-strip,
+  .ap-system-context-strip,
+  .ap-journey-continuity,
+  .ap-path-continuation,
+  .ap-availability-surface,
+  .ap-learning-checkpoint,
+  .ap-reflection-log,
+  .ap-observation-surface {
+    border-radius: var(--ap-mobile-radius);
+    padding: clamp(1rem, 4vw, 1.25rem);
+  }
+
+  .ap-page-context-strip,
+  .ap-system-context-strip,
+  .ap-context-strip-main,
+  .ap-context-strip-details,
+  .ap-context-strip-actions,
+  .ap-journey-continuity__body,
+  .ap-path-continuation__actions,
+  .ap-availability-guidance,
+  .ap-availability-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: var(--ap-mobile-panel-gap);
+  }
+
+  .button,
+  .button-primary,
+  .button-secondary,
+  .ap-action,
+  .ap-action-secondary,
+  button:not(.nav-toggle),
+  input[type='submit'] {
+    width: 100%;
+    justify-content: center;
+    min-height: 46px;
+    text-align: center;
+  }
+
+  .ap-context-chip,
+  .ap-context-chip-link,
+  .ap-book-pill,
+  .ap-essay-pill,
+  .ap-field-pill,
+  .ap-lab-pill,
+  .ap-framework-status,
+  .ap-status,
+  .ap-availability-badge {
+    white-space: normal;
+    max-width: 100%;
+  }
+
+  /* Atlas: on phone, orientation first, controls second, map third, details last. */
+  .ap-atlas-orientation,
+  .ap-atlas-compass,
+  .ap-atlas-cartography-legend,
+  .ap-atlas-metrics,
+  .ap-atlas-controls,
+  .ap-atlas-panel,
+  .ap-atlas-map,
+  .ap-atlas-detail-panel {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .ap-atlas-controls,
+  .ap-filter-row,
+  .ap-atlas-projection-control {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .ap-atlas-controls input,
+  .ap-atlas-controls select,
+  .ap-atlas-controls button,
+  .ap-filter-row input,
+  .ap-filter-row select,
+  .ap-filter-row button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .ap-atlas-map,
+  .ap-atlas-canvas,
+  .ap-system-map {
+    min-height: 58vh;
+    max-height: 70vh;
+    overflow: hidden;
+    touch-action: pan-y;
+  }
+
+  .ap-atlas-node {
+    max-width: min(13rem, 72vw);
+  }
+
+  .ap-atlas-edge-label {
+    font-size: 0.68rem;
+    max-width: 8.5rem;
+    white-space: normal;
+  }
+
+  .ap-atlas-domain-label,
+  .ap-atlas-blueprint-label {
+    font-size: 0.66rem;
+    max-width: 42vw;
+    white-space: normal;
+  }
+
+  .ap-relationship-row {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 0.45rem;
+  }
+
+  .ap-relationship-verb {
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .ap-footer,
+  .site-footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 1rem;
+    padding-inline: var(--ap-mobile-safe-gutter);
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --ap-mobile-safe-gutter: clamp(0.85rem, 5vw, 1rem);
+  }
+
+  .hero,
+  .page-hero {
+    padding-top: clamp(3rem, 10vw, 5rem);
+    padding-bottom: clamp(2.5rem, 9vw, 4rem);
+  }
+
+  .ap-atlas-edge-label {
+    display: none;
+  }
+
+  .ap-atlas-domain-hull {
+    opacity: 0.3;
+  }
+
+  .ap-context-related-node,
+  .ap-companion-link,
+  .ap-weave-chip,
+  .ap-connection-item,
+  .ap-route-step,
+  .ap-pathway-step {
+    display: block;
+    width: 100%;
+  }
+
+  .ap-telemetry-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
+  }
+
+  .ap-learning-options {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .email-capture form {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
+
+/* Ultra narrow screens: no horizontal escape hatches. */
+@media (max-width: 390px) {
+  .brand span {
+    max-width: 12rem;
+  }
+
+  .ap-atlas-map,
+  .ap-atlas-canvas,
+  .ap-system-map {
+    min-height: 52vh;
+  }
+
+  .ap-node,
+  .ap-atlas-node,
+  .ap-panel,
+  .card,
+  .list-item {
+    padding: 0.95rem;
+  }
+}

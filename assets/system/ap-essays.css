@@ -1,0 +1,191 @@
+/*
+  AP Essay Experience
+  Sprint 9: An essay is not a post. An essay is a lens.
+*/
+
+.ap-essay-principle {
+  margin: var(--ap-space-2xl) auto;
+  max-width: var(--ap-content-wide);
+  border: 1px solid var(--ap-border-strong);
+  border-radius: var(--ap-radius-xl);
+  padding: clamp(1.25rem, 4vw, 2.25rem);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.055), rgba(255,255,255,0.015)),
+    var(--ap-surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.ap-essay-principle::before {
+  content: "ESSAY ≠ POST";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  color: var(--ap-muted);
+  opacity: 0.55;
+}
+
+.ap-essay-toolbar {
+  max-width: var(--ap-content-wide);
+  margin: var(--ap-space-xl) auto var(--ap-space-lg);
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) auto auto;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.ap-essay-toolbar input,
+.ap-essay-toolbar select {
+  width: 100%;
+  background: var(--ap-surface);
+  color: var(--ap-text);
+  border: 1px solid var(--ap-border);
+  border-radius: var(--ap-radius-md);
+  padding: 0.8rem 0.9rem;
+}
+
+.ap-essay-surface {
+  max-width: var(--ap-content-wide);
+  margin: 0 auto var(--ap-space-2xl);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.ap-essay-lens-card {
+  border: 1px solid var(--ap-border);
+  border-radius: var(--ap-radius-lg);
+  background: var(--ap-surface);
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  isolation: isolate;
+}
+
+.ap-essay-lens-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255,255,255,0.055), transparent 42%);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.ap-essay-lens-card:hover,
+.ap-essay-lens-card:focus-within {
+  border-color: var(--ap-accent);
+  transform: translateY(-1px);
+}
+
+.ap-essay-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.ap-essay-pill {
+  border: 1px solid var(--ap-border);
+  border-radius: 999px;
+  color: var(--ap-muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.55rem;
+  text-transform: uppercase;
+}
+
+.ap-essay-lens-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.55rem;
+}
+
+.ap-essay-lens {
+  color: var(--ap-text);
+  font-weight: 650;
+  margin: 0 0 0.7rem;
+}
+
+.ap-essay-question {
+  border-left: 2px solid var(--ap-accent);
+  padding-left: 0.75rem;
+  color: var(--ap-muted);
+  margin: 0.2rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+.ap-essay-summary {
+  color: var(--ap-muted);
+  flex: 1;
+}
+
+.ap-essay-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.ap-essay-difficulty {
+  color: var(--ap-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ap-essay-template {
+  max-width: var(--ap-content);
+  margin: var(--ap-space-2xl) auto;
+}
+
+.ap-essay-metadata-surface,
+.ap-essay-continue-surface,
+.ap-essay-lens-surface {
+  border: 1px solid var(--ap-border);
+  border-radius: var(--ap-radius-lg);
+  background: var(--ap-surface);
+  padding: clamp(1rem, 3vw, 1.5rem);
+  margin: var(--ap-space-xl) 0;
+}
+
+.ap-essay-metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.ap-essay-metadata-grid div {
+  border: 1px solid var(--ap-border);
+  border-radius: var(--ap-radius-md);
+  padding: 0.75rem;
+}
+
+.ap-essay-metadata-grid span {
+  display: block;
+  color: var(--ap-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.ap-essay-empty {
+  max-width: var(--ap-content-wide);
+  margin: var(--ap-space-xl) auto;
+  color: var(--ap-muted);
+  border: 1px dashed var(--ap-border);
+  border-radius: var(--ap-radius-lg);
+  padding: 1rem;
+}
+
+@media (max-width: 760px) {
+  .ap-essay-toolbar {
+    grid-template-columns: 1fr;
+  }
+}

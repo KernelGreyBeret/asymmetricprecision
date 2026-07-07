@@ -1,0 +1,57 @@
+{
+  "version": "0.34",
+  "principle": "Applied guides turn builder knowledge into repeatable operating paths.",
+  "guides": [
+    {
+      "id": "book-turning-code-into-cash",
+      "title": "The Ultimate Guide for Turning Code into Cash",
+      "subtitle": "From Idea to Income",
+      "author": "Tommy Burke",
+      "status": "Published",
+      "publishedYear": "2023",
+      "stage": "Applied Systems Guides",
+      "domain": "Software Commercialization",
+      "difficulty": 2,
+      "url": "../books/turning-code-into-cash.html",
+      "summary": "A practical commercialization guide for builders who have created software but need to understand the system around selling, licensing, packaging, distributing, supporting, and sustaining it.",
+      "readerOutcome": "The reader sees software commercialization as an operating system around the product, not a single sales action.",
+      "systemQuestion": "How does a useful software project become a commercially viable product that can survive outside the builder's machine?",
+      "domains": [
+        "Software Commercialization",
+        "Productization",
+        "Operational Design",
+        "Builders",
+        "Business Systems"
+      ],
+      "connections": [
+        "principle-practical",
+        "principle-outcomes",
+        "principle-evidence",
+        "laboratories",
+        "lab-kgb-studio",
+        "lab-code-shield"
+      ],
+      "actions": [
+        {
+          "label": "Buy on Amazon",
+          "url": "https://amzn.to/4fjjAEa"
+        },
+        {
+          "label": "Open guide page",
+          "url": "../books/turning-code-into-cash.html"
+        },
+        {
+          "label": "View in Atlas",
+          "url": "../atlas/index.html?focus=book-turning-code-into-cash"
+        },
+        {
+          "label": "Ask about the book",
+          "url": "mailto:tommy@asymmetricprecision.com?subject=The%20Ultimate%20Guide%20for%20Turning%20Code%20into%20Cash"
+        }
+      ],
+      "purchaseUrl": "https://amzn.to/4fjjAEa",
+      "availabilityNote": "The book is published and available now. The AP companion curriculum around it \u2014 worksheets, builder journey steps, reflection prompts, and lab exercises \u2014 is still in development.",
+      "curriculumStatus": "Companion AP curriculum in development"
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+/* AP Contextual Surfaces
+   Principle: context should travel with the learner. */
+
+.ap-system-context-strip {
+  margin: clamp(1.5rem, 4vw, 3rem) auto;
+  max-width: var(--ap-max-width, 1120px);
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border: 1px solid rgba(200, 164, 93, 0.32);
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(200, 164, 93, 0.12), rgba(126, 228, 255, 0.04)),
+    rgba(15, 18, 23, 0.88);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28), inset 0 0 0 1px rgba(255, 255, 255, 0.025);
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
+  gap: clamp(1rem, 3vw, 1.75rem);
+  overflow: hidden;
+  position: relative;
+}
+
+.ap-system-context-strip::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(126, 228, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(126, 228, 255, 0.03) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8), transparent 72%);
+}
+
+.ap-context-strip-main,
+.ap-context-strip-details,
+.ap-context-strip-actions,
+.ap-context-related {
+  position: relative;
+  z-index: 1;
+}
+
+.ap-context-strip-main h2 {
+  margin: 0.15rem 0 0.6rem;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+}
+
+.ap-context-strip-main p:last-child {
+  margin-bottom: 0;
+}
+
+.ap-context-strip-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-content: start;
+}
+
+.ap-context-strip-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  grid-column: 1 / -1;
+}
+
+.ap-context-chip,
+.ap-context-related-node span,
+.ap-readalong-node span {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid rgba(126, 228, 255, 0.24);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  background: rgba(126, 228, 255, 0.06);
+  color: var(--ap-text, #f2eee6);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.ap-context-chip-link {
+  text-decoration: none;
+}
+
+.ap-context-chip-link:hover,
+.ap-context-chip-link:focus-visible {
+  border-color: rgba(200, 164, 93, 0.75);
+  background: rgba(200, 164, 93, 0.14);
+}
+
+.ap-context-related {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.ap-context-related-node {
+  min-width: 0;
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.035);
+  text-decoration: none;
+  color: var(--ap-text, #f2eee6);
+  display: grid;
+  gap: 0.45rem;
+}
+
+.ap-context-related-node strong {
+  overflow-wrap: anywhere;
+}
+
+.ap-readalong-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: clamp(1rem, 3vw, 1.75rem);
+  align-items: start;
+  max-width: var(--ap-max-width, 1120px);
+  margin-inline: auto;
+}
+
+.ap-readalong-layout > .ap-readable-surface,
+.ap-readalong-layout > .ap-essay-body,
+.ap-readalong-layout > .ap-content-body {
+  margin-inline: 0;
+  min-width: 0;
+}
+
+.ap-readalong-panel {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+  min-width: 0;
+  border: 1px solid rgba(126, 228, 255, 0.22);
+  border-radius: 22px;
+  padding: 1rem;
+  background:
+    radial-gradient(circle at top right, rgba(126, 228, 255, 0.08), transparent 12rem),
+    rgba(12, 15, 19, 0.9);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+}
+
+.ap-readalong-group + .ap-readalong-group {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ap-readalong-group h3 {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+}
+
+.ap-readalong-node {
+  display: grid;
+  gap: 0.38rem;
+  padding: 0.75rem;
+  border-radius: 16px;
+  color: var(--ap-text, #f2eee6);
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  text-decoration: none;
+  min-width: 0;
+}
+
+.ap-readalong-node + .ap-readalong-node {
+  margin-top: 0.55rem;
+}
+
+.ap-readalong-node strong,
+.ap-readalong-node em,
+.ap-mini-atlas p {
+  overflow-wrap: anywhere;
+}
+
+.ap-readalong-node em {
+  color: var(--ap-muted, #b9b0a2);
+  font-size: 0.88rem;
+  font-style: normal;
+}
+
+.ap-connection-surface--contextual {
+  max-width: var(--ap-max-width, 1120px);
+  overflow: hidden;
+}
+
+.ap-connection-surface--contextual .ap-connection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.ap-connection-surface--contextual .ap-connection-card {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.ap-connection-surface--contextual .ap-connection-card span,
+.ap-connection-surface--contextual .ap-connection-card strong {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 920px) {
+  .ap-system-context-strip,
+  .ap-readalong-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-readalong-panel {
+    position: relative;
+    top: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .ap-system-context-strip,
+  .ap-readalong-panel {
+    border-radius: 18px;
+  }
+
+  .ap-context-strip-actions,
+  .ap-context-strip-actions .ap-action,
+  .ap-mini-atlas .ap-action {
+    width: 100%;
+  }
+}

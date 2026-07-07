@@ -1,0 +1,106 @@
+/* AP Relationship Grammar presentation
+   Principle: relationships should read like meaning, not metadata. */
+
+.ap-connection-actions,
+.ap-relationship-list {
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.ap-relationship-row,
+.ap-connection-actions > li {
+  min-width: 0;
+}
+
+.ap-relationship-row button,
+.ap-connection-actions button {
+  inline-size: 100%;
+  display: grid;
+  grid-template-columns: minmax(6.5rem, 0.45fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 0.25rem 0.9rem;
+  text-align: left;
+  border: 1px solid rgba(200, 164, 93, 0.28);
+  border-radius: 1rem;
+  padding: 0.85rem 0.9rem;
+  background:
+    linear-gradient(135deg, rgba(200, 164, 93, 0.08), rgba(126, 228, 255, 0.035)),
+    rgba(12, 14, 18, 0.82);
+  color: var(--ap-text, #f2eee6);
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.025) inset;
+}
+
+.ap-relationship-row button:hover,
+.ap-connection-actions button:hover,
+.ap-relationship-row button:focus-visible,
+.ap-connection-actions button:focus-visible {
+  border-color: rgba(126, 228, 255, 0.55);
+  transform: translateY(-1px);
+}
+
+.ap-relationship-verb,
+.ap-connection-actions button > span:first-child {
+  grid-row: span 3;
+  align-self: stretch;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-block-size: 100%;
+  border-radius: 0.75rem;
+  padding: 0.45rem 0.5rem;
+  color: var(--ap-accent, #c8a45d);
+  border: 1px solid rgba(200, 164, 93, 0.2);
+  background: rgba(200, 164, 93, 0.08);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.ap-relationship-row strong,
+.ap-connection-actions button > strong {
+  min-width: 0;
+  color: var(--ap-text, #f2eee6);
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  overflow-wrap: anywhere;
+}
+
+.ap-relationship-row small,
+.ap-connection-actions button > small {
+  min-width: 0;
+  color: var(--ap-muted, #a9a193);
+  overflow-wrap: anywhere;
+}
+
+.ap-relationship-row em,
+.ap-connection-actions button > em {
+  min-width: 0;
+  color: rgba(242, 238, 230, 0.72);
+  font-style: normal;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.ap-system-marker [data-ap-relationship-phrase],
+.ap-system-marker span {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 720px) {
+  .ap-relationship-row button,
+  .ap-connection-actions button {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-relationship-verb,
+  .ap-connection-actions button > span:first-child {
+    grid-row: auto;
+    justify-content: flex-start;
+    min-block-size: auto;
+  }
+}

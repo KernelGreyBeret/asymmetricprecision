@@ -1,0 +1,168 @@
+/*
+  AP Journeys
+  Guided paths for different kinds of explorers.
+  A journey is not a funnel. It is a route toward clearer understanding.
+*/
+
+.ap-journey-surface { display: grid; gap: var(--ap-gap); }
+
+.ap-journey-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid var(--ap-line);
+  border-radius: var(--ap-radius-soft);
+  background: rgba(255,255,255,0.025);
+}
+
+.ap-journey-toolbar label {
+  color: var(--ap-muted);
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.ap-journey-toolbar input,
+.ap-journey-toolbar select {
+  min-width: min(280px, 80vw);
+  border: 1px solid var(--ap-line);
+  border-radius: 999px;
+  background: rgba(0,0,0,0.22);
+  color: var(--ap-text);
+  padding: 0.75rem 0.95rem;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.ap-journey-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--ap-gap);
+}
+
+.ap-journey-card {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  border: 1px solid var(--ap-line);
+  border-radius: var(--ap-radius);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.018)),
+    radial-gradient(circle at 10% 0%, rgba(200,164,93,0.09), transparent 18rem);
+  box-shadow: var(--ap-shadow);
+  padding: 1.25rem;
+  overflow: hidden;
+}
+
+.ap-journey-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(90deg, transparent, rgba(200,164,93,0.08), transparent);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.45s ease, opacity 0.45s ease;
+  pointer-events: none;
+}
+
+.ap-journey-card:hover::before { transform: translateX(100%); opacity: 1; }
+
+.ap-journey-card h2,
+.ap-journey-card h3 { margin: 0; }
+
+.ap-journey-signal,
+.ap-journey-question,
+.ap-journey-summary { color: var(--ap-muted); margin: 0; }
+
+.ap-journey-question {
+  color: var(--ap-text);
+  border-left: 3px solid var(--ap-gold);
+  padding-left: 0.85rem;
+  font-family: var(--ap-font-serif);
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.ap-journey-domains {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.ap-journey-domain,
+.ap-journey-type {
+  display: inline-flex;
+  border: 1px solid var(--ap-line);
+  border-radius: 999px;
+  padding: 0.25rem 0.55rem;
+  color: var(--ap-muted);
+  font-size: 0.75rem;
+}
+
+.ap-route {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ap-route-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.ap-route-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0.62rem;
+  top: 1.7rem;
+  bottom: -0.45rem;
+  width: 1px;
+  background: var(--ap-line);
+}
+
+.ap-route-index {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid var(--ap-line-strong);
+  border-radius: 999px;
+  color: var(--ap-gold);
+  background: var(--ap-bg);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.ap-route-body { display: grid; gap: 0.15rem; }
+.ap-route-label { color: var(--ap-gold); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 800; }
+.ap-route-title { color: var(--ap-text); font-weight: 800; }
+.ap-route-title:hover { color: var(--ap-gold); }
+
+.ap-journey-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; align-items: center; }
+
+.ap-path-note {
+  border: 1px dashed var(--ap-line-strong);
+  border-radius: var(--ap-radius-soft);
+  padding: 1rem;
+  color: var(--ap-muted);
+  background: rgba(200,164,93,0.045);
+}
+
+@media (max-width: 860px) {
+  .ap-journey-grid { grid-template-columns: 1fr; }
+  .ap-journey-toolbar { align-items: stretch; }
+  .ap-journey-toolbar label, .ap-journey-toolbar input, .ap-journey-toolbar select { width: 100%; }
+}

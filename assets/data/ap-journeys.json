@@ -1,0 +1,232 @@
+{
+  "version": "0.8",
+  "name": "AP Learning Journeys",
+  "principle": "A journey is not a funnel. A journey is a guided path toward clearer understanding.",
+  "journeys": [
+    {
+      "id": "journey-leader",
+      "title": "For Leaders",
+      "signal": "You are responsible for outcomes across people, policy, incentives, and execution.",
+      "question": "How do I make better decisions inside a system I do not fully control?",
+      "summary": "A path for leaders trying to understand why organizations behave the way they do and how to improve outcomes without mistaking activity for progress.",
+      "domains": [
+        "Leadership",
+        "Organizations",
+        "Decision Making",
+        "Outcomes"
+      ],
+      "entry": "../philosophy/index.html",
+      "steps": [
+        {
+          "label": "Begin with the philosophy",
+          "title": "Why AP Exists",
+          "url": "../philosophy/index.html",
+          "type": "principle"
+        },
+        {
+          "label": "Clarify the failure mode",
+          "title": "The System Was Telling the Truth",
+          "url": "../essays/the-system-was-telling-the-truth.html",
+          "type": "essay"
+        },
+        {
+          "label": "Shift the measure",
+          "title": "Design for Outcomes",
+          "url": "../atlas/index.html?focus=principle-outcomes",
+          "type": "framework"
+        },
+        {
+          "label": "Reflect",
+          "title": "Learning Checkpoint",
+          "url": "../learning/index.html",
+          "type": "learning"
+        }
+      ],
+      "connections": [
+        "principle-outcomes",
+        "principle-evidence",
+        "concept-hidden-systems"
+      ]
+    },
+    {
+      "id": "journey-architect",
+      "title": "For Architects",
+      "signal": "You translate intent into structure and must keep systems understandable as they grow.",
+      "question": "How do I design systems that survive contact with real organizations?",
+      "summary": "A path for architects working across technology, governance, security, workflows, and human constraints.",
+      "domains": [
+        "Architecture",
+        "Systems",
+        "Trust",
+        "Constraints"
+      ],
+      "entry": "../frameworks/index.html",
+      "steps": [
+        {
+          "label": "Start with the system",
+          "title": "See the System",
+          "url": "../atlas/index.html?focus=principle-see-system",
+          "type": "principle"
+        },
+        {
+          "label": "Use the models",
+          "title": "Frameworks",
+          "url": "../frameworks/index.html",
+          "type": "framework"
+        },
+        {
+          "label": "Explore relationships",
+          "title": "Atlas",
+          "url": "../atlas/index.html",
+          "type": "atlas"
+        },
+        {
+          "label": "Apply",
+          "title": "Laboratories",
+          "url": "../laboratories/index.html",
+          "type": "laboratory"
+        }
+      ],
+      "connections": [
+        "principle-see-system",
+        "principle-practical",
+        "concept-atlas"
+      ]
+    },
+    {
+      "id": "journey-cyber",
+      "title": "For Cybersecurity Practitioners",
+      "signal": "You need security to be understood as capability, evidence, decisions, and outcomes — not just artifacts.",
+      "question": "How do I separate real security outcomes from compliance motion?",
+      "summary": "A path through Zero Trust, RMF, evidence, authorization, trust, and outcome-oriented security thinking.",
+      "domains": [
+        "Cybersecurity",
+        "Trust",
+        "Governance",
+        "Evidence"
+      ],
+      "entry": "../essays/index.html",
+      "steps": [
+        {
+          "label": "Start with outcomes",
+          "title": "The End State Is the Requirement",
+          "url": "../essays/end-state-is-the-requirement.html",
+          "type": "essay"
+        },
+        {
+          "label": "Clarify trust",
+          "title": "The Three A’s of Zero Trust",
+          "url": "../essays/three-as.html",
+          "type": "essay"
+        },
+        {
+          "label": "Map the relationships",
+          "title": "Atlas",
+          "url": "../atlas/index.html",
+          "type": "atlas"
+        },
+        {
+          "label": "Record the insight",
+          "title": "Learning",
+          "url": "../learning/index.html",
+          "type": "learning"
+        }
+      ],
+      "connections": [
+        "zero-trust",
+        "rmf",
+        "principle-evidence",
+        "principle-outcomes"
+      ]
+    },
+    {
+      "id": "journey-builder",
+      "title": "For Builders",
+      "signal": "You learn by making things real: interfaces, tools, games, prototypes, and experiments.",
+      "question": "How do ideas become systems people can use?",
+      "summary": "A path for developers, designers, makers, and operators who want to see AP principles become practical interfaces and working systems.",
+      "domains": [
+        "Laboratories",
+        "Visualization",
+        "Learning",
+        "Design"
+      ],
+      "entry": "../laboratories/index.html",
+      "steps": [
+        {
+          "label": "Start with laboratories",
+          "title": "Laboratories",
+          "url": "../laboratories/index.html",
+          "type": "laboratory"
+        },
+        {
+          "label": "Study the language",
+          "title": "Hidden Systems Visual Language",
+          "url": "../frameworks/index.html?focus=framework-hsvl",
+          "type": "framework"
+        },
+        {
+          "label": "Explore connections",
+          "title": "Atlas",
+          "url": "../atlas/index.html",
+          "type": "atlas"
+        },
+        {
+          "label": "Improve the model",
+          "title": "Reflection Log",
+          "url": "../learning/index.html",
+          "type": "learning"
+        }
+      ],
+      "connections": [
+        "concept-hsvl",
+        "concept-atlas",
+        "principle-practical"
+      ]
+    },
+    {
+      "id": "journey-newcomer",
+      "title": "For New Explorers",
+      "signal": "You are not looking for a category. You are looking for the best first thread to pull.",
+      "question": "What is Asymmetric Precision, and why does it think this way?",
+      "summary": "A short orientation path for people encountering AP for the first time.",
+      "domains": [
+        "Applied Systems Thinking",
+        "Learning",
+        "Philosophy"
+      ],
+      "entry": "../start-here/index.html",
+      "steps": [
+        {
+          "label": "Read the oath",
+          "title": "Start Here",
+          "url": "../start-here/index.html",
+          "type": "orientation"
+        },
+        {
+          "label": "Understand the worldview",
+          "title": "Philosophy",
+          "url": "../philosophy/index.html",
+          "type": "principle"
+        },
+        {
+          "label": "Choose a domain",
+          "title": "Atlas",
+          "url": "../atlas/index.html",
+          "type": "atlas"
+        },
+        {
+          "label": "Leave with clarity",
+          "title": "Learning Checkpoint",
+          "url": "../learning/index.html",
+          "type": "learning"
+        }
+      ],
+      "connections": [
+        "ap",
+        "philosophy",
+        "concept-understanding"
+      ]
+    }
+  ]
+}

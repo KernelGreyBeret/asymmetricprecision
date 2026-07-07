@@ -1,63 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frameworks | Asymmetric Precision</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="icon" type="image/png" href="../assets/favicon.png"/>
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2235b039ebf949b3a2e63066d4691d12"}'></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frameworks | Asymmetric Precision</title>
+  <meta name="description" content="Practical operating models for understanding and improving complex systems." />
+  <link rel="stylesheet" href="../assets/system/ap-system.css" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
 </head>
-<body>
-<header class="site-header"><a class="brand" href="../index.html">
-    <img src="../assets/logo-mark.png" alt="Asymmetric Precision Logo"/>
-    <span>Asymmetric Precision</span>
-</a>
+<body data-ap-page="frameworks" data-ap-layer="knowledge">
+  <header class="site-header">
+    <a class="brand" href="../index.html">
+      <img src="../assets/logo-mark.png" alt="Asymmetric Precision Logo" />
+      <span>Asymmetric Precision</span>
+    </a>
     <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    <nav class="site-nav"><a href="../books/index.html">Books</a><a href="../essays/index.html">Essays</a><a
-            href="../frameworks/index.html">Frameworks</a><a href="../field-notes/index.html">Field Notes</a><a
-            href="../projects/index.html">Projects</a><a href="../about/index.html">About</a><a
-            href="../contact/index.html">Contact</a></nav>
-</header>
-<main>
-    <section class="page-hero"><p class="eyebrow">Reusable models</p>
-        <h1>Frameworks</h1>
-        <p class="page-intro">Named models, diagrams, patterns, principles, and terminology that make complex systems
-            easier to explain, defend, and operate.</p></section>
-    <section class="card-grid two">
-        <article class="card"><p class="card-label">Zero Trust</p><span class="status development">In Dev...</span>
-            <h3>Attribution, Authority, Authorization</h3>
-            <p>A simple but powerful framing for understanding what most Zero Trust capabilities are really trying to
-                establish.</p></article>
-        <article class="card"><p class="card-label">Systems</p><span class="status development">In Dev...</span>
-            <h3>Constraints Create Behavior</h3>
-            <p>A working principle for diagnosing outcomes without over-attributing them to personality, culture, or
-                intent.</p></article>
-        <article class="card"><p class="card-label">Architecture</p><span class="status development">In Dev...</span>
-            <h3>Decision Authority vs. Enforcement</h3>
-            <p>A model for separating who decides, who enforces, and how obligations survive translation into real
-                tools.</p></article>
-        <article class="card"><p class="card-label">Operations</p><span class="status development">In Dev...</span>
-            <h3>Pressure, Drift, and Adaptation</h3>
-            <p>A lens for spotting the slow movement that precedes obvious failure.</p></article>
+    <nav class="site-nav">
+      <a href="../start-here/index.html">Start Here</a>
+      <a href="../philosophy/index.html">Philosophy</a>
+      <a href="../atlas/index.html">Atlas</a>
+      <a href="../journeys/index.html">Journeys</a>
+      <a href="../books/index.html">Books</a>
+      <a href="../essays/index.html">Essays</a>
+      <a class="active" href="../frameworks/index.html">Frameworks</a>
+      <a href="../laboratories/index.html">Laboratories</a>
+      <a href="../field-notes/index.html">Field Notes</a>
+      <a href="../about/index.html">About</a>
+      <a href="../contact/index.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero ap-framework-hero">
+      <p class="eyebrow">Frameworks</p>
+      <h1>A framework is not a document. A framework is an operating model.</h1>
+      <p class="page-intro">AP frameworks are practical models for seeing a system, asking better questions, evaluating evidence, and deciding what to do next.</p>
     </section>
-</main>
-<footer class="site-footer">
 
+    <section class="section split ap-model-intro">
+      <div>
+        <p class="section-label">Framework Experience</p>
+        <h2>Models that survive contact.</h2>
+      </div>
+      <p>Each framework should clarify the problem, reveal the model, show how to apply it, identify evidence, and connect back into the Atlas.</p>
+    </section>
+
+    <section class="ap-framework-controls" aria-label="Framework filters">
+      <label>
+        <span>Filter by domain</span>
+        <select id="framework-domain-filter">
+          <option value="all">All domains</option>
+        </select>
+      </label>
+      <label>
+        <span>Search frameworks</span>
+        <input id="framework-search" type="search" placeholder="Trust, outcomes, evidence..." />
+      </label>
+    </section>
+
+    <section id="framework-grid" class="ap-framework-grid" aria-live="polite">
+      <article class="ap-framework-loading">Loading framework models...</article>
+    </section>
+
+    <section class="ap-connection-surface">
+      <p class="section-label">Where this connects</p>
+      <h2>Frameworks connect thinking to action.</h2>
+      <p>Use the Atlas to see how each framework relates to principles, essays, laboratories, and domains.</p>
+      <a class="button secondary" href="../atlas/index.html">Explore the Atlas</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div>
-        <img class="footer-logo" src="../assets/logo-mark.png" alt="Asymmetric Precision Logo">
-
-        <p class="footer-copyright">
-            © 2026 Tommy Burke. All rights reserved.
-        </p>
+      <img class="footer-logo" src="../assets/logo-mark.png" alt="Asymmetric Precision Logo" />
+      <p class="footer-copyright">© 2026 Tommy Burke. All rights reserved.</p>
     </div>
+    <p class="footer-description">Asymmetric Precision™ is a systems-thinking and operational architecture platform focused on trust, complexity, and modern enterprise systems.</p>
+  </footer>
 
-    <p class="footer-description">
-        Asymmetric Precision™ is a systems-thinking and operational architecture platform focused on trust, complexity,
-        and modern enterprise systems.
-    </p>
-
-</footer>
-<script src="../assets/js/main.js"></script>
+  <script src="../assets/system/ap-system.js"></script>
+  <script src="../assets/system/ap-frameworks.js"></script>
 </body>
 </html>

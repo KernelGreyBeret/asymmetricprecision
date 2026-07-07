@@ -1,0 +1,146 @@
+/* Sprint 32 — Atlas Stability Core
+   Principle: A map must remain usable before it becomes elaborate. */
+
+.ap-atlas-stability {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(200, 164, 93, 0.26);
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.035);
+  color: var(--ap-text, #f2eee6);
+}
+
+.ap-atlas-stability strong {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--ap-gold, #c8a45d);
+}
+
+.ap-atlas-stability span {
+  color: var(--ap-muted, #b8b0a3);
+  font-size: 0.92rem;
+}
+
+.ap-atlas-canvas {
+  min-height: clamp(34rem, 68vh, 56rem);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.ap-atlas-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 1;
+}
+
+.ap-atlas-edge {
+  fill: none;
+  stroke: rgba(200, 164, 93, 0.34);
+  stroke-width: 0.35;
+  vector-effect: non-scaling-stroke;
+}
+
+.ap-atlas-edge.is-active {
+  stroke: rgba(126, 228, 255, 0.78);
+  stroke-width: 0.55;
+}
+
+.ap-atlas-edge-label {
+  fill: rgba(242, 238, 230, 0.76);
+  font-size: 2.05px;
+  letter-spacing: 0.03em;
+  paint-order: stroke;
+  stroke: rgba(9, 10, 12, 0.85);
+  stroke-width: 0.35;
+  pointer-events: none;
+}
+
+.ap-atlas-node {
+  position: absolute;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  max-width: 12rem;
+  min-width: 7.5rem;
+  white-space: normal;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+.ap-atlas-node span,
+.ap-atlas-node small {
+  display: block;
+}
+
+.ap-atlas-node small {
+  margin-top: 0.2rem;
+  opacity: 0.72;
+  font-size: 0.72rem;
+}
+
+.ap-atlas-blueprint-label {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 3;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 999px;
+  background: rgba(0,0,0,0.35);
+  color: var(--ap-muted, #b8b0a3);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ap-atlas-projection-summary,
+.ap-atlas-metrics {
+  overflow: hidden;
+}
+
+.ap-atlas-projection-actions,
+.ap-reflection-actions,
+.ap-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.ap-relationship-row button em {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--ap-muted, #b8b0a3);
+  font-style: normal;
+  font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+@media (max-width: 760px) {
+  .ap-atlas-canvas {
+    min-height: 42rem;
+  }
+
+  .ap-atlas-node {
+    min-width: 6.4rem;
+    max-width: 9rem;
+    font-size: 0.74rem;
+  }
+
+  .ap-atlas-node small {
+    display: none;
+  }
+
+  .ap-atlas-edge-label {
+    display: none;
+  }
+}

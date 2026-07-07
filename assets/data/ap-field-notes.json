@@ -1,0 +1,49 @@
+{
+  "principle": "A field note is not a post. A field note is an observation.",
+  "fieldNotes": [
+    {
+      "id": "field-system-truth",
+      "title": "The System Was Already Speaking",
+      "summary": "Failures often appear sudden only because the earlier signals were normalized, explained away, or assigned to the wrong cause.",
+      "signalType": "Drift Signal",
+      "domains": ["Systems", "Failure", "Organizations"],
+      "connections": ["Systems Tell the Truth", "Evidence Over Assumption", "The System Was Telling the Truth"],
+      "status": "Seed Observation",
+      "difficulty": "Foundational",
+      "href": "../essays/index.html"
+    },
+    {
+      "id": "field-compliance-gravity",
+      "title": "Compliance Creates Its Own Gravity",
+      "summary": "When compliance becomes the center of the system, people optimize for artifact completion instead of risk clarity or operational effect.",
+      "signalType": "Incentive Signal",
+      "domains": ["Governance", "Incentives", "Decision Making"],
+      "connections": ["Design for Outcomes", "RMF as Governance", "Activities Serve Outcomes"],
+      "status": "Seed Observation",
+      "difficulty": "Intermediate",
+      "href": "../frameworks/index.html"
+    },
+    {
+      "id": "field-architecture-shadow",
+      "title": "Architecture Has a Shadow System",
+      "summary": "Every formal architecture produces an informal architecture: exceptions, workarounds, trust shortcuts, undocumented dependencies, and operational habits.",
+      "signalType": "Hidden System Signal",
+      "domains": ["Architecture", "Trust", "Constraints"],
+      "connections": ["Hidden Systems Matter", "Atlas", "Laboratories"],
+      "status": "Seed Observation",
+      "difficulty": "Intermediate",
+      "href": "../atlas/index.html"
+    },
+    {
+      "id": "field-clarity-pressure",
+      "title": "Pressure Reveals Clarity Gaps",
+      "summary": "Under pressure, teams do not rise to the quality of their slide decks. They fall to the clarity of their shared mental models.",
+      "signalType": "Decision Signal",
+      "domains": ["Leadership", "Learning", "Operational Design"],
+      "connections": ["Build Better Mental Models", "Learning Journeys", "Tactical Compassion"],
+      "status": "Seed Observation",
+      "difficulty": "Foundational",
+      "href": "../journeys/index.html"
+    }
+  ]
+}

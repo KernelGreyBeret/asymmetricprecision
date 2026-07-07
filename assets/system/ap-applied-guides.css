@@ -1,0 +1,162 @@
+/* AP Applied Guides
+Sprint 34 — Applied Guides Integration
+Principle: Applied guides turn builder knowledge into repeatable operating paths.
+*/
+
+.ap-applied-guides-surface {
+  margin: clamp(2rem, 5vw, 4rem) auto;
+  width: min(1180px, calc(100% - 2rem));
+  border: 1px solid var(--ap-border, rgba(255,255,255,.16));
+  border-radius: var(--ap-radius-xl, 28px);
+  padding: clamp(1rem, 3vw, 2rem);
+  background:
+    linear-gradient(135deg, rgba(200,164,93,.10), transparent 38%),
+    rgba(255,255,255,.035);
+  box-shadow: var(--ap-shadow-soft, 0 20px 60px rgba(0,0,0,.28));
+  overflow: hidden;
+}
+
+.ap-applied-guides-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1.25rem;
+}
+
+.ap-applied-guides-header h2 {
+  margin: .25rem 0 .5rem;
+  max-width: 850px;
+}
+
+.ap-applied-guides-header p {
+  margin: 0;
+  color: var(--ap-muted, rgba(242,238,230,.72));
+  max-width: 780px;
+}
+
+.ap-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 1rem;
+}
+
+.ap-guide-card {
+  min-width: 0;
+  display: grid;
+  gap: 1rem;
+  border: 1px solid var(--ap-border, rgba(255,255,255,.14));
+  border-radius: var(--ap-radius-lg, 22px);
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  background: rgba(8, 10, 12, .68);
+  overflow: hidden;
+}
+
+.ap-guide-card header {
+  display: flex;
+  justify-content: space-between;
+  gap: .75rem;
+  align-items: flex-start;
+}
+
+.ap-guide-card h3 {
+  margin: .35rem 0 0;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  line-height: .95;
+  overflow-wrap: anywhere;
+}
+
+.ap-guide-status,
+.ap-guide-stage {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--ap-border, rgba(255,255,255,.18));
+  border-radius: 999px;
+  padding: .35rem .65rem;
+  color: var(--ap-text, #f2eee6);
+  background: rgba(255,255,255,.07);
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ap-guide-stage {
+  color: var(--ap-muted, rgba(242,238,230,.72));
+}
+
+.ap-guide-question {
+  border-left: 3px solid var(--ap-accent, #c8a45d);
+  padding-left: 1rem;
+  color: var(--ap-text, #f2eee6);
+}
+
+.ap-guide-domain-row,
+.ap-guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  min-width: 0;
+}
+
+.ap-guide-domain-row span {
+  border: 1px solid var(--ap-border, rgba(255,255,255,.14));
+  border-radius: 999px;
+  padding: .35rem .6rem;
+  background: rgba(255,255,255,.06);
+  color: var(--ap-muted, rgba(242,238,230,.72));
+  font-size: .85rem;
+}
+
+.ap-guide-actions a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ap-applied-guide-callout {
+  margin: clamp(1rem, 3vw, 2rem) 0;
+  border: 1px solid rgba(200,164,93,.35);
+  border-radius: var(--ap-radius-lg, 22px);
+  padding: clamp(1rem, 3vw, 1.5rem);
+  background: rgba(200,164,93,.08);
+}
+
+.ap-builder-journey-card {
+  margin-top: 1rem;
+  border: 1px solid var(--ap-border, rgba(255,255,255,.14));
+  border-radius: var(--ap-radius-lg, 22px);
+  padding: 1rem;
+  background: rgba(255,255,255,.04);
+}
+
+@media (max-width: 760px) {
+  .ap-applied-guides-header {
+    grid-template-columns: 1fr;
+  }
+  .ap-guide-card header {
+    display: grid;
+  }
+}
+
+
+
+/* Sprint 34.3 — book page copy trim */
+.ap-guide-purchase-actions,
+.ap-guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+}
+
+.ap-applied-guide-callout {
+  width: min(1180px, calc(100% - 2rem));
+  margin: clamp(1rem, 3vw, 2rem) auto;
+}
+
+.ap-guide-availability-note {
+  border-left: 3px solid rgba(200,164,93,.72);
+  padding-left: .9rem;
+  color: var(--ap-muted, rgba(242,238,230,.72));
+}

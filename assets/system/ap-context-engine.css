@@ -1,0 +1,96 @@
+/* AP Context Engine UI
+   Principle: a path should stay visible after the click that begins it. */
+
+.ap-journey-context,
+.ap-page-system-surface,
+.ap-book-availability {
+  width: min(var(--ap-content-wide), calc(100% - 2rem));
+  margin: clamp(1rem, 3vw, 2rem) auto;
+  padding: clamp(1rem, 2.5vw, 1.4rem);
+  border: 1px solid var(--ap-line-strong, rgba(200,164,93,0.35));
+  border-radius: var(--ap-radius-lg, 22px);
+  background:
+    linear-gradient(135deg, rgba(200,164,93,0.095), rgba(255,255,255,0.025)),
+    var(--ap-panel, rgba(255,255,255,0.055));
+  box-shadow: var(--ap-shadow-soft, 0 20px 70px rgba(0,0,0,0.22));
+}
+
+.ap-journey-context,
+.ap-page-system-surface,
+.ap-book-availability {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 1.05fr);
+  gap: clamp(1rem, 3vw, 1.5rem);
+  align-items: start;
+}
+
+.ap-journey-context h2,
+.ap-page-system-surface h2,
+.ap-book-availability h2 {
+  font-size: clamp(1.45rem, 3vw, 2.4rem);
+}
+
+.ap-journey-context p,
+.ap-page-system-surface p,
+.ap-book-availability p {
+  color: var(--ap-muted);
+}
+
+.ap-journey-context-actions,
+.ap-book-availability-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.ap-page-system-markers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  gap: 0.65rem;
+}
+
+.ap-system-marker {
+  display: grid;
+  gap: 0.25rem;
+  min-width: 0;
+  padding: 0.85rem;
+  border: 1px solid var(--ap-line, rgba(255,255,255,0.14));
+  border-radius: var(--ap-radius-soft, 16px);
+  background: rgba(0,0,0,0.18);
+  color: var(--ap-text);
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.ap-system-marker span,
+.ap-system-marker small {
+  color: var(--ap-muted);
+  font-size: 0.78rem;
+}
+
+.ap-system-marker strong {
+  overflow-wrap: anywhere;
+}
+
+.ap-connection-surface--journey {
+  border-color: var(--ap-line-strong, rgba(200,164,93,0.35));
+  background:
+    linear-gradient(135deg, rgba(200,164,93,0.08), rgba(255,255,255,0.025)),
+    var(--ap-panel, rgba(255,255,255,0.055));
+}
+
+@media (max-width: 860px) {
+  .ap-journey-context,
+  .ap-page-system-surface,
+  .ap-book-availability {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ap-connection-actions button small {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--ap-muted);
+  font-size: 0.72rem;
+  font-weight: 500;
+}
