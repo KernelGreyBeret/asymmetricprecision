@@ -1,6 +1,6 @@
 # Intellectual Property Notice
 
-**Project:** KGB Studio  
+**Project:** Asymmetric Precision  
 **Owner:** Tommy Burke / KernelGreyBeret  
 **Status:** Proprietary; all rights reserved
 
@@ -8,7 +8,7 @@ This repository is public for deployment, demonstration, portfolio visibility, r
 
 ## Covered material
 
-The protected project includes KGB Studio; KGB Forge and related modules; source code; architecture; engines; runtime systems; project formats; schemas; workflows; algorithms; builders; exporters; templates; interfaces; visual language; graphics; icons; logos; documentation; sample projects; generated release structures; and all related creative and technical materials.
+The protected project includes the Asymmetric Precision website and source code; essays; books and excerpts; frameworks; models; taxonomies; methodologies; field notes; research; curricula; diagrams; graphics; illustrations; photographs; logos; names; slogans; visual language; design system; interface styles; page compositions; downloadable documents; and all other written, visual, conceptual, and technical materials.
 
 Copyright protection applies automatically to original expression fixed in these files. Publication on GitHub does not waive ownership or authorize reuse.
 
@@ -41,7 +41,7 @@ A third-party component remains subject to its own stated license. Its presence 
 
 Requests for reuse, commercial licensing, educational use, publication, or partnership should be directed to the repository owner through GitHub or the official project website:
 
-- https://github.com/KernelGreyBeret/KGBStudio
-- https://kgbarcade.dev
+- https://github.com/KernelGreyBeret/asymmetricprecision
+- https://asymmetricprecision.com
 
 See `LICENSE` for the controlling repository terms.

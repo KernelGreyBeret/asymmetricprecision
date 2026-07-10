@@ -8,7 +8,7 @@ Security fixes are generally applied only to the current deployed version and th
 
 Please report suspected vulnerabilities privately through GitHub’s **Report a vulnerability** / private security advisory workflow for this repository:
 
-`https://github.com/KernelGreyBeret/KGBStudio/security/advisories/new`
+`https://github.com/KernelGreyBeret/asymmetricprecision/security/advisories/new`
 
 Do **not** open a public issue, discussion, or pull request containing exploit details, secrets, personal information, or a working proof of concept.
 
@@ -24,7 +24,7 @@ Include, when available:
 
 ## Scope
 
-Good-faith reports may cover the Studio application, imported projects and assets, export and packaging workflows, generated PWAs, service workers, local persistence, preview/runtime systems, and deployment configuration.
+Good-faith reports may cover the public website, downloadable files, forms, client-side tools, deployment configuration, and any code that could affect visitor privacy, content integrity, or site availability.
 
 The following are normally out of scope unless they create a concrete security impact:
 

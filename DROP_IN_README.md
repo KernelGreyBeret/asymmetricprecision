@@ -1,8 +1,8 @@
-# KGB Studio Repository Protection Package
+# Asymmetric Precision Repository Protection Package
 
 Prepared for:
 
-- Repository: https://github.com/KernelGreyBeret/KGBStudio
+- Repository: https://github.com/KernelGreyBeret/asymmetricprecision
 - Owner: Tommy Burke / @KernelGreyBeret
 - Rights posture: Proprietary, all rights reserved
 - Prepared: July 2026

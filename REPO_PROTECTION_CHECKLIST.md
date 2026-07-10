@@ -1,6 +1,6 @@
 # Repository Protection Checklist
 
-**Repository:** [KGB Studio](https://github.com/KernelGreyBeret/KGBStudio)  
+**Repository:** [Asymmetric Precision](https://github.com/KernelGreyBeret/asymmetricprecision)  
 **Owner:** Tommy Burke / @KernelGreyBeret  
 **Default posture:** Publicly viewable, proprietary, owner-controlled
 

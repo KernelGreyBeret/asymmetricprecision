@@ -2,7 +2,7 @@
 
 ## Standard
 
-Participants in KGB Studio spaces are expected to communicate professionally, stay focused on the work, respect intellectual-property boundaries, and treat other participants with dignity.
+Participants in Asymmetric Precision spaces are expected to communicate professionally, stay focused on the work, respect intellectual-property boundaries, and treat other participants with dignity.
 
 Constructive disagreement is welcome. Harassment, threats, discrimination, sexualized conduct, deliberate disruption, impersonation, doxxing, spam, or repeated bad-faith behavior is not.
 

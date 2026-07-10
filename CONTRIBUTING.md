@@ -1,8 +1,8 @@
-# Contributing to KGB Studio
+# Contributing to Asymmetric Precision
 
-    KGB Studio is an owner-directed, source-available development environment. Public visibility does not make the project open source.
+    Asymmetric Precision is the owner’s public publishing and intellectual-property platform. Public visibility does not make its writings, frameworks, designs, or source materials open source.
 
-The maintainer may accept narrowly scoped defect fixes, compatibility improvements, accessibility fixes, documentation corrections, or other changes aligned with the published architecture and roadmap. New modules, architectural changes, format changes, branding changes, and major feature work should not be submitted without prior written approval.
+The maintainer may accept narrowly scoped typo corrections, broken-link reports, accessibility fixes, browser-compatibility fixes, or technical corrections that do not alter authorship, meaning, voice, framework structure, visual identity, or publication intent. Rewrites, derivative frameworks, content additions, and redesigns should not be submitted without prior written approval.
 
     ## Before submitting work
 
