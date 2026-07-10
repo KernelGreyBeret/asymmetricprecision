@@ -1,0 +1,63 @@
+KGB PROPRIETARY LICENSE
+Version 1.0 — 2026
+
+Copyright © 2026 Tommy Burke. All rights reserved.
+
+Project: KGB Studio
+Repository: https://github.com/KernelGreyBeret/KGBStudio
+
+1. OWNERSHIP
+
+This repository and its contents are proprietary intellectual property owned by Tommy Burke, also publishing and operating under the name KernelGreyBeret, except where a specific file or third-party component is expressly identified as having a different owner or license.
+
+Protected material includes, without limitation, KGB Studio; KGB Forge and related modules; source code; architecture; engines; runtime systems; project formats; schemas; workflows; algorithms; builders; exporters; templates; interfaces; visual language; graphics; icons; logos; documentation; sample projects; generated release structures; and all related creative and technical materials.
+
+2. NO OPEN-SOURCE LICENSE
+
+This repository is publicly viewable for transparency, demonstration, portfolio, deployment, collaboration review, and community awareness. Public access to the repository does not place any material in the public domain and does not grant an open-source license.
+
+Except for the limited permission in Section 3, no permission is granted to use, copy, reproduce, modify, adapt, translate, distribute, publish, transmit, display, perform, sublicense, sell, commercialize, create derivative works from, train models on, scrape for reuse, or otherwise exploit any portion of this repository.
+
+3. LIMITED PERMISSION TO VIEW AND EVALUATE
+
+You may access and view the repository through GitHub and may run the publicly deployed project for its intended end-user purpose. You may also temporarily download or clone the repository solely for private evaluation, security research conducted under SECURITY.md, or preparation of a proposed contribution under CONTRIBUTING.md.
+
+This limited permission:
+- is personal, revocable, non-exclusive, non-transferable, and non-sublicensable;
+- does not authorize publication, redistribution, deployment, mirroring, resale, incorporation into another project, or creation of derivative works;
+- does not authorize removal or alteration of copyright, trademark, attribution, provenance, or rights notices; and
+- ends when the permitted evaluation, security review, or contribution activity ends.
+
+4. CONTRIBUTIONS
+
+Submission of an issue, pull request, patch, suggestion, asset, text, or other contribution does not grant the contributor any ownership interest in the project.
+
+By intentionally submitting a contribution, the contributor represents that they have the right to submit it and grants Tommy Burke a perpetual, worldwide, irrevocable, royalty-free, transferable, sublicensable license to use, reproduce, modify, adapt, distribute, display, perform, publish, commercialize, and incorporate that contribution into this project or other works.
+
+The maintainer is not required to accept, use, credit, maintain, or respond to any contribution.
+
+5. THIRD-PARTY MATERIALS
+
+Third-party libraries, fonts, media, tools, or other components remain governed by their respective licenses and notices. This license does not enlarge or restrict rights granted directly by those third parties.
+
+6. NAMES, MARKS, AND BRAND IDENTITY
+
+No permission is granted to use the names “KGB Studio,” “KernelGreyBeret,” “KGB Arcade,” “KGB Studio,” “Asymmetric Precision,” related logos, slogans, trade dress, visual identities, or confusingly similar marks, except for truthful nominative reference to the original project.
+
+7. COMMERCIAL AND OTHER PERMISSIONS
+
+Any permission beyond this license requires a separate written agreement signed by Tommy Burke. Requests may be made through the repository owner’s GitHub profile or the project website.
+
+8. NO WARRANTY
+
+THE PROJECT IS PROVIDED “AS IS” AND “AS AVAILABLE,” WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, SECURITY, ACCURACY, OR AVAILABILITY.
+
+9. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE OWNER AND CONTRIBUTORS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, CONSEQUENTIAL, OR OTHER DAMAGES ARISING FROM ACCESS TO OR USE OF THE PROJECT.
+
+10. RESERVATION OF RIGHTS
+
+All rights not expressly granted are reserved. Unauthorized use may violate copyright, trademark, contract, unfair-competition, or other applicable law.
+
+This document is a project license and rights notice, not legal advice.

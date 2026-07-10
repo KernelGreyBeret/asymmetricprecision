@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a reproducible defect in KGB Studio
+title: "[BUG] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a defect. Do not include security vulnerabilities, secrets, or private information here. Use the private process in SECURITY.md for security issues.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What went wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Page, game, module, or file
+  - type: input
+    id: environment
+    attributes:
+      label: Browser, operating system, and device
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots, console output, or other evidence
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I checked for an existing report.
+          required: true
+        - label: This report does not disclose a security vulnerability or secret.
+          required: true
